@@ -129,8 +129,6 @@ Its public purpose is simple:
 
 > practice thinking, solving, explaining, and documenting — consistently.
 
-All projects completed alongside full-time employment.
-
 ---
 
 ## 🖖 Final thought
