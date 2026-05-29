@@ -24,16 +24,6 @@ The goal is to use AI wisely while still practicing the ability to think, explai
 
 ---
 
-# Mock Interviews & Brain Gym
-
-A structured practice repository for technical interview preparation, SQL and Python drilling, problem solving, and long-term cognitive fitness in the age of AI.
-
-This repository started as a mock interview preparation space for Data Analyst roles. It is evolving into a personal brain gym: a place where I regularly practice SQL, Python, mathematical reasoning, business problem solving, and clear technical communication.
-
-The goal is not only to get a job, but to keep my thinking sharp while using AI tools responsibly.
-
----
-
 # 🧠🏋️ Data Brain Gym
 
 **A personal brain gym for SQL, Python, AI engineering fundamentals, problem solving, interview communication, and cognitive fitness in the age of AI.**
