@@ -57,8 +57,67 @@ Updated `data-spock-core.instructions.md` (in `know-thyself-data/copilot/`):
 
 ---
 
+## ✅ WHAT WE ACCOMPLISHED TODAY — PART 2 (Notebook + Documentation)
+
+### Exercise 2 — Explore table sizes (populated + executed)
+Populated the markdown and code cells for Exercise 2 in `01-exploratory-data-analysis-in-sql.ipynb`.
+- Discovered that `company`, `tag_company`, `tag_type` are not available as CSV downloads from DataCamp Resources
+- These 3 tables exist only inside DataCamp's PostgreSQL environment — no export available
+
+### Full local database — all 6 tables now available
+Resolved the missing tables by reading `create-database.sql`, which contains full `INSERT` statements for the 3 small lookup tables.
+Updated the DuckDB setup cell to create all 6 tables:
+
+| Table | Rows | Source |
+|-------|------|--------|
+| `fortune500` | 500 | CSV |
+| `evanston311` | 36,431 | CSV |
+| `stackoverflow` | 45,238 | CSV |
+| `company` | 14 | `create-database.sql` INSERT statements |
+| `tag_company` | 56 | `create-database.sql` INSERT statements |
+| `tag_type` | 59 | `create-database.sql` INSERT statements |
+
+All 6 tables verified and loaded. JOIN exercises that use `company`, `tag_company`, and `tag_type` are now fully executable locally.
+
+### Notes for Students added to `create-database.sql`
+Added a `✅ NOTES FOR STUDENTS` block at the bottom of the SQL script explaining:
+- What each of the 6 tables represents
+- Why foreign keys matter and how they connect the tables
+- The difference between DuckDB (no FK enforcement) and PostgreSQL (hard FK enforcement)
+- The most important mental model: schema as a map, every JOIN is a path
+
+### Notebook Exercise Standard added to `data-spock-core.instructions.md`
+Added **Notebook Exercise Standard** rule to the Student-Friendly Documentation Rule section:
+- Every populated exercise markdown cell must include: task description, instructions, Hint (SQL pattern), **Why this matters** (one sentence on the concept), and Note (local setup differences)
+- Goal stated explicitly: *"The notebook must function as a self-contained mini-course"*
+
+---
+
+## 🧠 DECISIONS AND REASONING — PART 2
+
+| Decision | Reason |
+|----------|--------|
+| Read INSERT statements from `create-database.sql` instead of creating new CSVs | Cleanest solution — data already exists in the repo, no new files needed |
+| Execute INSERT statements directly in DuckDB setup cell | DuckDB accepts standard SQL — no parsing layer needed |
+| Notes for Students in SQL file, not just in notebook | The SQL file is itself a learning resource — a student reading it should understand the schema |
+| Notebook Exercise Standard added to core instructions | Without an explicit rule, exercise cells risk becoming "copy the query" exercises with no conceptual explanation |
+
+---
+
 ## 🔜 NEXT STEPS
 
-1. Commit all changes in `data-brain-gym` — one logical unit: language enforcement + audit fixes
-2. Commit `captains-log.instructions.md` + updated `data-spock-core.instructions.md` in `know-thyself-data`
-3. Continue populating `01-exploratory-data-analysis-in-sql.ipynb` — Exercise 4 onwards
+1. Commit updated `data-spock-core.instructions.md` in `know-thyself-data`
+2. Continue populating `01-exploratory-data-analysis-in-sql.ipynb` — Exercise 4 onwards (Exercise 2 + 3 done)
+3. Note: `datacamp/` is gitignored — notebook changes are local only (copyright protection)
+
+---
+
+## ✅ Notes for Students
+
+Two things to take away from today's infrastructure work:
+
+**1. Always read the schema script before querying.**
+`create-database.sql` told us everything: which tables exist, how they connect, and — crucially — that the data for 3 of them was already there in INSERT statements. If you open a new database and feel lost, find the schema script first. It is the map.
+
+**2. Documentation is part of the work, not extra work.**
+The notebook exercise cells, the SQL notes, the captain's log — these are not decoration. They are how you will remember what you did and why, six months from now. And they are how anyone else can pick up where you left off without needing to ask questions. Write as if the next reader is a student who has never seen this project. That student might be you.
