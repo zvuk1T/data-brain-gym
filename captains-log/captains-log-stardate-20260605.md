@@ -7,19 +7,19 @@
 
 ## 🎯 SESSION GOAL
 
-Izgraditi kompletnu strukturu za DataCamp SQL for Business Analysts trek — backbone notebooke, data foldere, lokalni DuckDB setup.
+Build the complete structure for the DataCamp SQL for Business Analysts track — backbone notebooks, data folders, local DuckDB setup.
 
 ---
 
-## ✅ ŠTA SMO POSTIGLI DANAS
+## ✅ WHAT WE ACCOMPLISHED TODAY
 
-### Track struktura
-- Kreiran `datacamp/sql-for-business-analysts/` folder kao kontejner za cijeli trek
-- Kreiran `datacamp/` entry u `.gitignore` (copyright zaštita)
-- Premješten i preimenovan EDA notebook sa `01-` prefiksom
+### Track structure
+- Created `datacamp/sql-for-business-analysts/` folder as container for the entire track
+- Added `datacamp/` entry to `.gitignore` (copyright protection)
+- Moved and renamed the EDA notebook with `01-` prefix
 
-### Backbone notebooke — 6 kurseva
-Kreirana kompletna kičma za cijeli trek:
+### Backbone notebooks — 6 courses
+Created the complete backbone for the entire track:
 
 | # | Notebook | Exercises | Dataset |
 |---|----------|-----------|---------|
@@ -30,26 +30,26 @@ Kreirana kompletna kičma za cijeli trek:
 | `04` | `analyzing-business-data-in-sql` | 46 | Delivr |
 | `05` | `reporting-in-sql` | 54 | Olympics |
 
-Svaki notebook: title cell + Table of Contents + Chapter headers + Markdown/Code par za svaki exercise.
+Each notebook: title cell + Table of Contents + Chapter headers + Markdown/Code pair for every exercise.
 
-### Data infrastruktura
-- Kreiran `data/` folder sa podfolderom za svaki kurs
-- Kreiran `data/README.md` — inventar svih dataseta s download linkovima
-- Za `01-eda-sql` — kompletan lokalni setup:
-  - `create-database.sql` — PostgreSQL schema (referenca)
-  - `evanston311.csv` — 36,431 redova (curl sa DataCamp CDN)
-  - `fortune500.csv` — 500 redova (curl sa DataCamp CDN)
-  - `stackoverflow.csv` — 45,238 redova (curl sa DataCamp CDN)
-  - `erd.md` — ERD + JOIN cheatsheet (iz DataCamp Resources)
+### Data infrastructure
+- Created `data/` folder with a subfolder for each course
+- Created `data/README.md` — dataset inventory with download links
+- For `01-eda-sql` — complete local setup:
+  - `create-database.sql` — PostgreSQL schema (reference)
+  - `evanston311.csv` — 36,431 rows (curl from DataCamp CDN)
+  - `fortune500.csv` — 500 rows (curl from DataCamp CDN)
+  - `stackoverflow.csv` — 45,238 rows (curl from DataCamp CDN)
+  - `erd.md` — ERD + JOIN cheatsheet (from DataCamp Resources)
   - `Exploratory Data Analysis in SQL.pdf` — Course Glossary
 
-### DuckDB lokalni setup
-- `duckdb` instaliran u zajednički `.venv`
-- Setup ćelija dodana na vrh notebooka `01-` (ćelija 3)
-- Riješen path problem — `Path().resolve()` umjesto relativnih putanja
-- Testirano i potvrđeno: sve 3 tabele učitane, Exercise 3 izvršen ✅
+### DuckDB local setup
+- `duckdb` installed into shared `.venv`
+- Setup cell added to the top of the `01-` notebook (cell 3)
+- Resolved path issue — `Path().resolve()` instead of relative paths
+- Tested and confirmed: all 3 tables loaded, Exercise 3 executed ✅
 
-### Exercise 3 — Count missing values (populiran i pokrenut)
+### Exercise 3 — Count missing values (populated and executed)
 ```sql
 -- Missing ticker values → 32
 SELECT count(*) - count(ticker) AS missing FROM fortune500;
@@ -60,37 +60,37 @@ SELECT count(*) - count(industry) AS missing FROM fortune500;
 
 ---
 
-## 🧠 ODLUKE I RAZLOZI
+## 🧠 DECISIONS AND REASONING
 
-| Odluka | Razlog |
-|--------|--------|
-| `00-` prefix za prerequisite kurs | Alphabetical sort = vizualni redoslijed učenja |
-| DuckDB umjesto PostgreSQL za notebooks | Zero friction — `import duckdb`, bez servera |
-| `data/` folder unutar `datacamp/` | Gitignored automatski, Cookiecutter DS konvencija |
-| `erd.md` umjesto raw PNG | Pretraživo, verzionisano, JOIN cheatsheet ugrađen |
-| SQL kao triple-quoted strings (`sql_1 = """..."""`) | Executable, syntax highlighted, ne kao komentari |
+| Decision | Reason |
+|----------|--------|
+| `00-` prefix for prerequisite course | Alphabetical sort = visual learning order |
+| DuckDB instead of PostgreSQL for notebooks | Zero friction — `import duckdb`, no server needed |
+| `data/` folder inside `datacamp/` | Auto-gitignored, Cookiecutter DS convention |
+| `erd.md` instead of raw PNG | Searchable, versioned, JOIN cheatsheet built in |
+| SQL as triple-quoted strings (`sql_1 = """..."""`) | Executable, syntax highlighted, not buried in comments |
 
 ---
 
-## 🌱 RAZGOVOR — Analytics Engineering i dbt
+## 🌱 DISCUSSION — Analytics Engineering and dbt
 
-> *"Kada je dbt omogućio analitičarima da rade transformacije podataka koristeći SQL i Git, nastala je nova vrsta posla..."*
+> *"When dbt enabled analysts to run data transformations using SQL and Git, a new kind of job was born..."*
 
-### Šta je dbt?
-**dbt = Data Build Tool** — organizuje i pokreće SQL transformacije nad podacima koji već postoje u data warehouse-u.
+### What is dbt?
+**dbt = Data Build Tool** — organises and runs SQL transformations on data that already exists in a data warehouse.
 
-Spaja tri svijeta:
-- **Data Analyst** — zna SQL
-- **Data Engineer** — zna infrastrukturu  
-- **Software Engineer** — zna Git i testiranje
+It bridges three worlds:
+- **Data Analyst** — knows SQL
+- **Data Engineer** — knows infrastructure
+- **Software Engineer** — knows Git and testing
 
 ```
-DATA WAREHOUSE → RAW PODACI → dbt MODELI → Testovi / Dokumentacija / Lineage → ČISTI PODACI → BI alati
+DATA WAREHOUSE → RAW DATA → dbt MODELS → Tests / Documentation / Lineage → CLEAN DATA → BI tools
 ```
 
-### Zašto dbt NIJE sljedeći korak sada
+### Why dbt is NOT the next step right now
 
-dbt modeli su bukvalno CTEs:
+dbt models are literally CTEs:
 ```sql
 -- dbt model: fct_revenue.sql
 WITH orders AS (
@@ -99,17 +99,17 @@ WITH orders AS (
 SELECT ...
 ```
 
-Kurs `00` (Data Manipulation in SQL) ima cijelo poglavlje o CTEs.  
-Kurs `04` (Analyzing Business Data) gradi profit/revenue modele — isti pattern.
+Course `00` (Data Manipulation in SQL) has an entire chapter on CTEs.
+Course `04` (Analyzing Business Data) builds profit/revenue models — same pattern.
 
-**Zaključak:** SQL track gradi tačno razumijevanje koje dbt zahtijeva.  
-Nakon tracka → dbt Core → dbt + DuckDB lokalno → Analytics Engineer portfolio.
+**Conclusion:** The SQL track builds exactly the understanding dbt requires.
+After the track → dbt Core → dbt + DuckDB locally → Analytics Engineer portfolio.
 
 ---
 
-## 🔜 SLJEDEĆI KORACI
+## 🔜 NEXT STEPS
 
-1. **Odmah:** Nastaviti populirati `01-` notebook — screenshot po screenshot
-2. **Kada dostupno:** Preuzeti datasete za `02`, `04`, `05` iz DataCamp Resources panela
-3. **Paralelno:** Preuzeti European Soccer DB (`00`) sa Kaggle + Pagila (`03`) sa GitHub
-4. **Dugoročno:** dbt Core kurs nakon završetka SQL tracka
+1. **Immediately:** Continue populating the `01-` notebook — screenshot by screenshot
+2. **When available:** Download datasets for `02`, `04`, `05` from DataCamp Resources panel
+3. **In parallel:** Download European Soccer DB (`00`) from Kaggle + Pagila (`03`) from GitHub
+4. **Long-term:** dbt Core course after completing the SQL track

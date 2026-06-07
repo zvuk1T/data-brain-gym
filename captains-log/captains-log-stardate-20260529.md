@@ -7,7 +7,7 @@
 
 ## 🎯 SESSION GOAL
 
-Create the data-brain-gym repository — a unified krovni repo that integrates mock-interviews and manufacturing-process-sql-analysis into one long-term training system.
+Create the data-brain-gym repository — a unified umbrella repo that integrates mock-interviews and manufacturing-process-sql-analysis into one long-term training system.
 
 ---
 

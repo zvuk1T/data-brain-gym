@@ -36,21 +36,21 @@ Verify that the shared Python virtual environment exists and configure VS Code t
 
 ## 🧩 BONUS — Kernel / Interpreter Terminology
 
-Naučili smo razliku između termina koji se koriste u VS Codeu:
+We clarified the difference between terms used in VS Code:
 
-| Pojam | Šta znači |
+| Term | Meaning |
 |---|---|
-| **Python interpreter** | Konkretni Python executable koji pokreće kod |
-| **Virtual environment (.venv)** | Izolovano okruženje s vlastitim paketima |
-| **Kernel** | Termin koji Jupyter koristi — jezgro koje izvršava ćelije u `.ipynb` fajlovima |
-| **Kernel picker / interpreter selector** | Dropdown u VS Codeu gdje biraš koji Python/kernel koristiti |
+| **Python interpreter** | The specific Python executable that runs code |
+| **Virtual environment (.venv)** | An isolated environment with its own installed packages |
+| **Kernel** | The term Jupyter uses — the core that executes cells in `.ipynb` files |
+| **Kernel picker / interpreter selector** | The dropdown in VS Code where you choose which Python/kernel to use |
 
-**Pravilo:**
-- Za `.ipynb` fajlove → biraš **kernel** (gornji desni ugao notebooka)
-- Za `.py` fajlove → biraš **interpreter** (donji desni ugao u status baru)
-- Oboje pokazuju na isti `.venv`
+**Rule:**
+- For `.ipynb` files → choose the **kernel** (top-right corner of the notebook)
+- For `.py` files → choose the **interpreter** (bottom-right corner in the status bar)
+- Both point to the same `.venv`
 
-**Tačan kernel/interpreter koji koristimo:**
+**The exact kernel/interpreter we use:**
 ```
 .venv (3.11.11) (Python 3.11.11)  ~/Desktop/vs_code/.venv/bin/python  Virtual Env
 ```
