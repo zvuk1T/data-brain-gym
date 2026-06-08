@@ -8,5 +8,7 @@ venv/
 .vscode/
 data/
 
-# DataCamp course materials (copyright protection)
-datacamp/
+# DataCamp raw data files and recordings (copyright protection)
+# Notebooks, README, and queries are original work — committed
+datacamp/**/data/
+datacamp/**/recordings/

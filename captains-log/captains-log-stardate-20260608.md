@@ -83,3 +83,122 @@ When you write the GOAL block first, you have to be able to state in one or two 
 The WALKTHROUGH block forces you to explain WHY each line exists. This is the difference between a solution and a lesson. Anyone can copy a working query. Understanding why each clause is there — that is the skill that transfers to the next problem.
 
 The RECAP is the most skipped block in real projects. It is also the most valuable one six months later. Write it as if you are leaving a note for the version of yourself who will read this file again and remember nothing.
+
+```
+
+---
+
+## SESSION PART 2 — Learning Architecture + Foundations-First Pivot
+
+---
+
+## 🎯 WHAT WE DECIDED (and why)
+
+Session continued after token budget reset. The work pivoted from exercise population to architecture design.
+
+The core decision: **theory and foundations before SQL and Python code.**
+
+Articulated by Data as: *"prije nego što krenemo na SQL query-e i na kod u Pythonu mislim da je jako bitno da završimo ovaj teoretski dio i da usvojimo koncepte, termine i metodologiju"* — before going to queries and code, the theoretical layer must be understood and internalised first.
+
+---
+
+## ✅ WHAT WE ACCOMPLISHED — PART 2
+
+### 1. Cleaned EDA notebook — 15 empty video code cells deleted
+Video exercises had been given empty code cells during the bulk cell population from previous sessions. These were wrong — video exercises get a markdown cell only (link + summary). Deleted all 15 across the notebook. Video exercise format is now: markdown only.
+
+### 2. Exercise 7 — Read an entity relationship diagram (100 XP)
+First exercise using the correct two-instruction pattern:
+- 1 markdown cell — exercise header, GOAL, APPROACH, instructions, hint, why this matters
+- 2 code cells — one per instruction (not one combined cell)
+
+**Instruction 1/2:** `SELECT type, COUNT(tag) AS count FROM tag_type GROUP BY type ORDER BY count DESC`
+→ Result: cloud=31, database=6, payment=5, ... (10 tag types total)
+
+**Instruction 2/2:** LEFT JOIN company → tag_company → tag_type WHERE type='cloud'
+→ Result: companies tagged as cloud technology companies
+
+Both cells executed successfully.
+
+### 3. Researched 3 DataCamp foundations tracks
+Full course inventory compiled from DataCamp UI and user screenshots:
+
+| Track | Courses | Hours |
+|-------|---------|-------|
+| Data Literacy Professional | 8 | 15h |
+| Data Storytelling | 4 | 6h |
+| Data Skills for Business | 6 | 17h |
+
+Cross-track overlap identified: 4 courses appear in multiple tracks (Introduction to Data, Communicating Data Insights, Introduction to Data Literacy, Data Storytelling Concepts).
+
+### 4. Created `datacamp/foundations/` folder structure
+Three subfolders created:
+- `foundations/data-literacy-professional/`
+- `foundations/data-storytelling/`
+- `foundations/data-skills-for-business/`
+
+Each contains a starter notebook with title page and Table of Contents. No exercise content yet — to be built exercise by exercise.
+
+### 5. Created `datacamp/README.md`
+Master context document for the entire DataCamp folder. Covers:
+- The core idea (DataCamp provides exercises; we provide meaning)
+- Folder structure map
+- Why theory before code (with and without foundations contrast)
+- Complete course tables for all 3 foundations tracks
+- Cross-track shared courses map
+- 5-block Problem-Solving Standard adapted for DataCamp exercises
+- Story block format (to be added after foundations complete)
+- Local setup notes (DuckDB, gitignore)
+- Session continuity instructions
+- **Career context section** (added at end of session — see below)
+
+### 6. Read `know-thyself.md` for career context (lines 1–300)
+Read the private source of truth to understand the philosophy behind this system. Key findings:
+
+- **Career path (locked):** SQL for Business Analysts → dbt Core → Analytics Engineer → AI Engineering
+- **Working pattern:** problem → observation → diagnosis → deeper mechanism → solution → explanation
+- **Energy sources:** real problems with depth, understanding mechanisms, connecting technical with human meaning
+- **Story block rationale:** externalises the natural pattern of "connecting technical systems with human/business meaning"
+- **Interview risk:** internal confidence exists but external expression is softened → recruiter reads it as uncertainty → story block also serves to make evidence visible
+
+### 7. Added `## 🎯 Why This System Exists — Career Context` to `datacamp/README.md`
+Final section added to README. Professional and recruiter-readable. Covers:
+- Target career path (locked)
+- Why each foundations track serves that path
+- Why foundations before code (matches working pattern: understand system before operating it)
+- What success looks like: every exercise answers business question + audience + decision enabled
+
+---
+
+## 🧠 DECISIONS AND REASONING
+
+| Decision | Reason |
+|----------|--------|
+| Delete empty video code cells | Video exercises have no code — empty cells create noise and false progress signals |
+| Two code cells per two-instruction exercise | Each instruction is its own query — combining them obscures the learning step |
+| Foundations before returning to EDA | Working pattern: understand system before operating it — theoretical layer must exist first |
+| Old `data_storytelling_skill_track_datacamp_outline_only.ipynb` kept | Historical reference — not deleted, but superseded by new foundations structure |
+| `datacamp/README.md` as master context doc | Future sessions (and future Spock instances) need to read one file to understand the whole system |
+| Career context section in README | README is public-facing — makes the philosophy legible to recruiters and to Spock in new chats without needing to read know-thyself.md |
+
+---
+
+## 🔜 NEXT STEPS
+
+1. **Commit both repos** — all uncommitted changes from both session parts
+2. **Start foundations content** — decide which track/course to open first (Data decides)
+3. **EDA notebook** — return with story block after foundations complete (Ch1 Ex9, 10, 11 pending screenshots)
+
+---
+
+## 📁 FILES CHANGED THIS SESSION
+
+| File | Change |
+|------|--------|
+| `datacamp/README.md` | Created — comprehensive learning architecture + career context |
+| `datacamp/foundations/data-literacy-professional/data-literacy-professional.ipynb` | Created — title page + ToC |
+| `datacamp/foundations/data-storytelling/data-storytelling.ipynb` | Created — title page + ToC |
+| `datacamp/foundations/data-skills-for-business/data-skills-for-business.ipynb` | Created — title page + ToC |
+| `datacamp/sql-for-business-analysts/01-exploratory-data-analysis-in-sql.ipynb` | 15 video code cells deleted; Exercise 7 two code cells added and executed |
+| `know-thyself-data/copilot/data-spock-core.instructions.md` | Video Exercise Standard added (from previous session — uncommitted) |
+| `captains-log/captains-log-stardate-20260608.md` | This file — Part 2 added |
