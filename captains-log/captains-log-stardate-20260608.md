@@ -202,3 +202,33 @@ Final section added to README. Professional and recruiter-readable. Covers:
 | `datacamp/sql-for-business-analysts/01-exploratory-data-analysis-in-sql.ipynb` | 15 video code cells deleted; Exercise 7 two code cells added and executed |
 | `know-thyself-data/copilot/data-spock-core.instructions.md` | Video Exercise Standard added (from previous session — uncommitted) |
 | `captains-log/captains-log-stardate-20260608.md` | This file — Part 2 added |
+
+---
+
+## SESSION PART 3 — Infrastructure Improvements + Learning Philosophy
+
+### Core instructions updated — two new rules
+- **Rule 7:** Spock must read files completely from start to finish before acting or summarizing. A summary based on half a file is not a summary — it is a guess.
+- **Commit Checklist step 5:** After changing `data-spock-core.instructions.md`, review all `.github/copilot-instructions.md` files in connected repos for needed updates.
+
+Both changes committed and pushed to `know-thyself-data`.
+
+### Learning philosophy articulated
+Working through the foundations approach, a formulation emerged that captures the entire purpose of this system:
+
+> *DataCamp provides the exercise. We provide what DataCamp cannot: **your own reason why you know this.***
+
+Added to `datacamp/README.md` in the Core Idea section. This is the sentence that distinguishes the approach here from passive course completion.
+
+### Foundations work started
+Decided to begin `data-literacy-professional.ipynb` — Course 1: Introduction to Data. Screenshot-driven method: Data shares screenshots lekcija po lekcija, Spock builds the synthesis layer (GOAL, key concepts, WALKTHROUGH, RECAP). The result is not a DataCamp summary — it is a personal knowledge base built on top of DataCamp's structure.
+
+---
+
+## 📁 FILES CHANGED — PART 3
+
+| File | Change |
+|------|--------|
+| `know-thyself-data/copilot/data-spock-core.instructions.md` | Rule 7 + Commit Checklist step 5 added and committed |
+| `datacamp/README.md` | Core Idea section updated — learning philosophy sentence added |
+| `captains-log/captains-log-stardate-20260608.md` | This file — Part 3 added |

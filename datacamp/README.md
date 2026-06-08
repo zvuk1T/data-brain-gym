@@ -19,6 +19,8 @@ Our job is to answer a deeper set of questions before we write a single line of 
 
 This is the difference between a technician who runs queries and an analyst who understands their impact.
 
+DataCamp provides the exercise. We provide what DataCamp cannot: **your own reason why you know this.**
+
 ---
 
 ## 🗂️ Folder Structure
