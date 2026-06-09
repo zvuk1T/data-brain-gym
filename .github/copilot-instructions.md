@@ -68,7 +68,7 @@ data-brain-gym/
 
 ---
 
-## � DataCamp Notebook Standard
+## 📓 DataCamp Notebook Standard
 
 All DataCamp theory lessons are stored as Jupyter notebooks with markdown cells only (no code until Course 8).
 
@@ -104,6 +104,24 @@ All DataCamp theory lessons are stored as Jupyter notebooks with markdown cells 
 - Single question with one correct answer (table is sufficient)
 - Linear concept with no branches
 - The table already captures the full structure
+
+**Callout (`>`) rule — use only for:**
+- A trap or bias that cannot be shown inside the ASCII tree (e.g. "urgency is a social engineering trigger")
+- A key definition that requires a full sentence (e.g. metadata, PII)
+- A caveat or exception to the pattern just shown
+- Never use `>` to restate what the map already shows — that is redundancy, not annotation
+
+**`Why this matters` rule:**
+- Present in every lesson — both video and exercise cells
+- One paragraph: connects the concept to a real business or professional context
+- Answers: *why would someone in a data role need to know this?*
+- Not a summary of the lesson — a reason to care about it
+
+**Deferred chapter intro/recap rule:**
+- Do NOT write chapter intro cells before completing all lessons in that chapter
+- Do NOT write chapter recap cells mid-chapter
+- Write both AFTER all lessons are complete — with full context in hand
+- Reason: an intro written without knowing the full chapter is a guess. An intro written after is a synthesis.
 
 **Format rule:** ASCII trees in notebooks (render everywhere, no dependencies). Mermaid diagrams in `.md` guide files only.
 

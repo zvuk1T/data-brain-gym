@@ -193,9 +193,85 @@ Also fixed in this session: `🎬` video links were incorrectly present on all e
 
 ---
 
+---
+
+### Part 8 — Chapter 3 complete: all 12 lessons
+
+| # | Lesson | Type | XP | Status |
+|---|--------|------|----|--------|
+| 1 | Data ethics and privacy | 🎬 Video | 50 | ✅ Done |
+| 2 | Ethical decisions | 🔘 Practice | 50 | ✅ Done |
+| 3 | Ethics and privacy | 📝 Exercise | 100 | ✅ Done |
+| 4 | Privacy concerns | 📝 Exercise | 50 | ✅ Done |
+| 5 | Data life cycle | 🎬 Video | 50 | ✅ Done |
+| 6 | The data life cycle | 🔘 Practice | 50 | ✅ Done |
+| 7 | Applying the data life cycle | 📝 Exercise | 50 | ✅ Done |
+| 8 | Ordering the data life cycle | 📝 Exercise | 100 | ✅ Done |
+| 9 | Common data mistakes | 🎬 Video | 50 | ✅ Done |
+| 10 | Lack of explanation | 🔘 Practice | 50 | ✅ Done |
+| 11 | Spot the mistakes | 📝 Exercise | 50 | ✅ Done |
+| 12 | Wrap-up | 🎬 Video | 50 | ✅ Done |
+
+**Course 1: Introduction to Data — fully complete.**
+
+| Chapter | Lessons | XP |
+|---------|---------|-----|
+| Ch1 — Data Basics | 10 | 700 |
+| Ch2 — Data Wisdom | 9 | 600 |
+| Ch3 — Data In-depth | 12 | 700 |
+| **Total** | **31** | **2000** |
+
+---
+
+### Part 9 — Methodological analysis: what we evolved vs. what is in core instructions
+
+After completing Course 1, we conducted a review of our DataCamp notebook methodology against `data-spock-core.instructions.md`.
+
+**What core instructions document:**
+- 5-block Problem-Solving Standard: `GOAL → APPROACH → SOLUTION → WALKTHROUGH → RECAP`
+- Learning Rules: WHY before HOW, mental model after every important step
+- Mental map rule: ASCII in chat/notebooks, Mermaid in `.md` files
+
+**What our DataCamp notebook template does (current state):**
+- Video: `GOAL → ASCII map → callouts → Why this matters → RECAP`
+- Exercise: `Scenario → Solution table → Why this matters → RECAP`
+
+**Gaps and evolutions identified:**
+
+| Pattern | Status | Notes |
+|---------|--------|-------|
+| `APPROACH` block | Missing from notebook template | Core instructions prescribes it; for theory notebooks it may not be needed, but the absence is intentional and should be documented |
+| `WALKTHROUGH` block | Partially replaced by ASCII map | Map shows structure; walkthrough explains steps — not identical. For theory notebooks, the map is sufficient |
+| "Map IS the explanation" | Our evolution | Core instructions says "mental map after every step" — we refined to "map as primary, prose only for what map cannot carry." Emerged organically through Ch2 L1 |
+| `Why this matters` section | Our addition | Not in 5-block standard. Connects concept to business context. Present in every lesson |
+| Callout (`>`) rule | Our addition | Not documented anywhere before today. Rule: `>` callouts only for annotations the map cannot carry — traps, definitions, caveats |
+| "Practice → Pattern → Principle" | Our named meta-principle | Implicit in core instructions ("WHY before HOW") but not formulated this way. Emerged from reflecting on how the template itself was built |
+| Deferred intro/recap | Decision made today | Do not write chapter intro before completing all lessons. Write it with full context in hand. Logical application of "WHY before HOW" to notebook structure itself |
+
+**Action taken:** `data-brain-gym/.github/copilot-instructions.md` and `data-spock-core.instructions.md` updated to document these evolutions.
+
+---
+
+## 🧠 DECISIONS AND REASONING
+
+| Decision | Reason |
+|----------|--------|
+| ASCII in notebooks, Mermaid in `.md` files | Mermaid does not render natively in Jupyter markdown cells in VS Code without extensions |
+| Mental map per structure, not per exercise | A mental map of a single yes/no question adds noise, not value |
+| Theory before code — finish foundations first | Spock recommendation from previous session: foundations give WHY, practical tracks give HOW. Without foundations, every query is just syntax |
+| `data-spock-core.instructions.md` — updated today | Added "Practice → Pattern → Principle" meta-principle + callout rule + map-as-primary evolution |
+| `data-brain-gym/copilot-instructions.md` — updated today | Callout rule formalised, `Why this matters` added to template, deferred intro/recap principle added |
+| Video lesson template refined — prose list removed | The ASCII map is the explanation. Numbered prose list was redundant. `>` callouts added for what the map cannot show |
+| Chapter intro/recap deferred | Do not write chapter intro before completing all lessons. Full context = better synthesis |
+| Course 1 fully complete before writing chapter intros | Same principle: practice → pattern → principle. Write the intro when you know what was in the chapter |
+
+---
+
 ## ⚠️ WHERE WE STOPPED
 
-**Chapter 2 fully complete.** Next: Chapter 3 — Data In-depth (12 lessons).
+**Course 1: Introduction to Data — fully complete. All 31 lessons, 2000 XP.**
+Methodology documented. Documentation files updated.
+Next: chapter intro cells (Ch1, Ch2, Ch3) + chapter recap cells, now that full context is available.
 
 ---
 
@@ -205,9 +281,14 @@ Also fixed in this session: `🎬` video links were incorrectly present on all e
 2. ✅ `data-brain-gym/.github/copilot-instructions.md` updated
 3. ✅ Chapter 1 — all 10 lessons complete
 4. ✅ Chapter 2 — all 9 lessons complete
-5. ✅ Video lesson template refined — prose list removed, map is primary
-6. ✅ Exercise/practice cells — video link removed from all non-video cells
-7. ⏳ Chapter 3, L1 — Data ethics and privacy (Video, 50 XP)
+5. ✅ Chapter 3 — all 12 lessons complete
+6. ✅ Course 1 — fully complete (31 lessons, 2000 XP)
+7. ✅ Video lesson template refined — map is primary, callout rule formalised
+8. ✅ Methodological analysis — evolutions documented in core instructions + project instructions
+9. ⏳ Chapter intro cells — Ch1, Ch2, Ch3 (write with full context)
+10. ⏳ Chapter recap cells — Ch1, Ch2, Ch3 (synthesis, not list)
+11. ⏳ Course 1 intro cell (optional — after all chapter intros done)
+12. ⏳ Commit all changes
 
 ---
 
@@ -218,3 +299,5 @@ Also fixed in this session: `🎬` video links were incorrectly present on all e
 **On the lesson template:** The template was not designed upfront — it emerged from doing the work. L1, L2, L3 were built first, patterns became visible, the rule was named after the pattern existed. This is the correct order: practice → pattern → principle. Trying to define the perfect template before writing a single lesson is a form of procrastination dressed as planning.
 
 **On ASCII mental maps:** The goal of a mental map is to let you close your eyes and see the structure. If you can already see it from the table, the map adds nothing. Add it when the structure itself is the lesson.
+
+**On methodology documentation:** Every time you identify a pattern you have been using implicitly, name it and write it down. Unnamed patterns disappear. Named patterns compound. The "Practice → Pattern → Principle" rule, the callout rule, the deferred intro decision — none of these were designed in advance. They were discovered, named, and documented. That is the correct order.
