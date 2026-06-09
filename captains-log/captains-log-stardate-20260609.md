@@ -131,7 +131,7 @@ Through building L1–L6 organically from video transcripts and screenshots, we 
 
 ---
 
-### Part 5 — Lessons completed: Course 1, Chapter 1 (L1–L6)
+### Part 5 — Lessons completed: Course 1, Chapter 1 (ALL 10 ✅)
 
 | # | Lesson | Type | XP | Status |
 |---|--------|------|----|--------|
@@ -141,9 +141,12 @@ Through building L1–L6 organically from video transcripts and screenshots, we 
 | 4 | Data context | 🔘 Practice | 50 | ✅ Done |
 | 5 | The curious case of data growth | 🎬 Video | 50 | ✅ Done |
 | 6 | Data storage capabilities | 📝 Exercise | 100 | ✅ Done |
-| 7 | Making the right decisions | 🔘 Practice | 50 | ⏳ Next |
+| 7 | Making the right decisions | 🔘 Practice | 50 | ✅ Done |
+| 8 | The value of data | 🎬 Video | 50 | ✅ Done |
+| 9 | Data-driven vs. gut feelings | 📝 Exercise | 100 | ✅ Done |
+| 10 | Data-driven decision making | 📝 Exercise | 50 | ✅ Done |
 
-Session broke during L7 — Data had sent two screenshots but Spock did not respond before the 413 error.
+Chapter 1 complete. Session recovered after the 413 error — L7 screenshots were resent, L7–L10 added in the second chat session.
 
 ---
 
@@ -155,24 +158,22 @@ Session broke during L7 — Data had sent two screenshots but Spock did not resp
 | Mental map per structure, not per exercise | A mental map of a single yes/no question adds noise, not value |
 | Theory before code — finish foundations first | Spock recommendation from previous session: foundations give WHY, practical tracks give HOW. Without foundations, every query is just syntax |
 | `data-spock-core.instructions.md` — not updated today | All relevant global rules already present. DataCamp-specific template is a project-level concern, not a global rule |
-| `data-brain-gym/copilot-instructions.md` — to be updated | Needs `datacamp/` in Project Structure + DataCamp lesson template rules |
+| `data-brain-gym/copilot-instructions.md` — updated | Added `datacamp/` to Project Structure + DataCamp Notebook Standard section |
 
 ---
 
 ## ⚠️ WHERE WE STOPPED
 
-Session ended mid-L7. Data had sent two screenshots for **L7: Making the right decisions** (Practice, 50 XP). Screenshots were not captured in the JSON (no image data in message variables — images are not serialised in the VS Code chat export format).
-
-**L7 screenshots need to be resent** to continue.
+**Chapter 1 fully complete.** Next: Chapter 2 — Data Wisdom (9 lessons).
 
 ---
 
 ## 🔜 NEXT STEPS
 
-1. ✅ Captain's log created (this file)
-2. ⏳ Update `data-brain-gym/.github/copilot-instructions.md` — add `datacamp/` to Project Structure + lesson template rules
-3. ⏳ Resend L7 screenshots → complete L7, L8, L9, L10 (Chapter 1 remaining)
-4. ⏳ Continue to Chapter 2 (Data Wisdom) and Chapter 3 (Data In-depth)
+1. ✅ Captain's log created and updated
+2. ✅ `data-brain-gym/.github/copilot-instructions.md` updated
+3. ✅ Chapter 1 — all 10 lessons complete
+4. ⏳ Start Chapter 2: Data Wisdom — L1: Data wisdom (Video, 50 XP)
 
 ---
 
