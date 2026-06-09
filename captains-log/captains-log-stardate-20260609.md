@@ -1,7 +1,7 @@
 # Captain's Log — Stardate 20260609
 **Date:** 9 June 2026
 **Project:** data-brain-gym
-**Session:** Data Literacy Professional — Course 1, Chapter 1 (L1–L6) + notebook template established
+**Session:** Data Literacy Professional — Course 1, Chapter 1 complete + Chapter 2 complete + templates refined
 
 ---
 
@@ -150,6 +150,36 @@ Chapter 1 complete. Session recovered after the 413 error — L7 screenshots wer
 
 ---
 
+### Part 6 — Chapter 2 complete: all 9 lessons
+
+| # | Lesson | Type | XP | Status |
+|---|--------|------|----|--------|
+| 1 | Data wisdom | 🎬 Video | 50 | ✅ Done |
+| 2 | Managing mental models | 🔘 Practice | 50 | ✅ Done |
+| 3 | DIKW steps | 📝 Exercise | 100 | ✅ Done |
+| 4 | Data in decision making | 🎬 Video | 50 | ✅ Done |
+| 5 | The right decision | 📝 Exercise | 100 | ✅ Done |
+| 6 | Being data-driven | 🔘 Practice | 50 | ✅ Done |
+| 7 | Data as a resource | 🎬 Video | 50 | ✅ Done |
+| 8 | Aggregating information | 🔘 Practice | 50 | ✅ Done |
+| 9 | Data management | 📝 Exercise | 100 | ✅ Done |
+
+---
+
+### Part 7 — Video lesson template refined
+
+Through building Chapter 2 L1, we identified a structural redundancy in the previous video lesson template: the numbered prose list and the ASCII map said the same thing twice.
+
+**Old pattern:** GOAL → numbered prose list → ASCII map → Why this matters → RECAP
+
+**New pattern:** GOAL → ASCII map as primary explanation → `>` callouts for annotations the map can't show → Why this matters → RECAP
+
+**Rule:** The map is the explanation. Prose only for what the map cannot show (e.g. the unconscious bias trap, a definition that needs a sentence).
+
+Also fixed in this session: `🎬` video links were incorrectly present on all exercise and practice cells. Removed from all 8 non-video cells in the notebook. Template in `copilot-instructions.md` corrected — link line now only in the video lesson template.
+
+---
+
 ## 🧠 DECISIONS AND REASONING
 
 | Decision | Reason |
@@ -159,12 +189,13 @@ Chapter 1 complete. Session recovered after the 413 error — L7 screenshots wer
 | Theory before code — finish foundations first | Spock recommendation from previous session: foundations give WHY, practical tracks give HOW. Without foundations, every query is just syntax |
 | `data-spock-core.instructions.md` — not updated today | All relevant global rules already present. DataCamp-specific template is a project-level concern, not a global rule |
 | `data-brain-gym/copilot-instructions.md` — updated | Added `datacamp/` to Project Structure + DataCamp Notebook Standard section |
+| Video lesson template refined — prose list removed | The ASCII map is the explanation. Numbered prose list was redundant. `>` callouts added for what the map cannot show. `copilot-instructions.md` updated to reflect new standard |
 
 ---
 
 ## ⚠️ WHERE WE STOPPED
 
-**Chapter 1 fully complete.** Next: Chapter 2 — Data Wisdom (9 lessons).
+**Chapter 2 fully complete.** Next: Chapter 3 — Data In-depth (12 lessons).
 
 ---
 
@@ -173,7 +204,10 @@ Chapter 1 complete. Session recovered after the 413 error — L7 screenshots wer
 1. ✅ Captain's log created and updated
 2. ✅ `data-brain-gym/.github/copilot-instructions.md` updated
 3. ✅ Chapter 1 — all 10 lessons complete
-4. ⏳ Start Chapter 2: Data Wisdom — L1: Data wisdom (Video, 50 XP)
+4. ✅ Chapter 2 — all 9 lessons complete
+5. ✅ Video lesson template refined — prose list removed, map is primary
+6. ✅ Exercise/practice cells — video link removed from all non-video cells
+7. ⏳ Chapter 3, L1 — Data ethics and privacy (Video, 50 XP)
 
 ---
 

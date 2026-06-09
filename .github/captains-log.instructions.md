@@ -1,5 +1,5 @@
 ---
-description: 'Language rule for captain's log files — applies to all files in captains-log/ folder.'
+description: "Language rule for captains-log files."
 applyTo: 'captains-log/**'
 ---
 

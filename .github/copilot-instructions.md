@@ -77,16 +77,17 @@ All DataCamp theory lessons are stored as Jupyter notebooks with markdown cells 
 #### Chapter X — Lesson N: [Title] *(Video / XP)*
 > 🎬 [Watch on DataCamp](URL) *(requires login)*
 **🎯 GOAL** — 1–2 sentence synthesis
-**📋 Key concepts covered** — numbered list with explanations
-[ASCII mental map — only when concept has a tree/hierarchy structure]
+**🧠 Mental Map** — ASCII map as primary explanation (always for video lessons with structure)
+> callout annotations — only for what the map cannot show (e.g. bias traps, key definitions)
 **💡 Why this matters** — business context
 **✅ RECAP** — 3–5 bullets: key concept, common mistake, question to ask
 ```
 
+> **Template rule:** The map IS the explanation. No numbered prose list. Use `>` callouts only for annotations the map cannot carry (a trap, a definition, a caveat). If a video lesson has no mappable structure, use a short unnumbered prose paragraph instead.
+
 **Exercise / Practice cell structure:**
 ```
 #### Chapter X — Lesson N: [Title] *(Exercise or Practice / XP)*
-> 🎬 [Watch on DataCamp](URL) *(requires login)*
 **📋 Scenario** — DataCamp scenario + task
 **✅ Solution** — table: Item | Classification | Why
 **🧠 Mental Map** — ASCII tree (only when concept has a hierarchy or classification structure)
