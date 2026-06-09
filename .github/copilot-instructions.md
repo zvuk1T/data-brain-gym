@@ -43,6 +43,13 @@ Every decision must be explainable to a recruiter at a glance:
 data-brain-gym/
 ├── .github/              ← Copilot instructions and prompts
 ├── docs/                 ← Manifesto, frameworks, guides
+├── datacamp/             ← all DataCamp coursework
+│   ├── README.md         ← learning philosophy + folder architecture
+│   ├── foundations/      ← theory tracks — always before practical work
+│   │   ├── data-literacy-professional/   ← 8 courses, 15h (active)
+│   │   ├── data-storytelling/            ← 4 courses, 6h
+│   │   └── data-skills-for-business/     ← 6 courses, 17h
+│   └── sql-for-business-analysts/        ← practical SQL track (resumes after foundations)
 ├── sql/
 │   ├── problems/         ← DataCamp SQL case studies and exercises
 │   ├── datalemur/        ← DataLemur interview drills (Microsoft, Google, etc.)
@@ -61,7 +68,47 @@ data-brain-gym/
 
 ---
 
-## 🔗 Connected Projects
+## � DataCamp Notebook Standard
+
+All DataCamp theory lessons are stored as Jupyter notebooks with markdown cells only (no code until Course 8).
+
+**Video lesson cell structure:**
+```
+#### Chapter X — Lesson N: [Title] *(Video / XP)*
+> 🎬 [Watch on DataCamp](URL) *(requires login)*
+**🎯 GOAL** — 1–2 sentence synthesis
+**📋 Key concepts covered** — numbered list with explanations
+[ASCII mental map — only when concept has a tree/hierarchy structure]
+**💡 Why this matters** — business context
+**✅ RECAP** — 3–5 bullets: key concept, common mistake, question to ask
+```
+
+**Exercise / Practice cell structure:**
+```
+#### Chapter X — Lesson N: [Title] *(Exercise or Practice / XP)*
+> 🎬 [Watch on DataCamp](URL) *(requires login)*
+**📋 Scenario** — DataCamp scenario + task
+**✅ Solution** — table: Item | Classification | Why
+**🧠 Mental Map** — ASCII tree (only when concept has a hierarchy or classification structure)
+**💡 Why this matters** — business relevance
+**✅ RECAP** — 3–5 bullets
+```
+
+**ASCII mental map rule — add only when:**
+- Concept is a hierarchy or tree (e.g. Data Context, storage evolution)
+- Concept is a classification into categories (e.g. structured/unstructured, quantitative/qualitative)
+- The structure itself is the lesson — closing your eyes, you should be able to see it
+
+**Skip the mental map when:**
+- Single question with one correct answer (table is sufficient)
+- Linear concept with no branches
+- The table already captures the full structure
+
+**Format rule:** ASCII trees in notebooks (render everywhere, no dependencies). Mermaid diagrams in `.md` guide files only.
+
+---
+
+## �🔗 Connected Projects
 - **know-thyself-data** — private repo, source of truth, career identity
 - **job-pipeline** — CV generation tool
 - **invoice-automation** — first commercial client project
