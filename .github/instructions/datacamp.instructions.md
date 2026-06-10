@@ -140,6 +140,11 @@ All DataCamp theory notebooks contain **markdown cells only** (no code cells unt
 
 ---
 
+**🎯 GOAL — What does this exercise test?**
+[One sentence: what concept or skill is being tested — not the scenario, the pedagogical purpose]
+
+---
+
 **📋 Scenario**
 [DataCamp scenario text — verbatim or closely paraphrased from screenshot]
 
@@ -167,6 +172,7 @@ All DataCamp theory notebooks contain **markdown cells only** (no code cells unt
 
 **Rules:**
 - NO `🎬` link in exercise or practice cells.
+- `🎯 GOAL` is mandatory in every exercise and practice cell — one sentence, pedagogical purpose, not a restatement of the scenario.
 - Mental map is conditional — see map rules below.
 
 ---
@@ -211,17 +217,26 @@ Use `>` callouts ONLY for:
 
 ## 🗂️ Chapter Structure Rules — Deferred Intro/Recap
 
-**Do NOT write chapter intro cells before completing all lessons in that chapter.**
-**Do NOT write chapter recap cells mid-chapter.**
-**Write both AFTER all lessons are complete — with full context in hand.**
+**Chapter intro format: compact arc line in the course header cell — NOT a separate cell.**
 
-Reason: An intro written before knowing the full chapter is a guess. An intro written after is a synthesis.
-The same principle applies at course level: course intro cell written only after all chapters are complete.
+Add a single italic arc line directly below each chapter's italic description in Cell 1 (course header):
+```
+*In this chapter, you will learn about...*
+*Arc: L1–4 → communication types · L5–7 → insight framework · L8–11 → audience analysis*
+```
+
+**Why compact arc, not a separate intro cell:** A separate intro cell written after the chapter is a synthesis — but it is also redundant. The course header already describes the chapter. The arc line adds the one thing the description lacks: the internal structure. One line is sufficient.
+
+**Do NOT write chapter recap cells mid-chapter.**
+**Write recap cells AFTER all lessons in that chapter are complete — with full context in hand.**
+
+Reason: A recap written without knowing the full chapter is a guess. A recap written after is a synthesis.
+The same principle applies at course level: course recap/summary written only after all chapters are complete.
 
 **When to write them:**
-- Chapter intro: after the last lesson cell of that chapter is verified
-- Chapter recap: same session as intro, immediately after
-- Course intro: after all chapter intros and recaps are written
+- Chapter arc line: add to course header after the last lesson cell of that chapter is verified
+- Chapter recap: after the last lesson cell of that chapter is verified
+- Course summary: after all chapter recaps are written
 
 ---
 
