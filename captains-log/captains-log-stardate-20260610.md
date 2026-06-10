@@ -192,3 +192,112 @@ VS Code's `applyTo` frontmatter in `.github/instructions/` files is a mechanism 
 
 **On session crashes (413 errors):**
 A 413 crash means the request exceeded the model's context window. It is not a data loss event — it is a size event. All work written to files survives. The recovery is: read git status, read notebook summaries, read the last cell, and reconstruct the stopping point. This takes 2-3 minutes. The only unrecoverable thing is the in-context reasoning from the crashed session — which is why decisions must always be written into files (captain's logs, instruction files) and not left only in chat.
+
+---
+
+## SESSION PART 2 — Course 2 Chapter 1 completion + notebook structure decisions
+
+### Part 7 — Chapter 1 completed (L4–L11)
+
+Continued from Ch1 L3. Remaining 8 lessons written:
+
+| Lesson | Type | XP | Status |
+|--------|------|----|--------|
+| Ch1 L4 — Becoming a more effective communicator | 📝 Exercise | 50 | ✅ written |
+| Ch1 L5 — Data insights | 🎬 Video | 50 | ✅ written |
+| Ch1 L6 — Insightful characteristics | 📝 Exercise | 50 | ✅ written |
+| Ch1 L7 — Insightful journey | 📝 Exercise | 100 | ✅ written |
+| Ch1 L8 — Getting to know your audience | 🎬 Video | 50 | ✅ written |
+| Ch1 L9 — Audience information | 📝 Exercise | 100 | ✅ written |
+| Ch1 L10 — Factoring importance | 📝 Exercise | 50 | ✅ written |
+| Ch1 L11 — Communication framework | 📝 Exercise | 100 | ✅ written |
+
+All cells include: GOAL + Scenario/Mental Map + Solution/Map + Why this matters + RECAP.
+
+Chapter 1 Recap cell written after all 11 lessons — deferred synthesis, as per methodology.
+
+---
+
+### Part 8 — GOAL section added to Exercise/Practice template
+
+Mid-session decision: Exercise and Practice cells must also have a `🎯 GOAL` section, not just video cells.
+
+Reason: Without a GOAL, an exercise cell shows a scenario and an answer. With it, the pedagogical purpose is explicit — the reader knows what skill is being tested, not just what is being asked.
+
+Changes made:
+- `datacamp.instructions.md` — `🎯 GOAL` added to Exercise/Practice template as mandatory first section
+- L2, L3, L4 in `02-communicating-data-insights.ipynb` retroactively updated with GOAL sections
+
+---
+
+### Part 9 — Chapter intro format decision
+
+Problem: A separate Chapter 1 intro cell was written (verbose, 3-paragraph synthesis). User feedback: redundant — the course header already describes the chapter.
+
+Decision: Remove the separate intro cell. Add a single compact arc line directly under each chapter's italic description in the course header cell.
+
+Format:
+```
+*In this chapter, you will learn about...*
+*Arc: L1–4 → communication types · L5–7 → insight framework · L8–11 → audience analysis*
+```
+
+Applied to all 3 chapters in the course header cell. `datacamp.instructions.md` updated: chapter intro rule now specifies compact arc line in header, not a separate cell.
+
+---
+
+### Part 10 — Course Knowledge Map cell removed
+
+The Course Knowledge Map cell (cell 2) contained internal workflow language not appropriate for a public notebook — references to how it was built, tools used, session mechanics.
+
+Decision: Delete it entirely.
+
+Reason: Everything it contained lives in better form elsewhere — course arc in cell 1 (arc lines), key concepts in each lesson cell, running examples in RECAP sections. The cell was scaffolding. The building is complete — scaffolding comes down.
+
+---
+
+### Part 11 — Captain's log versioning error corrected
+
+This session incorrectly created `-b` and `-c` versioned logs for the same date, violating the documented rule: *one log per date — never create A/B/C versions*.
+
+Root cause: The "Captain's Log Rule" in `data-spock-core.instructions.md` was buried in the `Session Continuity` section without `⚠️ HARD RULE` prominence. The `captains-log.instructions.md` scoped file existed in both repos but covered only language, not versioning.
+
+Corrections made this session:
+- `-c` log deleted (was not committed)
+- `-b` log content merged into this file as Session Part 2
+- `-b` log deleted via `git rm`
+- `captains-log.instructions.md` deleted from both repos (redundant — language rule already in global file)
+- "Captain's Log Rule" elevated to `⚠️ HARD RULE` in `data-spock-core.instructions.md`
+
+---
+
+## 📋 DECISIONS — SESSION PART 2
+
+| Decision | Reason |
+|----------|--------|
+| GOAL mandatory in exercise cells | Pedagogical purpose should be explicit — reader knows what skill is being tested |
+| Chapter intro = compact arc line in header, not separate cell | Separate cell was redundant; one italic line adds structure without adding noise |
+| Course Knowledge Map cell deleted | Internal workflow language does not belong in a public notebook |
+| `-b` and `-c` logs eliminated, content merged here | One log per date — documented rule, violated twice, now corrected |
+| `captains-log.instructions.md` deleted from both repos | Redundant — language rule already in global file; did not enforce versioning rule |
+| Captain's Log Rule elevated to HARD RULE | Buried rule = ignored rule. Prominence determines compliance |
+
+---
+
+## 🔜 NEXT STEPS (updated)
+
+1. ✅ Course 2 Chapter 1 — complete
+2. ✅ Notebook structure cleaned (arc lines, no Knowledge Map cell, no separate intro cell)
+3. ✅ Captain's log violations corrected
+4. ✅ `captains-log.instructions.md` removed from both repos
+5. ✅ Captain's Log Rule elevated in `data-spock-core.instructions.md`
+6. ⏳ Open new chat — context window of this session is large
+7. ⏳ Course 2, Chapter 2 — Lesson 1: Visualizing Success *(Video / 50 XP)*
+
+---
+
+**On the public-first mindset:**
+A learning notebook is also a portfolio artifact. Internal workflow scaffolding does not belong in the final document. The reader sees only the learning, not the process of making it. Remove the scaffolding when the structure stands on its own.
+
+**On documented rules that get broken:**
+A rule written in the middle of a long document is not a rule — it is a note. Rules that must be enforced need prominence: a dedicated section, a `⚠️` marker, placement near the top. The distance between "documented" and "enforced" is visibility.
