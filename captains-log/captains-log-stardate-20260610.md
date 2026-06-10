@@ -85,6 +85,62 @@ VS Code automatically loads this file only when the active file is inside the `d
 
 ---
 
+### Part 4 — `datacamp.instructions.md` created
+
+`data-brain-gym/.github/instructions/datacamp.instructions.md` created with `applyTo: "datacamp/**"`.
+
+Content built from three sources: real notebook cells (Course 1 practice), both instructions files, and DataCamp README. It is designed as a complete operational manual for DataCamp work — not a list of rules but a system.
+
+Key sections:
+- **Pre-Session Workflow** — what to do before any screenshot arrives (read course outline, check for PDFs, confirm position)
+- **Screenshot Workflow** — the only source of lesson content; what a complete screenshot set looks like; what to do when missing
+- **Video / Exercise Templates** — complete templates with all rules inline
+- **ASCII Map Rules** and **Callout Rules** — precise, conditional
+- **Why This Matters Rules** — not a summary, a reason to care
+- **Deferred Intro/Recap Rule** — never write chapter intro before all lessons are complete
+- **❌ Mistakes to Never Repeat** — table of every mistake discovered during Course 1 with the corrective rule alongside it
+- **413 Prevention** — symptoms, prevention, recovery
+- **Session End Checklist** — commit format, what to verify
+
+The `❌ Mistakes` section directly addresses the need to not repeat the same errors: `🎬` link in exercise cells, map on single-answer questions, numbered list alongside a map, chapter intro written mid-chapter, building cells from lesson titles without screenshots.
+
+---
+
+### Part 5 — Where does the scoped instructions documentation live?
+
+Question raised: should the scoped folder instructions pattern be documented in `datacamp.instructions.md`, `copilot-instructions.md`, or `docs/`?
+
+**Answer:** `know-thyself-data/docs/repo-architecture.md` — and it was already there.
+
+Reasoning:
+- `repo-architecture.md` already had a section "How File-Scoped Instructions Work" with the `applyTo: '**/know-thyself.md'` example
+- Our pattern today (`applyTo: 'datacamp/**'`) is the same mechanism, broader scope — Variant B of the same concept
+- `instructions.md` files are operational rules for the model; `docs/` files are architectural documentation for humans
+- The docs/ home means the pattern is accessible in any future project setup, not buried inside one repo's instructions
+
+---
+
+### Part 6 — `repo-architecture.md` updated in `know-thyself-data`
+
+`know-thyself-data/docs/repo-architecture.md` updated to document both variants of the scoped instructions pattern:
+
+**What changed:**
+- Section renamed from "How File-Scoped Instructions Work" → "How File-Scoped and Folder-Scoped Instructions Work"
+- Variant A (file-scoped): unchanged — `applyTo: '**/know-thyself.md'`
+- Variant B (folder-scoped) added: `applyTo: 'datacamp/**'` — with concrete example, when to use, and mental model
+- Mental model added showing the three-layer hierarchy:
+  ```
+  ~/.copilot/instructions/*.instructions.md   → ALL workspaces, ALL files
+  .github/copilot-instructions.md             → ALL files in THIS repo
+  .github/instructions/<name>.instructions.md → ONLY where applyTo matches
+  ```
+- Final `.github/` structure diagram updated — `datacamp.instructions.md` added with `applyTo` annotation
+- Manual sync table updated — folder-scoped added as separate row
+
+This change lives in `know-thyself-data` (private repo) and needs its own commit there.
+
+---
+
 ## 🧠 DECISIONS AND REASONING
 
 | Decision | Reason |
@@ -94,34 +150,35 @@ VS Code automatically loads this file only when the active file is inside the `d
 | Per-course notebook files (`01-...`, `02-...`) instead of one monolithic file | Course 1 notebook alone is 1467 lines. One file for all 8 courses would hit context limits before Course 3. Per-course files keep context manageable |
 | Scoped folder instructions over global | Global instructions load for every file — DataCamp rules are not relevant outside datacamp/. Scoped loading keeps context clean |
 | Principle added to data-spock-core.instructions.md | This pattern is not DataCamp-specific — it applies to any project where different subfolders have different workflows. Must be documented at the global level |
+| Scoped instructions documented in repo-architecture.md, not in instructions files | Instructions files are operational rules for the model. Architecture documentation belongs in docs/ — accessible for any future project, not buried in one repo's instructions |
+| `datacamp.instructions.md` is a complete operational manual, not a rule list | Built from three sources: real notebook cells, instructions files, README. The ❌ Mistakes section is the most valuable — it documents what went wrong in practice, not what we planned in theory |
 
 ---
 
 ## ⚠️ WHERE WE STOPPED
 
-Session focused on architecture and pattern documentation. No new lesson cells added today.
+Session focused entirely on architecture, documentation, and pattern work. No new lesson cells added today.
+
+**Files created/updated this session:**
+- `data-brain-gym/.github/instructions/datacamp.instructions.md` — created ✅ committed ✅
+- `data-brain-gym/captains-log/captains-log-stardate-20260610.md` — created ✅ committed ✅ (this file, updated after commit)
+- `know-thyself-data/docs/repo-architecture.md` — updated, **needs commit in know-thyself-data**
+- `know-thyself-data/copilot/data-spock-core.instructions.md` — updated (scoped instructions table row), **needs commit in know-thyself-data**
 
 **Current state of notebooks:**
 - `01-introduction-to-data.ipynb`: Course 1 fully complete (31 lessons, 2000 XP) — chapter intro/recap cells not yet written
 - `02-communicating-data-insights.ipynb`: Course header + Course Knowledge Map + Ch1 L1 — Ch1 L2 onwards not yet written
 
-**Unstaged changes that need committing:**
-- `01-introduction-to-data.ipynb` (new file)
-- `02-communicating-data-insights.ipynb` (new file)
-- `datacamp/foundations/data-literacy-professional/data-literacy-professional.ipynb` (deleted)
-- `.github/copilot-instructions.md` (modified — DataCamp Notebook Standard section added/updated)
-- `.gitignore` (modified)
-- `captains-log/captains-log-stardate-20260531.md` (modified)
-
 ---
 
 ## 🔜 NEXT STEPS
 
-1. ⏳ Create `data-brain-gym/.github/instructions/datacamp.instructions.md` with `applyTo: "datacamp/**"` — migrate DataCamp-specific rules from global copilot-instructions
-2. ⏳ Commit all unstaged changes (5 files + this captain's log)
-3. ⏳ Continue Course 2, Chapter 1 — Lesson 2: Communication types *(Exercise / 50 XP)*
-4. ⏳ Chapter intro/recap cells for Course 1 (Ch1, Ch2, Ch3) — deferred per the deferred synthesis rule
-5. ⏳ Continue Course 2 through all 3 chapters + chapter intro/recap cells
+1. ✅ Create `data-brain-gym/.github/instructions/datacamp.instructions.md`
+2. ✅ Commit all data-brain-gym changes
+3. ⏳ Commit `know-thyself-data` changes — `repo-architecture.md` + `data-spock-core.instructions.md`
+4. ⏳ Continue Course 2, Chapter 1 — Lesson 2: Communication types *(Exercise / 50 XP)*
+5. ⏳ Chapter intro/recap cells for Course 1 (Ch1, Ch2, Ch3) — deferred per deferred synthesis rule
+6. ⏳ Continue Course 2 through all 3 chapters + chapter intro/recap cells
 
 ---
 
