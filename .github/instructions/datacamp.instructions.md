@@ -238,6 +238,7 @@ These were discovered in practice — documented here so they are not repeated.
 | Building a cell from lesson title alone | Without a screenshot, the cell contained plausible-sounding but unverified content | Screenshots are the only source. Never synthesise from titles |
 | One giant notebook for entire track | Course 1 alone = 1467 lines. One file for 8 courses would be unmanageable | One notebook per course |
 | Template defined before any work existed | Trying to design the perfect template before writing any lesson | Practice → Pattern → Principle. Template emerges from doing, not planning |
+| Continuing forward with format drift unresolved | Discovered that Ch1 L1, L5, L8 in Course 1 used old numbered prose format while all later cells used the Mental Map standard | When format drift is discovered in existing notebooks, standardise before continuing with new content. Methodology consistency is higher priority than lesson throughput |
 
 ---
 
