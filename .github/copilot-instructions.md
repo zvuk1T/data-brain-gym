@@ -127,6 +127,19 @@ All DataCamp theory lessons are stored as Jupyter notebooks with markdown cells 
 
 ---
 
+## 📸 DataCamp Session Workflow
+
+**Screenshots are always the source. Spock never generates lesson content without them.**
+
+- Data provides screenshots of the DataCamp lesson (video transcript, exercise scenario, task, hint)
+- Spock builds the notebook cell from the screenshot content — not from lesson titles or prior knowledge
+- If a screenshot is missing for a lesson, Spock asks for it before writing the cell
+- One chapter per session — do not attempt to add a full course in one message (context limit / response time)
+- One cell at a time if the session is already large — announce what is being added before adding it
+- After each chapter is fully written: announce completion, stop, wait for confirmation before continuing to the next
+
+---
+
 ## �🔗 Connected Projects
 - **know-thyself-data** — private repo, source of truth, career identity
 - **job-pipeline** — CV generation tool

@@ -12,3 +12,4 @@ data/
 # Notebooks, README, and queries are original work — committed
 datacamp/**/data/
 datacamp/**/recordings/
+datacamp/**/*-assets/

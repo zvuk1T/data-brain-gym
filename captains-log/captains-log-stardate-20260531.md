@@ -19,8 +19,7 @@ Verify that the shared Python virtual environment exists and configure VS Code t
 ### `.vscode/settings.json`
 ```json
 {
-  "python.defaultInterpreterPath": "/Users/zeal.v/Desktop/vs_code/.venv/bin/python",
-  "python.analysis.typeCheckingMode": "off"
+  "python.defaultInterpreterPath": "/Users/zeal.v/Desktop/vs_code/.venv/bin/python"
 }
 ```
 
@@ -31,29 +30,6 @@ Verify that the shared Python virtual environment exists and configure VS Code t
 - One shared `.venv` for all projects under `vs_code/` — no need to create a new one per project
 - Exception: if a project becomes very large or has specific/conflicting dependencies, it gets its own `.venv` inside its own folder
 - `.vscode/settings.json` is the mechanism that tells VS Code which interpreter to use per workspace
-
----
-
-## 🧩 BONUS — Kernel / Interpreter Terminology
-
-We clarified the difference between terms used in VS Code:
-
-| Term | Meaning |
-|---|---|
-| **Python interpreter** | The specific Python executable that runs code |
-| **Virtual environment (.venv)** | An isolated environment with its own installed packages |
-| **Kernel** | The term Jupyter uses — the core that executes cells in `.ipynb` files |
-| **Kernel picker / interpreter selector** | The dropdown in VS Code where you choose which Python/kernel to use |
-
-**Rule:**
-- For `.ipynb` files → choose the **kernel** (top-right corner of the notebook)
-- For `.py` files → choose the **interpreter** (bottom-right corner in the status bar)
-- Both point to the same `.venv`
-
-**The exact kernel/interpreter we use:**
-```
-.venv (3.11.11) (Python 3.11.11)  ~/Desktop/vs_code/.venv/bin/python  Virtual Env
-```
 
 ---
 
