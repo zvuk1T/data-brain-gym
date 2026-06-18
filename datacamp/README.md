@@ -73,7 +73,7 @@ how to form analytical questions, and how to communicate insights. Ends with a r
 | # | Course | Key question it answers |
 |---|--------|------------------------|
 | 1 | Introduction to Data | What is data and why does it have value? |
-| 2 | Communicating Data Insights | How do I share what I found? |
+| 2 | Communicating Data Insights ✅ | How do I share what I found? |
 | 3 | Introduction to Data Literacy | How do I read, work with, analyze and communicate data? |
 | 4 | Introduction to Statistics | How do I describe and compare distributions? |
 | 5 | Introduction to Data Culture | How do organisations build trust in data? |
