@@ -78,17 +78,94 @@ Chapter 2 complete and committed. Chapter 3 (*Storytelling with Data*, 15 lesson
 - `datacamp/foundations/data-literacy-professional/02-communicating-data-insights.ipynb` — Chapter 2 complete ✅ committed ✅
 - `captains-log/captains-log-stardate-20260618.md` — this file
 
-**Current state of notebooks:**
+**Current state of notebooks (end of Part 2):**
 - `01-introduction-to-data.ipynb`: Course 1 fully complete (31 lessons, 2000 XP) — Ch1/Ch2/Ch3 intro/recap cells deferred
 - `02-communicating-data-insights.ipynb`: Ch1 complete (11 lessons, 650 XP) + Ch2 complete (12 lessons, 800 XP) — Ch3 not started
 
 ---
 
+### Part 3 — Session recovery after 413
+
+Context window exceeded between sessions. Recovered by reading notebook cell summary and last cell content. Confirmed stopping point: Ch3 L13 (*Aligning roles*) was the last written lesson.
+
+---
+
+### Part 4 — Chapter 3 completed: Storytelling with Data
+
+All 15 lessons written. Chapter 3 Intro and Recap written after all 15 lessons were complete (deferred synthesis rule). Course 2 now fully complete.
+
+| Lesson | Type | XP | Status |
+|--------|------|----|--------|
+| L1 — Data storytelling | 🎬 Video | 50 | ✅ |
+| L2 — Building a story | 📝 Exercise | 50 | ✅ |
+| L3 — Important call | 📝 Exercise | 100 | ✅ |
+| L4 — Keys to a good story | 🎬 Video | 50 | ✅ |
+| L5 — Defining the goal | 📝 Exercise | 50 | ✅ |
+| L6 — Narrative and context | 📝 Exercise | 100 | ✅ |
+| L7 — Storytelling in action | 🎬 Video | 50 | ✅ |
+| L8 — Telling a good story | 📝 Exercise | 50 | ✅ |
+| L9 — Guiding a story | 📝 Exercise | 100 | ✅ |
+| L10 — Delivering a story | 📝 Exercise | 100 | ✅ |
+| L11 — Data storytelling group framework | 🎬 Video | 50 | ✅ |
+| L12 — Organizing success | 📝 Exercise | 50 | ✅ |
+| L13 — Aligning roles | 📝 Exercise | 100 | ✅ |
+| L14 — Teamwork for success | 📝 Exercise | 100 | ✅ |
+| L15 — Wrap-up | 🎬 Video | 50 | ✅ |
+
+**Total Chapter 3 XP: 900 | Course 2 total: 2600 XP**
+
+---
+
+## 🧠 KEY CONCEPTS COVERED (Chapter 3)
+
+| Concept | Lesson | Core principle |
+|---------|--------|----------------|
+| Data story definition | L1 | Visualization + Narrative + Context; 3 advantages: easier to understand · inspires action · sticks longer |
+| Trust is not an advantage | L2 | Trust comes from data quality and analyst credibility — not from the storytelling format |
+| One story = one insight | L3 | Clarity requires focus — packing multiple insights destroys the advantage |
+| Narrative ≠ description | L4 | Narrative must inspire action and outline next steps — describing what happened is Context, not Narrative |
+| Components are audience-facing | L5 | The analyst's effort is invisible in a good story — difficulty of analysis is irrelevant to the audience |
+| Neither category | L6 | Raw data points and methodological notes belong in neither Narrative nor Context |
+| Narrative discovery | L7 | The narrative often emerges from sorting/iterating the chart — not planned in advance |
+| 3 universal improvement principles | L7 | Add text · use colour intentionally · simplify visual elements |
+| 5-step story sequence | L9 | Ask → Get → Explore → Model → Communicate (question before data, always) |
+| Context ≠ Narrative | L10 | Describing what happened = Context; telling what to do = Narrative; most common analyst gap |
+| 4 team roles | L11 | SME (narrative + context) · Visualizer · Analyst · Reviewer; SME ≠ Analyst |
+| Reviewer value | L11/L13 | Unfamiliarity with the data is an asset — closest proxy to the real audience |
+| Flexibility rule | L11/L12 | Rotating roles > locking roles; multiple roles per person is valid |
+| Role alignment | L13–L14 | Match each person's strength to the role that requires it; misalignment wastes skill |
+
+---
+
+## 🧠 DECISIONS AND REASONING
+
+| Decision | Reason |
+|----------|--------|
+| Chapter 3 Intro written after all 15 lessons | Deferred synthesis rule — arc line in course header was written first (before session), full intro cell written after all lessons complete |
+| Chapter 3 Recap written after L15 Wrap-up | Same rule — recap with full chapter context, not a prediction |
+| Course 2 complete marker added at bottom of notebook | Visual close-out: all 3 chapters · 38 lessons · 2600 XP |
+| Notebook status updated to ✅ Complete | Course header cell and `datacamp/README.md` both updated |
+
+---
+
+## ⚠️ WHERE WE STOPPED
+
+Course 2 complete and committed (`d37e62b`). Captain's log updated and committed.
+
+**Files modified this full session:**
+- `datacamp/foundations/data-literacy-professional/02-communicating-data-insights.ipynb` — Course 2 fully complete ✅ committed ✅
+- `datacamp/README.md` — Course 2 marked ✅ committed ✅
+- `captains-log/captains-log-stardate-20260618.md` — this file
+
+---
+
 ## 🔜 NEXT STEPS
 
-1. ✅ Complete Course 2 Chapter 2 — Effective Data Visuals
-2. ✅ Commit Chapter 2
-3. ✅ Create captain's log for today
-4. ⏳ Commit captain's log
-5. ⏳ Course 2, Chapter 3 — Data storytelling (15 lessons, starts with L1: Data storytelling *(Video / 50 XP)*)
-6. ⏳ Chapter intro/recap cells for Course 1 (Ch1, Ch2, Ch3) — still deferred
+1. ✅ Complete Course 2 Chapter 2
+2. ✅ Complete Course 2 Chapter 3
+3. ✅ Chapter 3 Intro + Recap cells (deferred synthesis)
+4. ✅ Course 2 complete marker + status update
+5. ✅ Commit Course 2
+6. ✅ Update captain's log
+7. ⏳ **Course 3: Introduction to Data Literacy** — create `03-introduction-to-data-literacy.ipynb`, build course header cell, check for PDF assets
+8. ⏳ Chapter intro/recap cells for Course 1 (Ch1, Ch2, Ch3) — still deferred (low priority, Course 1 content is solid)
