@@ -13,17 +13,17 @@ applyTo: "datacamp/**"
 
 `datacamp/` contains all DataCamp coursework — structured as a layered learning system, not a collection of completed exercises.
 
-**Three foundations tracks before any practical work:**
+**Three theory tracks before any practical work:**
 ```
-foundations/
+true-story-data/
 ├── data-literacy-professional/   ← 8 courses, 15h — what data is and how to reason with it
 ├── data-storytelling/             ← 4 courses, 6h  — how to communicate insights
 └── data-skills-for-business/      ← 6 courses, 17h — governance, ethics, AI, management
 
-sql-for-business-analysts/         ← practical track — resumes AFTER foundations are complete
+sql-for-business-analysts/         ← practical track — resumes AFTER true-story-data is complete
 ```
 
-**Rule:** No practical track work until all 3 foundations tracks are complete. There are no exceptions.
+**Rule:** No practical track work until all 3 true-story-data tracks are complete. There are no exceptions.
 
 ---
 
@@ -32,7 +32,7 @@ sql-for-business-analysts/         ← practical track — resumes AFTER foundat
 One notebook per course. Named by course number within the track.
 
 ```
-data-literacy-professional/
+true-story-data/data-literacy-professional/
 ├── 01-introduction-to-data.ipynb
 ├── 02-communicating-data-insights.ipynb
 ├── 03-introduction-to-data-literacy.ipynb

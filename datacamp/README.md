@@ -29,12 +29,12 @@ DataCamp provides the exercise. We provide what DataCamp cannot: **your own reas
 datacamp/
 ├── README.md                          ← this file
 │
-├── foundations/                       ← theory first — always
+├── true-story-data/                   ← theory tracks — based on a true story
 │   ├── data-literacy-professional/    ← 8 courses, 15h — what data is and how to reason with it
 │   ├── data-storytelling/             ← 4 courses, 6h — how to communicate insights
 │   └── data-skills-for-business/      ← 6 courses, 17h — governance, ethics, AI, management
 │
-└── sql-for-business-analysts/         ← practical track — resumes after foundations
+└── sql-for-business-analysts/         ← practical track — resumes after true-story-data
     ├── 01-exploratory-data-analysis-in-sql.ipynb
     ├── 02-data-driven-decision-making-in-sql.ipynb
     ├── ...
@@ -59,12 +59,12 @@ With the foundations:
 - Every result has an audience and a purpose
 - Every exercise is a data story waiting to be told
 
-**The rule:** foundations are completed before returning to practical exercises.
+**The rule:** `true-story-data` tracks are completed before returning to practical exercises.
 **The exception:** there isn't one.
 
 ---
 
-## 📋 The 3 Foundations Tracks
+## 📋 The 3 True-Story-Data Tracks
 
 ### 1. Data Literacy Professional *(15h | 8 courses)*
 The broadest foundation. Covers what data is, how to read and interpret it, basic statistics,

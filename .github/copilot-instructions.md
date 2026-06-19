@@ -45,11 +45,11 @@ data-brain-gym/
 ├── docs/                 ← Manifesto, frameworks, guides
 ├── datacamp/             ← all DataCamp coursework
 │   ├── README.md         ← learning philosophy + folder architecture
-│   ├── foundations/      ← theory tracks — always before practical work
+│   ├── true-story-data/      ← theory tracks — always before practical work
 │   │   ├── data-literacy-professional/   ← 8 courses, 15h (active)
 │   │   ├── data-storytelling/            ← 4 courses, 6h
 │   │   └── data-skills-for-business/     ← 6 courses, 17h
-│   └── sql-for-business-analysts/        ← practical SQL track (resumes after foundations)
+│   └── sql-for-business-analysts/        ← practical SQL track (resumes after true-story-data)
 ├── sql/
 │   ├── problems/         ← DataCamp SQL case studies and exercises
 │   ├── datalemur/        ← DataLemur interview drills (Microsoft, Google, etc.)
