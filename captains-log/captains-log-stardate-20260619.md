@@ -148,8 +148,16 @@ All commits done. Chat is full — closing this session and opening a new one.
    - Chapter 2 Recap written after L16 (deferred synthesis rule)
    - **Chapter 2 fully complete: 16 lessons, 1050 XP ✅**
 
-8. ⏳ **Commit Ch2 complete, then: Chapter 3 starts**
-   - Next: send Chapter 3 screenshots
+8. ✅ **Chapter 3 started — L1–L4 complete (descriptive analytics block)**
+   - L1: Descriptive analytics (Video) — 4-type framework table + EDA deep dive + ice cream case study
+   - L2: Reasons (not) to use descriptive analytics (Exercise) — hypothesis testing is NOT a use case
+   - L3: Exploring the data (Practice) — EDA Explorer, student performance dataset, outlier detection
+   - L4: Exploring connections (Practice) — Scatterplot Explorer, reading↔writing correlation, causality trap
+   - All 4 cells written and verified ✅
+   - **Chat context filling — new chat opened**
+
+9. ⏳ **Next: Ch3 L5 — Diagnostic analytics (Video)**
+   - Send screenshot for L5 in new chat to continue
 
 ---
 
