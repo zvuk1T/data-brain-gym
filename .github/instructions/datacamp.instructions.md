@@ -331,7 +331,40 @@ When these appear: announce current position, update the captain's log, commit, 
 
 ---
 
-## 📅 Session End Checklist
+## � Chat Closing & Opening Protocol
+
+### ⚠️ Warning signs — act before the crash
+
+| Signal | What it means | Action |
+|--------|--------------|--------|
+| Responses getting shorter without reason | Context compression has started | Finish current lesson, then close |
+| Spock asks for clarification on things already established | Old messages have fallen out of the window | Close after current lesson |
+| Spock asks for a screenshot already sent | Early context is gone | Close immediately |
+| 413 error / conversation won't load | Hard limit hit | New chat, recover from captain's log |
+
+### 🔒 Closing a chat (mandatory steps — in order)
+
+1. **Finish the current lesson cell** — do not close mid-cell
+2. **Commit all completed lesson cells** — `git add` + `git commit` with correct message format
+3. **Update the captain's log** — stopping point (last lesson completed) + next step (next lesson number and title)
+4. **Commit the captain's log**
+5. Close the chat
+
+### 🚀 Opening a new chat (mandatory steps — in order)
+
+1. **Run `#file:new-session.prompt.md`** — reads the two latest captain's logs, gives position summary
+2. **Get notebook summary** — `copilot_getNotebookSummary` to confirm current cell count and state
+3. **Read the last written lesson cell** — confirm exact stopping point (lesson title, chapter)
+4. **Announce the next lesson** — state lesson number, title, type (Video/Exercise/Practice) and XP
+5. **Wait for Data's confirmation** before requesting a screenshot
+
+**The commit boundary rule:**
+> One chapter = one natural commit boundary = one chat session.
+> Do not push into the next chapter in the same chat. If a chapter is long (15+ lessons), commit after a logical thematic block.
+
+---
+
+## �📅 Session End Checklist
 
 After each DataCamp working session:
 

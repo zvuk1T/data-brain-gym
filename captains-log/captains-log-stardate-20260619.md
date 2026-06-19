@@ -175,6 +175,71 @@ All commits done. Chat is full — closing this session and opening a new one.
 
 ---
 
+## SESSION PART 3 — Course 3 Chapter 4 (L1–L9) + instructions update
+
+**Session:** 19 June 2026 (continued)
+
+---
+
+### Chapter 4 progress: L1–L9 complete
+
+| # | Lesson | Type | XP | Status |
+|---|--------|------|----|--------|
+| L1 | Data visualizations | 🎬 Video | 50 | ✅ |
+| L2 | The purpose of visualizations | 📝 Exercise | 50 | ✅ |
+| L3 | Providing context | 📝 Exercise | 100 | ✅ |
+| L4 | Data storytelling | 🎬 Video | 50 | ✅ |
+| L5 | (Not) part of the story | 📝 Exercise | 50 | ✅ |
+| L6 | Crafting a story | 📝 Exercise | 100 | ✅ |
+| L7 | Three keys to communicating effectively | 🎬 Video | 50 | ✅ |
+| L8 | Focus on your central message | 📝 Exercise | 100 | ✅ |
+| L9 | Getting your outline in order | 📝 Exercise | 100 | ✅ |
+
+**Chapter 4 XP so far: 650 / 1100**
+
+---
+
+### Key concepts documented
+
+| Concept | Lesson | Core principle |
+|---------|--------|----------------|
+| McCandless technique | L1/L3 | 5 steps — conclusion-first: Introduce → Anticipate → State insight → Support → Close |
+| McCandless step order trap | L3 | "State the central message" is step 3 (literal centre), not after "Provide supporting evidence" |
+| Data story components | L4 | Data (foundation) · Visualizations (support) · Narrative (structure) |
+| Build backwards, deliver forwards | L4 | Identify central insight first; place it at step 4 in delivery sequence |
+| Setting ≠ business problem | L6 | Setting = background context; business problem = opening hook (the Problem element) |
+| Storytelling convinces | L6 | All 4 benefits: memorable · engaging · **convincing** · motivates action |
+| Three keys to communicating | L7 | Focus (relevance) · Structure (understandability) · Form (audience fit) |
+| Central message formula | L7/L8 | Problem description · Insights summary · Impact/recommendation |
+| Outline structure | L9 | Introduction (problem + context + objectives) · Body (data + analysis + findings) · Conclusions (insights + recommendations) |
+
+---
+
+### Instructions update
+
+Added **Chat Closing & Opening Protocol** section to `datacamp.instructions.md`:
+- Warning signs table (4 signals)
+- Closing checklist: finish cell → commit lessons → update captain's log → commit log → close
+- Opening checklist: new-session prompt → notebook summary → read last cell → announce next lesson → wait for confirmation
+- Commit boundary rule codified
+
+---
+
+### ⚠️ WHERE WE STOPPED
+
+Ch4 L1–L9 complete. Instructions updated. Chat closing now.
+
+**Files modified this session:**
+- `datacamp/true-story-data/data-literacy-professional/03-introduction-to-data-literacy.ipynb` — Ch4 L1–L9 written ✅
+- `.github/instructions/datacamp.instructions.md` — Chat Closing & Opening Protocol added ✅
+- `captains-log/captains-log-stardate-20260619.md` — this file
+
+### 🔜 NEXT STEP
+
+New chat → Ch4 L10: **The importance of form** *(Exercise, 50 XP)* — send screenshot to begin.
+
+---
+
 ## 📋 AGREED WORKFLOW FOR FUTURE COURSES (backbone rule)
 
 > Before each new course: Data sends PDF slide decks → Spock extracts content → builds Course Knowledge Map cell → THEN screenshots begin.
