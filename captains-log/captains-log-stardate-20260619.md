@@ -156,8 +156,22 @@ All commits done. Chat is full — closing this session and opening a new one.
    - All 4 cells written and verified ✅
    - **Chat context filling — new chat opened**
 
-9. ⏳ **Next: Ch3 L5 — Diagnostic analytics (Video)**
-   - Send screenshot for L5 in new chat to continue
+9. ✅ **Ch3 L5–L6 complete (diagnostic analytics block, start)**
+   - L5: Diagnostic analytics (Video) — RCA 5-step process · 4 techniques table · airline case study · causality limitation
+   - L6: Finding causes (Exercise) — correct answer: "can suggest potential causes" · key trap: option 4 (prove causality) is wrong
+   - Both cells written and verified ✅
+
+10. ✅ **know-thyself.md updated — §6D Root Cause Analysis**
+    - New section §6D added: RCA as the formal name for a lifelong instinct
+    - Recognition moment recorded (Žarko's own words, 19.06.2026)
+    - Evidence table: father's workshop → Emerson 70%+ → OBI Story 6 → Webeet → notebooks
+    - Connection to §0B Operating System and §6C Outlier Principle
+    - Interview language for RCA with industrial evidence and number
+    - §6B Soft Skills table updated to reference §6D
+    - Committed to know-thyself-data: `a4749e8` ✅ pushed ✅
+
+11. ⏳ **Next: Ch3 L7 — Diagnostic analytics techniques (Exercise or Practice)**
+    - Send screenshot for L7 in new chat to continue
 
 ---
 
