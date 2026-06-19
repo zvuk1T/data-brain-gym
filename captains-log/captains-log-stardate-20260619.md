@@ -88,7 +88,37 @@ All commits done. Chat is full — closing this session and opening a new one.
 **Current notebook state:**
 - `01-introduction-to-data.ipynb`: Course 1 complete (31 lessons, 2000 XP) — Ch intro/recap cells deferred
 - `02-communicating-data-insights.ipynb`: Course 2 complete (38 lessons, 2600 XP) ✅
-- `03-introduction-to-data-literacy.ipynb`: Course header + Knowledge Map ready. **No lesson cells yet.** 🔄
+- `03-introduction-to-data-literacy.ipynb`: **Ch1 complete (13 lessons, 800 XP) ✅** — Ch2 not started
+
+**Lesson status — Ch1 as of last chat break:**
+
+| # | Lesson | Type | XP | Status |
+|---|--------|------|----|--------|
+| L1 | Why data literacy is an essential skill | 🎬 Video | 50 | ✅ |
+| L2 | Defining data literacy | 📝 Exercise | 50 | ✅ |
+| L3 | The data literacy toolbox | 📝 Exercise | 100 | ✅ |
+| L4 | Data literacy in action | 🔁 Practice | 50 | ✅ |
+| L5 | From data to insights | 🎬 Video | 50 | ✅ |
+| L6 | DIKW pyramid as a process | 📝 Exercise | 100 | ✅ |
+| L7 | What is insight? | 📝 Exercise | 50 | ✅ |
+| L8 | The DIKW journey | 🔁 Practice | 50 | ⏳ next |
+| L9 | Data-driven decision making | 🎬 Video | 50 | ⏳ |
+| L10 | Becoming data-driven | 📝 Exercise | 50 | ⏳ |
+| L11 | Facts & myths about being data-driven | 📝 Exercise | 100 | ⏳ |
+| L12 | The data-driven process | 🔁 Practice | 50 | ⏳ |
+| L13 | Fitting the problem statement | 🔁 Practice | 50 | ⏳ |
+
+**Chapter 1 XP: 800 / 800 ✅**
+
+| # | Lesson | Type | XP | Status |
+|---|--------|------|----|--------|
+| L8 | The DIKW journey | 🔁 Practice | 50 | ✅ |
+| L9 | Data-driven decision making | 🎬 Video | 50 | ✅ |
+| L10 | Becoming data-driven | 📝 Exercise | 50 | ✅ |
+| L11 | Facts & myths about being data-driven | 📝 Exercise | 100 | ✅ |
+| L12 | The data-driven process | 🔁 Practice | 50 | ✅ |
+| L13 | Fitting the problem statement | 🔁 Practice | 50 | ✅ |
+| — | **Chapter 1 Recap** | 🧠 Synthesis | — | ✅ |
 
 ---
 
@@ -98,11 +128,20 @@ All commits done. Chat is full — closing this session and opening a new one.
 2. ✅ Rename `foundations/` → `true-story-data/`
 3. ✅ Update `know-thyself.md`
 4. ✅ Write captain's log
-5. ⏳ **Open new chat — start Course 3, Chapter 1**
-   - Next lesson: **Chapter 1 — Lesson 1: Why data literacy is an essential skill** *(Video / 50 XP)*
-   - Workflow: Data sends PDF(s) for that course → Spock pre-loads Knowledge Map → Data sends screenshot of lesson → Spock builds cell
-   - Note: for Course 3, the Knowledge Map is already in the notebook (Cell 2). PDFs were pre-loaded today.
-   - So: next session starts directly with L1 screenshot — no PDF step needed for Course 3.
+5. ✅ **New chat opened — Course 3, Chapter 1 started**
+   - Chat from 19 June (Part 1) broke after completing all admin (Course 3 notebook creation, folder rename, know-thyself update)
+   - New chat opened same day — recovered via captain's log + notebook summary
+   - Ch1 L1–L7 written and verified in the new chat session
+   - **Chat broke again after L7** — new chat opened (this note)
+
+6. ✅ **Ch1 L8–L13 completed + Chapter 1 Recap written** — new chat opened (this note)
+   - L8: The DIKW journey · L9: Data-driven decision making · L10: Becoming data-driven
+   - L11: Facts & myths about being data-driven · L12: The data-driven process · L13: Fitting the problem statement
+   - Chapter 1 Recap written after L13 (deferred synthesis rule)
+   - **Chapter 1 fully complete: 13 lessons, 800 XP ✅**
+
+7. ⏳ **Commit Ch1 complete, then: Chapter 2 starts**
+   - Next: send Chapter 2 screenshots
 
 ---
 
@@ -152,4 +191,43 @@ If DataCamp work were ever created *outside* `datacamp/` — that would contradi
 **In short:**
 - `datacamp.instructions.md` + `applyTo: "datacamp/**"` = the right tool, in the right place, only when needed.
 - DataLemur and Python practice have their own folder home. If they ever need scoped rules, a separate `datalemur.instructions.md` or `python.instructions.md` can be created the same way.
+
+---
+
+## 🔄 CONTEXT WINDOW MANAGEMENT — Why Chats Break and How to Prevent It
+
+*Written 19 June 2026 — after three chat breaks in one day.*
+
+### Why it happens
+Every chat session has a finite context window — a token limit for how much text the model can hold in memory at once. In DataCamp sessions, this fills faster than average because:
+- Each lesson cell is 400–800 words of structured content
+- Screenshots add visual context on top
+- Session recovery (reading notebook summaries, captain's logs) consumes tokens before the first lesson is written
+- By lesson 7–10, the oldest messages start falling out — Spock begins compressing, missing details, eventually hitting the hard limit (413 error)
+
+### Warning signs — act before the crash
+| Signal | What it means | Action |
+|--------|--------------|--------|
+| Spock skips a detail it preserved earlier | Context compression has started | Finish the current lesson, then commit + new chat |
+| Answers get shorter without reason | Old messages have fallen out of the window | Same — don't push further |
+| Spock asks for a screenshot already sent | Early context is gone | Commit immediately, new chat |
+| 413 error / conversation won't load | Context is full — hard limit hit | New chat, recover from captain's log |
+
+### Prevention — the commit boundary rule
+> **One chapter = one natural commit boundary = one chat session.**
+
+- After every chapter is complete → commit → open new chat
+- Do NOT push into the next chapter in the same chat
+- If a chapter is long (15+ lessons), consider committing mid-chapter after a logical cluster (e.g., after a thematic block)
+
+### Recovery protocol — when a new chat opens mid-chapter
+1. Run the **new-session prompt** (`#file:new-session.prompt.md`) — reads the two latest captain's logs
+2. Use `copilot_getNotebookSummary` to confirm which cells exist
+3. Read the last written cell to confirm exact stopping point
+4. Announce the next lesson and wait for confirmation before proceeding
+
+This is faster than re-reading everything manually and costs fewer tokens than a full file read.
+
+### The trade-off — why we don't just split every lesson into its own chat
+Opening a new chat costs tokens for recovery (reading logs, reading notebook state). For 1–2 lessons, the recovery overhead can exceed the work. The right unit is a chapter or a meaningful thematic block — large enough to justify the recovery cost, small enough to complete before the window fills.
 
