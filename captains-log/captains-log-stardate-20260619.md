@@ -114,3 +114,42 @@ This is the backbone. Not done for all courses in advance — done one course at
 
 - Course 3 backbone: ✅ done today (Knowledge Map in notebook)
 - Course 4 backbone: ⏳ when Course 3 is complete — Data sends PDF(s), Spock builds map, then screenshots begin
+
+---
+
+## 🏗️ ARCHITECTURE NOTE — Instruction Scoping (`applyTo`)
+
+*Written end-of-session, 19 June 2026 — why `datacamp.instructions.md` does NOT load for DataLemur or Python practice.*
+
+### The question
+> "Why doesn't `datacamp.instructions.md` load when we work on DataLemur SQL drills or Python interview practice? Maybe it should?"
+
+### The answer
+The `applyTo: "datacamp/**"` glob in `datacamp.instructions.md` is architecturally correct — and intentional.
+
+**Where each type of work lives:**
+
+| Work type | Folder | `datacamp.instructions.md` loads? |
+|-----------|--------|-----------------------------------|
+| DataCamp coursework | `datacamp/**` | ✅ Yes |
+| DataLemur SQL drills | `sql/datalemur/` | ❌ No — correct |
+| Python interview practice | `python/problems/` | ❌ No — correct |
+| Behavioural prep | `behavioural/` | ❌ No — correct |
+
+**Why this is correct:**
+`datacamp.instructions.md` contains rules that are 100% DataCamp-specific:
+- Notebook cell structure for DataCamp lessons
+- Screenshot → cell workflow
+- PDF slide deck pre-loading rule (backbone rule)
+- Course Knowledge Map format
+- DataCamp XP / lesson metadata conventions
+
+None of those rules apply to DataLemur drills or Python problems. If `datacamp.instructions.md` loaded everywhere, Spock would be carrying DataCamp-specific rules into contexts where they are irrelevant — wasting context budget and risking confusion.
+
+**The only edge case:**
+If DataCamp work were ever created *outside* `datacamp/` — that would contradict the folder architecture. The rule and the structure are aligned on purpose.
+
+**In short:**
+- `datacamp.instructions.md` + `applyTo: "datacamp/**"` = the right tool, in the right place, only when needed.
+- DataLemur and Python practice have their own folder home. If they ever need scoped rules, a separate `datalemur.instructions.md` or `python.instructions.md` can be created the same way.
+
