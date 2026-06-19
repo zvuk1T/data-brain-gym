@@ -88,7 +88,7 @@ All commits done. Chat is full — closing this session and opening a new one.
 **Current notebook state:**
 - `01-introduction-to-data.ipynb`: Course 1 complete (31 lessons, 2000 XP) — Ch intro/recap cells deferred
 - `02-communicating-data-insights.ipynb`: Course 2 complete (38 lessons, 2600 XP) ✅
-- `03-introduction-to-data-literacy.ipynb`: **Ch1 complete (13 lessons, 800 XP) ✅** — Ch2 not started
+- `03-introduction-to-data-literacy.ipynb`: Ch1 complete (13 lessons, 800 XP) ✅ · **Ch2 complete (16 lessons, 1050 XP) ✅** — Ch3 not started
 
 **Lesson status — Ch1 as of last chat break:**
 
@@ -140,8 +140,16 @@ All commits done. Chat is full — closing this session and opening a new one.
    - Chapter 1 Recap written after L13 (deferred synthesis rule)
    - **Chapter 1 fully complete: 13 lessons, 800 XP ✅**
 
-7. ⏳ **Commit Ch1 complete, then: Chapter 2 starts**
-   - Next: send Chapter 2 screenshots
+7. ✅ **Chapter 2 fully complete: 16 lessons, 1050 XP**
+   - L1–L4 (data sources): open vs. internal · text as valid data · Eurostat as open data · classification exercise
+   - L5–L8 (data types): structured/unstructured · quantitative/qualitative · mixed datasets
+   - L9–L12 (managing data): DBMS · warehouse vs. lake · cloud trade-off · ETL pipeline · SQL · dashboards · tool classification
+   - L13–L16 (data problems): dirty data · errors/missing/bias · consequences · Data Detective · cleaning myths
+   - Chapter 2 Recap written after L16 (deferred synthesis rule)
+   - **Chapter 2 fully complete: 16 lessons, 1050 XP ✅**
+
+8. ⏳ **Commit Ch2 complete, then: Chapter 3 starts**
+   - Next: send Chapter 3 screenshots
 
 ---
 

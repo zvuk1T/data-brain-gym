@@ -123,11 +123,7 @@ All DataCamp theory notebooks contain **markdown cells only** (no code cells unt
 
 ---
 
-**🧠 Mental Map — [Concept Name]**
-
-[ASCII tree — the primary explanation]
-
-> [callout — only for what the map cannot show]
+[Prose explanation — 2–4 sentences covering the core concept. For classification/comparison concepts, use a Markdown table instead (see table rules below).]
 
 ---
 
@@ -136,15 +132,18 @@ All DataCamp theory notebooks contain **markdown cells only** (no code cells unt
 
 **✅ RECAP**
 - [Key concept]
-- [Common mistake]
+- [Common mistake or trap]
 - [What to remember next time]
-- [Key question to ask]
+
+**🔗 Connection**
+- [How this concept links to another chapter, course, or real-world pattern — max 3 bullets]
+- [Skip this section entirely if there is no genuine connection to make]
 ```
 
 **Rules:**
-- The map IS the explanation. No numbered prose list before or alongside it.
-- If a concept has no mappable structure (linear, no branches), use a short unnumbered prose paragraph instead of a forced map.
 - `🎬` link appears ONLY in video lessons — never in exercise or practice cells.
+- No ASCII trees. Prose or Markdown table only.
+- `🔗 Connection` is for genuine cross-chapter or cross-course links only — not a restatement of the RECAP.
 
 ---
 
@@ -172,51 +171,51 @@ All DataCamp theory notebooks contain **markdown cells only** (no code cells unt
 
 ---
 
-**🧠 Mental Map — [Concept Name]**   ← ONLY when concept has hierarchy/classification structure
-
-[ASCII tree]
-
----
-
 **💡 Why this matters**
 [One paragraph: business relevance]
 
 **✅ RECAP**
 - [3–5 bullets]
+
+**🔗 Connection**
+- [Only when a genuine link exists — skip otherwise]
 ```
 
 **Rules:**
 - NO `🎬` link in exercise or practice cells.
 - `🎯 GOAL` is mandatory in every exercise and practice cell — one sentence, pedagogical purpose, not a restatement of the scenario.
-- Mental map is conditional — see map rules below.
+- No ASCII trees. Solution table is the structural element.
 
 ---
 
-## 🧠 ASCII Mental Map Rules
+## 🗂️ Three-Tier Format System
 
-**Add a map when:**
-- Concept is a hierarchy or tree (e.g. DIKW pyramid, Data Context components)
-- Concept is a classification into named categories (e.g. structured/unstructured, quantitative/qualitative)
-- The structure itself is the lesson — closing your eyes, you should see it
-- The concept has multi-level relationships
+Notebooks use **three formats** — each for a specific purpose:
 
-**Skip the map when:**
-- Single yes/no or multiple-choice question where one option is correct — the solution table is sufficient
-- Linear concept with no branches (A leads to B leads to C — a sentence works better)
-- The table already captures the full structure
+| Format | Used in | When to use |
+|--------|---------|-------------|
+| **Prose** | Notebooks — all lessons | Linear concepts, definitions, introductory explanations |
+| **Markdown table** | Notebooks — classification lessons | 2–4 named categories to compare (types, variants, vs. questions) |
+| **Mermaid diagram** | `.md` files only — one per chapter | Full chapter concept map — visual, rendered, permanent reference |
 
-**Format rule:** ASCII trees only in notebooks (renders everywhere, no dependencies). Mermaid diagrams in `.md` guide files only.
+**No ASCII trees in notebooks.** They require monospace to look right, have no visual weight, and render as raw code blocks. Tables and prose serve the same purpose and render cleanly.
 
----
+**Markdown table rules:**
+- Use when the lesson is a classification or comparison: `Type A vs. Type B`, `4 analytics types`, `3 keys framework`
+- Columns: Name · Core question/definition · Example (or similar — match the concept)
+- Do not force a table when prose is clearer
 
-## 💬 Callout (`>`) Rules
+**Mermaid chapter map rules:**
+- One `.md` file per chapter, created after all lessons in that chapter are complete (deferred synthesis rule)
+- Lives in the course `-assets/` folder: `03-introduction-to-data-literacy-assets/ch1-concept-map.md`
+- Shows how chapter concepts connect — not a list of lesson titles
+- Built after the chapter recap, not before
 
-Use `>` callouts ONLY for:
-- A trap or bias that cannot be shown inside the ASCII tree (e.g. "the brain adds meaning before it has enough context — this is where bias enters")
-- A key definition that requires a full sentence (e.g. metadata, PII)
-- A caveat or exception to the pattern just shown
-
-**Never use `>` to restate what the map already shows.** That is redundancy, not annotation. If the callout just repeats the tree in prose, delete it.
+**`🔗 Connection` rules:**
+- Max 3 bullets
+- Only genuine cross-chapter, cross-course, or real-world pattern links
+- If there is nothing genuine to connect → skip the section entirely
+- NOT a restatement of the RECAP in different words
 
 ---
 
@@ -227,6 +226,12 @@ Use `>` callouts ONLY for:
 - Answers: *why would someone in a data analyst role need to know this?*
 - NOT a summary of the lesson — a reason to care about it.
 - NOT "this is important because DataCamp says so" — a concrete scenario where this knowledge changes a decision.
+
+**Optional closing line — the Wisdom layer:**
+After the paragraph, optionally add one bold `→` sentence:
+> **→** *[One sentence: the shift in thinking or action this knowledge produces.]*
+
+Write it only when it genuinely lands — when there is a clear "therefore, act differently" conclusion. If it doesn't land, skip it. No filler. This is the DIKW Wisdom layer: not a summary of what was learned, but the proactive action it enables.
 
 ---
 
@@ -269,6 +274,7 @@ These were discovered in practice — documented here so they are not repeated.
 | One giant notebook for entire track | Course 1 alone = 1467 lines. One file for 8 courses would be unmanageable | One notebook per course |
 | Template defined before any work existed | Trying to design the perfect template before writing any lesson | Practice → Pattern → Principle. Template emerges from doing, not planning |
 | Continuing forward with format drift unresolved | Discovered that Ch1 L1, L5, L8 in Course 1 used old numbered prose format while all later cells used the Mental Map standard | When format drift is discovered in existing notebooks, standardise before continuing with new content. Methodology consistency is higher priority than lesson throughput |
+| ASCII trees in notebook cells | Used throughout Courses 1–2 — raw text blocks with no visual weight, no rendering advantage | No ASCII trees in notebooks. Prose for linear concepts, Markdown tables for classification. Mermaid in `.md` files only |
 
 ---
 
