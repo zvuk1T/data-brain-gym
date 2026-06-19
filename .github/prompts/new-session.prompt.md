@@ -3,7 +3,7 @@ mode: 'agent'
 description: "Start a new working session — read the latest captain's log and summarize where we are."
 ---
 
-Read the latest file from `captains-log/` (highest stardate number).
+Read the two latest files from `captains-log/` (two highest stardate numbers), starting with the older one.
 
 Then give me a summary in this format:
 
