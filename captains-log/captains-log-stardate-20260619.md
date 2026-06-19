@@ -261,3 +261,60 @@ This is faster than re-reading everything manually and costs fewer tokens than a
 ### The trade-off — why we don't just split every lesson into its own chat
 Opening a new chat costs tokens for recovery (reading logs, reading notebook state). For 1–2 lessons, the recovery overhead can exceed the work. The right unit is a chapter or a meaningful thematic block — large enough to justify the recovery cost, small enough to complete before the window fills.
 
+---
+
+## SESSION PART 2 — Chapter 3 complete + user-level instructions fix
+
+**Session:** 19 June 2026 (continued)
+**Commits:** `7d29e21` (Chapter 3) · `84a903e` (log — now merged and deleted)
+
+---
+
+### Part 1 — Chapter 3 completed: Working with and Analyzing Data
+
+All 16 lessons written from screenshots. Chapter 3 Recap written after L16 (deferred synthesis rule).
+
+| Lesson | Type | XP | Status |
+|--------|------|----|--------|
+| L1–L6 | various | 300 | ✅ (previous session) |
+| L7 — Root cause analysis steps | 📝 Exercise | 100 | ✅ |
+| L8 — Descriptive vs. diagnostic analytics | 📝 Exercise | 100 | ✅ |
+| L9 — Predictive analytics | 🎬 Video | 50 | ✅ |
+| L10 — Are we predicting yet? | 🔁 Practice | 50 | ✅ |
+| L11 — Building a predictive model | 📝 Exercise | 100 | ✅ |
+| L12 — Looking into the future | 🔁 Practice | 50 | ✅ |
+| L13 — Prescriptive analytics | 🎬 Video | 50 | ✅ |
+| L14 — Characteristics of prescriptive analytics | 📝 Exercise | 50 | ✅ |
+| L15 — Predictive vs. prescriptive analytics | 📝 Exercise | 100 | ✅ |
+| L16 — Matching use cases to the type of analytics | 📝 Exercise | 100 | ✅ |
+
+**Total Chapter 3 XP: 950 · Committed: `7d29e21`**
+
+---
+
+### Part 2 — user-level instructions fix
+
+**Problem diagnosed:** `data-spock-core.instructions.md` existed at `~/.copilot/instructions/` but had a malformed YAML frontmatter — `description` consumed the rest of the header and `applyTo: '**'` was merged onto the closing `---` line. VS Code could not parse it → file was not auto-applied → core rules (including one-log-per-day) were missing from context.
+
+**Fix applied:**
+- Corrected frontmatter to valid YAML: `description` on its own line, `applyTo: '**'` on its own line, proper `---` delimiters
+- File now auto-loads in **every workspace** regardless of which folders are open
+- Single-root workspace (data-brain-gym only) is now the correct setup for DataCamp sessions — `know-thyself-data` context budget savings preserved
+
+**Root cause of 20260619b.md violation:** core rules not in context → Spock created a new file instead of appending. Fixed by resolving the instructions file.
+
+---
+
+### ⚠️ WHERE WE STOPPED
+
+All commits done. `captains-log-stardate-20260619b.md` merged here and deleted.
+
+**Current notebook state:**
+- `01-introduction-to-data.ipynb`: Course 1 complete (31 lessons, 2000 XP)
+- `02-communicating-data-insights.ipynb`: Course 2 complete (38 lessons, 2600 XP)
+- `03-introduction-to-data-literacy.ipynb`: Ch1 ✅ · Ch2 ✅ · Ch3 ✅ · **Ch4 not yet started**
+
+### 🔜 NEXT STEP
+
+New chat → Ch4: Data Visualizations and Storytelling (10 lessons) → send screenshot for Ch4 L1.
+
