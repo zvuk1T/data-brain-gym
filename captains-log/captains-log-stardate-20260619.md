@@ -383,3 +383,57 @@ All commits done. `captains-log-stardate-20260619b.md` merged here and deleted.
 
 New chat → Ch4: Data Visualizations and Storytelling (10 lessons) → send screenshot for Ch4 L1.
 
+---
+
+## SESSION PART 4 — Chapter 4 complete · Course 3 complete
+
+**Session:** 19 June 2026 (continued)
+**Commit:** `0966b41`
+
+---
+
+### Chapter 4 completed: Communicating Insights
+
+All 16 lessons written from screenshots. Chapter 4 Recap written after L16 (deferred synthesis rule). Course 3 fully complete.
+
+| Lesson | Type | XP | Status |
+|--------|------|----|--------|
+| L1–L9 | various | 650 | ✅ (previous session) |
+| L10 — The importance of form | 📝 Exercise | 50 | ✅ |
+| L11 — From data to story: a case study | 🎬 Video | 50 | ✅ |
+| L12 — Formulating the central message | 📝 Exercise | 50 | ✅ |
+| L13 — Setting up the narrative structure | 📝 Exercise | 100 | ✅ |
+| L14 — Choosing visualizations | 🔁 Practice | 50 | ✅ |
+| L15 — Best and bad practices | 📝 Exercise | 100 | ✅ |
+| L16 — Wrap-up | 🎬 Video | 50 | ✅ |
+| — | **Chapter 4 Recap** | 🧠 Synthesis | ✅ |
+
+**Total Chapter 4 XP: 1100 / 1100 ✅ · Committed: `0966b41`**
+
+---
+
+### Course 3 — Introduction to Data Literacy: COMPLETE
+
+| Chapter | Lessons | XP | Status |
+|---------|---------|-----|--------|
+| Ch1 — Data Literacy Basics | 13 | 800 | ✅ |
+| Ch2 — Reading Data | 16 | 1050 | ✅ |
+| Ch3 — Working with and Analyzing Data | 16 | 1050 | ✅ |
+| Ch4 — Communicating Insights | 16 | 1100 | ✅ |
+| **Total** | **61** | **4000** | **✅** |
+
+---
+
+### ⚠️ WHERE WE STOPPED
+
+Course 3 complete and committed. Session closing.
+
+**Current notebook state:**
+- `01-introduction-to-data.ipynb`: Course 1 complete (31 lessons, 2000 XP) ✅
+- `02-communicating-data-insights.ipynb`: Course 2 complete (38 lessons, 2600 XP) ✅
+- `03-introduction-to-data-literacy.ipynb`: **Course 3 complete (61 lessons, 4000 XP)** ✅
+
+### 🔜 NEXT STEP
+
+New chat → Course 4 backbone: Data sends PDF slide decks → Spock extracts content → builds Course 4 Knowledge Map cell → then screenshots begin.
+
