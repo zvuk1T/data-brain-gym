@@ -71,6 +71,21 @@ When a screenshot arrives cold (no pre-loaded context), Spock builds the cell fr
 
 ---
 
+## 🦴 Course Backbone Rule — One Course at a Time
+
+Before starting any new course, Data sends PDF slide decks **for that course only**.
+Spock extracts the content → builds the **Course Knowledge Map** cell (Cell 2) → THEN screenshots begin.
+
+**Do NOT pre-build Knowledge Maps for multiple courses upfront.** One course at a time, just before that course starts.
+
+Why: pre-loading all courses in one session wastes context, loses freshness, and creates a false sense of readiness. The backbone is built when the course is ready to begin — not as a batch operation.
+
+**Current state (as of 20260619):**
+- Course 3 backbone is complete — Knowledge Map is already in Cell 2 of `03-introduction-to-data-literacy.ipynb`
+- Course 4+ backbones: build when each course starts
+
+---
+
 ## 📸 Screenshot Workflow — The Only Source
 
 **Spock never generates lesson content without a screenshot.**
