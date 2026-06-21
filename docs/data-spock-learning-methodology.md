@@ -63,7 +63,7 @@ ten times.
 
 ## 4. Core principles
 
-Eleven principles, each one line, each already in use across `data-brain-gym` and the
+Twelve principles, each one line, each already in use across `data-brain-gym` and the
 `invoice-automation` project.
 
 | # | Principle | Why it exists |
@@ -79,6 +79,22 @@ Eleven principles, each one line, each already in use across `data-brain-gym` an
 | 9 | **Document as a first-class output** — logs, guides, Notes for Students | What is not written down did not happen; the log is itself a learning resource |
 | 10 | **Career-anchored** — every exercise answers: what question, who asks, what decision | Turns a query into an insight and a portfolio into a narrative |
 | 11 | **Two voices** — Spock (logic) and Troi (psychology) are both always present | Skill grows with logic; it sticks when the emotional pattern is understood too |
+| 12 | **DIKW climb** — Data → Information → Knowledge → Wisdom; document to rise, not to record | A logged millimeter is DATA; the technique behind it is KNOWLEDGE — keep the layer that teaches |
+
+---
+
+### Two kinds of documentation
+
+The DIKW climb (principle #12) splits documentation into two jobs, each with its own signal/noise rule:
+
+| Kind | Job | Signal — keep | Noise — drop |
+|---|---|---|---|
+| **Process docs** (captain's logs, README) | Record methodology + the essence of what happened | How we work, what we learned, problems solved | Iteration trivia — a millimeter up/down, client back-and-forth |
+| **Teaching comments** (inline code comments) | Teach like a notebook lesson cell | The technique + WHY it exists; the named trap | The change-history of values |
+
+**The test for any code comment:** "Would this help a student rebuild this from
+scratch and understand the technique?" If yes, keep it. If it only records what
+the client asked on which day, remove it.
 
 ---
 
