@@ -190,6 +190,58 @@ All DataCamp theory notebooks contain **markdown cells only** (no code cells unt
 
 ---
 
+### 🔴 Error-Driven Solution Table — When User Sends Wrong Answer Screenshot
+
+This follows the **Error-Driven Learning Rule** (see `data-spock-core.instructions.md`).
+
+**When building an exercise or practice lesson cell where Data sent screenshots showing both correct AND incorrect attempts:**
+
+1. **Show all options** — do not hide the wrong answers
+2. **Solution table format:**
+   ```
+   | Option | Verdict | Explanation | Why This Trap (if incorrect) |
+   |--------|---------|-------------|---------------------------|
+   | [Option A text] | ✅ Correct | [Why it works] | — |
+   | [Option B text] | ❌ Wrong | [Why it fails] | Pattern: [Trap name]. You chose this because [specific misconception]. |
+   | [Option C text] | ❌ Wrong | [Why it fails] | Name: [Trap name]. The confusion: [what looks like logic but isn't]. |
+   ```
+
+3. **Add "Common Mistake" section** — placed AFTER the solution table, BEFORE "Why This Matters":
+   ```
+   **Common Mistake**
+   [Trap name]. [Root cause of misconception]. 
+   **→** *[Wisdom statement: the shift in thinking this error teaches]*
+   ```
+
+4. **Wisdom statement rules:**
+   - One bold sentence starting with `**→**`
+   - Action-oriented: "here is how you will think differently next time"
+   - Specific to the trap, not generic advice
+   - Example: `**→** *Histogram x-axis width measures spread; y-axis measures frequency. Always verify axes first.*`
+
+**Example: Course 4, Lesson 8 — "Most Frequent Crimes"**
+
+When Data selected the wrong option (ranked position instead of maximum frequency):
+
+| Option | Verdict | Explanation | Why This Trap |
+|--------|---------|-------------|---------------|
+| Rank 1: Theft | ✅ Correct | Theft has the highest frequency (mode = maximum). | — |
+| Rank 3: Robbery | ❌ Wrong | Has lower frequency than Theft; only third-most frequent. | **Trap: Ranking confusion.** You thought mode meant "middle-ranked typical value", not "highest magnitude". Mode = max, always. |
+| Rank 5: Other | ❌ Wrong | Lowest frequency; least common crime in dataset. | **Trap: Inversion.** Opposite of correct — chose the rarest instead of most common. |
+
+**Common Mistake**
+Confusing mode (maximum frequency) with a ranked position or "typical middle" value. Mode in statistics is not soft or average — it is the single highest-frequency category, identical to maximum for categorical data.
+**→** *When you see "mode" in statistics, translate it to "maximum". Mode = max. The highest-frequency category, nothing more.*
+
+---
+
+**Rules:**
+- `🎬` link appears ONLY in video lesson cells.
+- No ASCII trees. Prose or Markdown table only.
+- `🔗 Connection` is for genuine cross-chapter or cross-course links only — not a restatement of the RECAP.
+
+---
+
 ## 🗂️ Three-Tier Format System
 
 Notebooks use **three formats** — each for a specific purpose:
