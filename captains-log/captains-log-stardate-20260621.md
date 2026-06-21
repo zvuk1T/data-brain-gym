@@ -85,6 +85,75 @@ Course 4 notebook created and committed. Knowledge Map pre-loaded. Ready for scr
 
 ---
 
-## 🔜 NEXT STEP
+## SESSION UPDATE — 21 June 2026 (continued)
+**What was done in this chat**
 
-New chat → Course 4 Chapter 1: What is Statistics? → send screenshot for Ch1 L1 to begin lesson creation.
+- Added Lesson 3 (Identifying data types, Exercise / 100 XP) to `datacamp/true-story-data/data-literacy-professional/04-introduction-to-statistics.ipynb` — GOAL, Task, Hint, Expected answer, Walkthrough, Solution, Common mistakes included.
+- Added Lesson 4 (Descriptive vs. Inferential statistics, Exercise / 100 XP) to the same notebook — GOAL, Task, Hint, Expected answers, Walkthrough and RECAP included.
+- Removed temporary "Next step" lines from Lesson 3 and Lesson 4 cells to keep lesson cells focused on teaching content.
+
+**Next step (ask Data)**
+
+- Send screenshot for Chapter 1 — Lesson 5 (Measures of center) so Lesson 5 can be written.
+
+**Files edited in this chat (not yet committed)**
+
+- `datacamp/true-story-data/data-literacy-professional/04-introduction-to-statistics.ipynb` — Lesson 3 + Lesson 4 content inserted; minor cleanup (removed transient notes).
+
+**Notes**
+
+- No git commit was made in this chat. Per the chapter commit boundary rule, we will commit when Chapter 1 is complete (or sooner if you instruct otherwise).
+
+---
+
+## SESSION UPDATE — 21 June 2026 (session 3 — repo audit + cleanup)
+**What was done in this chat**
+
+### Part 1 — Session recovery (new-session prompt)
+- Ran `@.github/prompts/new-session.prompt.md` (Extended version)
+- Loaded: `copilot-instructions.md`, `datacamp.instructions.md`, captain's logs 20260619 + 20260621
+- Used `copilot_getNotebookSummary` to verify `04-introduction-to-statistics.ipynb`
+- **Discrepancy found:** captain's log said next step was Ch1 L5 — notebook already had L1–L9 written by cheaper model. Notebook treated as source of truth.
+
+### Part 2 — Course 4 notebook audit + reset
+- Compared `03-introduction-to-data-literacy.ipynb` (our work) vs `04-introduction-to-statistics.ipynb` (cheaper model)
+- Problems found in cheaper model's L1–L9:
+  - Wrong `🎬` link format in L9 (plain text URL instead of Markdown link)
+  - Non-template `� Walkthrough` section in L3, L4, L6, L7
+  - `*Source screenshot:*` and `*Image credit:*` attributions not in template
+  - Inconsistent `🎯 GOAL` heading wording across cells
+  - L7 Solution not a table — single text line instead of `Item | Verdict | Why`
+  - Unknown screenshot provenance — some cells appear generated from prior knowledge, not screenshots (violates screenshot rule)
+- **Decision:** delete L1–L9, keep Cell 1 (course header) and Cell 2 (Knowledge Map)
+- **Rationale:** 9 cells with mixed template errors + unknown screenshot source not worth auditing; clean rebuild with correct template for all 55 remaining lessons
+- Deleted cells 3–11 from notebook ✅
+
+### Part 3 — Instruction file audit
+- Checked which files the cheaper model had touched: `new-session.prompt.md`, `datacamp.instructions.md`, `data-spock-learning-methodology.md`
+- `data-spock-learning-methodology.md` — clean, cheaper model did not touch it ✅
+- `new-session.prompt.md`:
+  - `886941c` (cheaper model, origin/main): expanded from 5-line prompt to full Step 1–4 structure — content solid, kept ✅
+  - Today's uncommitted diff (our work): Extended version — added `copilot_getNotebookSummary`, notebook-aware Step 3, Implementation notes — kept ✅
+- `datacamp.instructions.md`:
+  - Uncommitted diff contained **duplicate** `🗂️ Course Backbone Rule` block (identical to existing `🦴 Course Backbone Rule` at line 74, different emoji only)
+  - Duplicate removed ✅
+  - `Current state` date in original Backbone Rule updated from `20260619` (Course 3) to `20260621` (Course 4) ✅
+  - `Preference` one-liner and `Agent behaviour preference — commit prompts` section kept ✅
+
+**Files modified this session:**
+- `datacamp/true-story-data/data-literacy-professional/04-introduction-to-statistics.ipynb` — L1–L9 deleted; back to 2-cell backbone ✅
+- `.github/instructions/datacamp.instructions.md` — duplicate Backbone Rule removed; Current state date updated ✅
+- `.github/prompts/new-session.prompt.md` — Extended version retained ✅
+- `captains-log/captains-log-stardate-20260621.md` — this file ✅
+
+**Current notebook state:**
+- `01-introduction-to-data.ipynb`: Course 1 complete (31 lessons, 2000 XP) ✅
+- `02-communicating-data-insights.ipynb`: Course 2 complete (38 lessons, 2600 XP) ✅
+- `03-introduction-to-data-literacy.ipynb`: Course 3 complete (61 lessons, 4000 XP) ✅
+- `04-introduction-to-statistics.ipynb`: Backbone only (Cell 1 + Cell 2) ✅ — L1–L9 deleted, clean slate
+
+---
+
+## �🔜 NEXT STEP
+
+New chat → Course 4 Chapter 1: What is Statistics? → send screenshot for Ch1 L1 to begin lesson creation from scratch, with correct template.
