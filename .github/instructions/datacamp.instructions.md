@@ -81,7 +81,9 @@ Spock extracts the content → builds the **Course Knowledge Map** cell (Cell 2)
 Why: pre-loading all courses in one session wastes context, loses freshness, and creates a false sense of readiness. The backbone is built when the course is ready to begin — not as a batch operation.
 
 **Current state (as of 20260621):**
-- Course 4 backbone is complete — Knowledge Map is in Cell 2 of `04-introduction-to-statistics.ipynb`
+- Course 4 Chapter 1 complete — all 12 lessons written, 750 XP achieved
+- Lessons 1–12: header + Knowledge Map + full lesson cells with trap-based error analysis
+- Course 4 Chapter 2 backbone: ready for screenshots (Knowledge Map pre-loaded from PDFs)
 - Course 5+ backbones: build when each course starts
 
 ---
