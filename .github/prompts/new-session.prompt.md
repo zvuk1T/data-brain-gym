@@ -1,9 +1,9 @@
 ---
 mode: 'agent'
-description: "Start a new working session — restore context, verify the stopping point, and wait for confirmation."
+description: "Start a new working session — restore context, verify the stopping point, and wait for confirmation. This version also loads user-level instructions and scoped instruction files, then verifies the active notebook via copilot_getNotebookSummary."
 ---
 
-# New Session Bootstrap
+# New Session Bootstrap (Extended)
 
 Work in read-only mode until I explicitly confirm the next action.
 
@@ -12,26 +12,33 @@ Do not run commands that change the environment.
 
 ---
 
-## Step 1 — Load project rules
+## Step 1 — Load project and user rules (source-of-truth)
 
-Read:
+Read, in this exact order:
 
-1. `.github/copilot-instructions.md`
-2. Any applicable instruction file under `.github/instructions/` for the active working folder
+1. User-level instructions (always present via symlink):
+   - `~/.copilot/instructions/data-spock-core.instructions.md`
 
-If the current work is inside `datacamp/`, also read:
+2. Project-level instructions for the current workspace:
+   - `<repo>/.github/copilot-instructions.md`
+
+3. All folder-scoped instruction files inside the repo:
+   - `<repo>/.github/instructions/*.instructions.md`
+   - Load each file whose frontmatter `applyTo` matches the active file path.
+
+If the current active file is inside `datacamp/`, also read:
 
 - `.github/instructions/datacamp.instructions.md`
 
-Treat these files as the source of truth for project rules, workflow, formatting, and confirmation requirements.
+Treat these files as the source of truth for project rules, workflow, formatting, confirmation requirements, and folder-specific templates.
+
+Note: Read each file from start to finish. Do not summarise until all required files are fully read.
 
 ---
 
-## Step 2 — Restore recent session context
+## Step 2 — Restore recent session context (captain's logs)
 
-Read the two latest files from `captains-log/`, determined by the two highest stardate numbers.
-
-Read the older one first, then the newer one.
+Read the two latest files from `captains-log/`, determined by the two highest stardate numbers. Read the older one first, then the newer one.
 
 Extract:
 
@@ -45,28 +52,31 @@ Do not rely only on the captain’s log. Use it as a recovery map, then verify t
 
 ---
 
-## Step 3 — Verify the active source file
+## Step 3 — Verify the active source file (notebook-aware)
 
-Identify the active file mentioned in the latest captain’s log and inspect it directly.
+If the active file from the captain's log is a DataCamp notebook, do the following verification steps.
 
-For DataCamp work:
+1. Identify the active notebook path mentioned in the latest log. If none is specified, find the most recently modified notebook in `datacamp/**`.
 
-1. Read the course header in the active notebook.
-2. Confirm the active course and chapter.
-3. Identify the exact last completed lesson cell.
-4. Confirm the exact next unfinished lesson.
-5. Check whether the Course Knowledge Map already exists.
-6. Confirm whether the next lesson is a Video, Exercise, or Practice lesson.
-7. Include the lesson XP when available.
-8. Do not create lesson content without the required screenshot source.
+2. Use the `copilot_getNotebookSummary` tool on the identified notebook. Extract the summary including number of cells, types, and the last-written cells.
 
-If the captain’s log and the notebook disagree, treat the notebook as the source of truth and clearly report the discrepancy.
+3. Read the course header (Cell 1) in the notebook and confirm:
+   - Course title, instructor, chapters, and overall XP/status.
+   - Whether a Course Knowledge Map (Cell 2) exists and contains PDF-extracted anchors.
+
+4. Identify the exact last completed lesson cell (the last lesson-style markdown cell written). Read that cell fully.
+
+5. Confirm the exact next unfinished lesson (title, lesson type: Video / Exercise / Practice, XP when available).
+
+6. Confirm whether the next lesson requires a screenshot (exercises/practices always require screenshots; video lessons require a transcript or video slide screenshot if available).
+
+If the captain's log and the notebook disagree, treat the notebook as the source of truth and clearly report the discrepancy.
 
 ---
 
-## Step 4 — Report the restored state
+## Step 4 — Report the restored state (strict format)
 
-Respond only in this format:
+Respond only in this format (no additional prose):
 
 **📍 Where we are:**  
 [Current project, track, course, chapter, and overall status]
@@ -83,6 +93,14 @@ Respond only in this format:
 **⚠️ Open questions or discrepancies:**  
 [List unresolved issues or differences between the captain’s log and source files. Write “None” if there are none.]
 
+
+After the summary, stop and wait for my explicit confirmation before doing anything else. The agent accepts any of the following exact confirmation words: "ok", "continue", or "engage".
+
 ---
 
-After the summary, stop and wait for my explicit confirmation before doing anything else.
+## Implementation notes for agents
+
+- Always read user-level instructions first — they contain HARD RULES (confirmation, captain's log rule, language rules).
+- Always call `copilot_getNotebookSummary` when working with notebooks referenced in the captain's logs — do not skip this step.
+- If `copilot_getNotebookSummary` returns an error or the notebook cannot be found, clearly state the problem and list candidate notebooks by recent modification time in `datacamp/**`.
+- Do not create lesson content without a screenshot. If the next lesson requires a screenshot, request it and stop.

@@ -80,9 +80,9 @@ Spock extracts the content → builds the **Course Knowledge Map** cell (Cell 2)
 
 Why: pre-loading all courses in one session wastes context, loses freshness, and creates a false sense of readiness. The backbone is built when the course is ready to begin — not as a batch operation.
 
-**Current state (as of 20260619):**
-- Course 3 backbone is complete — Knowledge Map is already in Cell 2 of `03-introduction-to-data-literacy.ipynb`
-- Course 4+ backbones: build when each course starts
+**Current state (as of 20260621):**
+- Course 4 backbone is complete — Knowledge Map is in Cell 2 of `04-introduction-to-statistics.ipynb`
+- Course 5+ backbones: build when each course starts
 
 ---
 
@@ -398,3 +398,14 @@ Shared courses as of June 2026:
 | Communicating Data Insights | ✅ (2) — active | ✅ (1) — shared | — |
 | Introduction to Data Literacy | ✅ (3) | — | ✅ (2) — shared |
 | Data Storytelling Concepts | ✅ (7) | ✅ (2) — shared | — |
+
+---
+
+**Preference:** When referencing a lesson in conversation, always state the full lesson title.
+
+---
+
+**Agent behaviour preference — commit prompts**
+
+- Spock will not ask for a commit after every lesson. Commits for DataCamp notebook work follow the established commit-boundary rule: one chapter = one natural commit boundary. Spock will only prompt for a commit when a full chapter is complete (or when you explicitly request it).
+- Spock will continue to announce actions and wait for your explicit confirmation before making any file edits or running terminal commands that modify the workspace. This preference only suppresses repetitive "commit now?" prompts after individual lessons.
