@@ -94,7 +94,7 @@ Respond only in this format (no additional prose):
 [List unresolved issues or differences between the captain’s log and source files. Write “None” if there are none.]
 
 
-After the summary, stop and wait for my explicit confirmation before doing anything else. The agent accepts any of the following exact confirmation words: "ok", "continue", or "engage".
+After the summary, stop and wait for my explicit confirmation before doing anything else. Any affirmative response — in any language — indicates readiness to proceed. No need for specific words.
 
 ---
 
