@@ -106,6 +106,96 @@ Spock announces what is missing and asks for it. No partial cells — a half-bui
 
 ---
 
+## ✅ Cell Quality Checklist — Verify Before Finalising
+
+Run this checklist on every lesson cell before inserting it into the notebook. If any item fails, fix it before proceeding.
+
+---
+
+### 1. 🎯 GOAL — Pedagogical purpose, not a topic summary
+
+The GOAL must state **what skill or concept is being tested** — not a restatement of the lesson title.
+
+❌ **Weak (topic summary):**
+> "This lesson is about the binomial distribution and its parameters."
+
+✅ **Strong (pedagogical purpose):**
+> "Can you identify the conditions that make a scenario binomial? This tests whether you can distinguish binary independent events from other probability setups."
+
+**Rule:** If you removed the lesson title from the cell, the GOAL alone must still tell you *what the student is learning to do* — not what the lesson covers.
+
+---
+
+### 2. 💡 Why This Matters — Concrete scenario, not a generic claim
+
+"Why This Matters" must connect the concept to a **specific business or professional decision** that changes because of this knowledge.
+
+❌ **Weak (generic claim):**
+> "Understanding distributions is important for data analysts."
+
+✅ **Strong (concrete scenario):**
+> "In customer wait-time analysis, knowing whether your data follows a uniform or normal distribution determines which probability formula you apply. Getting it wrong means your SLA calculations are off — and your operations team makes decisions based on bad numbers."
+
+**Rule:** The paragraph must answer: *"In what specific situation would a real analyst use this, and what goes wrong if they don't?"*
+
+---
+
+### 3. 🔗 Connection — Logical bridge, not a list of lesson titles
+
+The Connection section must explain **why** the link exists — not just name which lessons are nearby.
+
+❌ **Weak (title list):**
+> - Lesson 1: Binomial parameters
+> - Lesson 2: Recognizing binomial
+> - This lesson: How p affects shape
+
+✅ **Strong (logical bridge):**
+> - **Lesson 1** introduced n and p as parameters — this lesson shows their *consequence*: changing p shifts the entire distribution shape, not just the formula output.
+> - **Chapter 2 (Law of Large Numbers):** same principle applies — the *direction* of a statistical relationship matters as much as its existence.
+
+**Rule:** Each Connection bullet must answer: *"Why does this lesson logically follow from, or set up, the connected lesson?"* If you cannot answer that, skip the bullet.
+
+---
+
+### 4. Error-Driven Learning — All options shown, trap named
+
+If Data sent a wrong answer screenshot:
+
+- ✅ All answer options appear in the solution table (not just the correct one)
+- ✅ Each wrong option has a "Why This Trap" column entry naming the specific misconception
+- ✅ The `**Common Mistake**` section appears after the table with a named trap + wisdom statement
+- ✅ The wisdom `**→**` sentence is action-oriented ("next time, do X") — not a restatement of the correct answer
+
+If no wrong answer was sent → solution table shows all options with correct/incorrect verdict and brief explanation only. No trap analysis required.
+
+---
+
+### 5. Template compliance — Mandatory elements present
+
+| Element | Video | Exercise | Practice |
+|---------|-------|----------|----------|
+| `🎯 GOAL` | ✅ | ✅ | ✅ |
+| `🎬` link | ✅ | ❌ never | ❌ never |
+| `📋 Scenario` | ❌ | ✅ | ✅ |
+| `✅ Solution` table | ❌ | ✅ | ✅ |
+| `💡 Why This Matters` | ✅ | ✅ | ✅ |
+| `✅ RECAP` bullets | ✅ | ✅ | ✅ |
+| `🔗 Connection` | optional | optional | optional |
+
+Missing a mandatory element = cell is incomplete. Do not insert it into the notebook.
+
+---
+
+### 6. No content without a screenshot
+
+**Never build lesson content from the lesson title alone.**
+
+If a screenshot has not been provided for a lesson: announce the lesson title and type, then stop and wait for the screenshot. Do not generate content from prior knowledge or course descriptions.
+
+This is the screenshot rule — see section above. It applies to every lesson, every session.
+
+---
+
 ## 📓 Lesson Cell Templates
 
 All DataCamp theory notebooks contain **markdown cells only** (no code cells until Course 8 case study).
