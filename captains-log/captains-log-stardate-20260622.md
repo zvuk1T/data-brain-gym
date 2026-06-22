@@ -247,4 +247,103 @@ Example: L9 isn't "here's the law of large numbers." It's:
 
 Notebook is committed. Documentation is complete. Ready for Chapter 3 in next session.
 
+---
+
+## SESSION PART 2 — Chapter 3 Start: Binomial Distribution (Lessons 1–3)
+
+**Session:** 22 June 2026, afternoon  
+**Goal:** Begin Chapter 3: More Distributions and the Central Limit Theorem. Build Lessons 1–3 with focus on binomial distribution fundamentals and error-driven learning.
+
+---
+
+### Session Bootstrap
+
+Ran new-session prompt. Confirmed stopping point: Chapter 2 complete (1,500 / 3,450 XP). Ready to begin Chapter 3.
+
+**Notebook state verified:** 28 cells total (through Chapter 2, Lesson 13)
+
+---
+
+### Lessons Built (3 lessons, 150 XP)
+
+| Lesson | Type | XP | Content | Status |
+|--------|------|-----|---------|--------|
+| **L1** | Video | 50 | The Binomial Distribution — parameters n and p, expected value, independence | ✅ |
+| **L2** | Exercise | 50 | Recognizing a Binomial Distribution — lottery scenario (correct on first attempt) | ✅ |
+| **L3** | Exercise | 50 | How Probability Affects Binomial Distribution — sales histograms (error-driven, 3 attempts) | ✅ |
+
+**Block 1 subtotal: 150 XP / 1000 XP (Chapter 3)**
+
+---
+
+### 🧠 Error-Driven Learning — Lesson 3
+
+**Scenario:** Three sales people (George, Izzy, James) with different close rates (p values). Histograms show binomial distributions. Task: Who has highest P(9+ sales per week)?
+
+**Error progression:**
+
+1. **Attempt 1 — George (❌):** Selected leftmost person  
+   - Root cause: Misread peak location on x-axis
+
+2. **Attempt 2 — Izzy (❌):** Selected middle person  
+   - Trap: Confused "symmetric/balanced distribution" with "high right tail"  
+   - Key insight: Symmetric ≠ high on one side; it means equal tails on both sides  
+   - Specifics: Izzy's p=0.5 gives expected value 6, so P(9+) is in the left tail, not high
+
+3. **Attempt 3 — James (✅):** Correct  
+   - Why: James's p=0.75 gives expected value 9, so peak is at 9+
+
+**Wisdom extracted:**  
+**→** *Binomial shape follows p: peak location = n × p. To answer "probability of k or more," find where k sits relative to the peak. If k is at or right of the peak, that person has the high probability.*
+
+---
+
+### ⚠️ Session Interruption
+
+**Issue:** Clipboard/attachment failure prevented screenshot capture for Lesson 4.
+- Tried multiple times to paste screenshot of "Identifying n and p" exercise
+- Received error: "Pasted image precrtano" (crossed-out/corrupted)
+- Attempted workarounds: browser refresh, different paste methods, etc.
+
+**Decision:** Pause session. Commit Lessons 1–3. Restart in new session with fresh clipboard.
+
+---
+
+### 📊 Course Progress
+
+| Chapter | Lessons | XP | Status |
+|---------|---------|----|----|
+| Ch1: Summary Statistics | 12/12 | 750/750 | ✅ Complete |
+| Ch2: Probability & Distributions | 13/13 | 750/750 | ✅ Complete |
+| Ch3: More Distributions & CLT | 3/16 | 150/1000 | 🔄 In Progress |
+| Ch4: Hypothesis Testing & Correlation | 0/15 | 0/950 | ⏳ Queued |
+| **Total** | **28/56** | **1,650/3,450** | **47.8% complete** |
+
+---
+
+### 📁 Files Modified & Committed
+
+| File | Change | Commit |
+|------|--------|--------|
+| `04-introduction-to-statistics.ipynb` | Added L1–L3 (3 cells, 243 lines) | `929a19a` |
+
+---
+
+## 🔜 NEXT STEP (updated)
+
+**For next session (new chat):**
+1. Run `#file:new-session.prompt.md` — recover context
+2. Confirm: Chapter 3, Lessons 1–3 in notebook (31 cells, 150 XP)
+3. Start Chapter 3, Lesson 4 ("Identifying n and p") — Exercise / 50 XP
+4. Request screenshot of histogram and options
+
+**Paused at:** Chapter 3, Lesson 4 (Exercise / 50 XP) — ready for screenshot
+
+---
+
+**Session Part 2 paused:** 22 June 2026, afternoon ✅  
+**Commit:** `929a19a` — Chapter 3 L1–L3 complete  
+**Duration:** ~1.5 hours (3 lessons + troubleshooting + commit)  
+**Energy state:** Good — ready to resume
+
 🖖 *Live long and prosper, Data.*
