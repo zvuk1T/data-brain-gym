@@ -362,3 +362,48 @@ Created `data-spock-hard-rules.instructions.md` — 4 non-negotiable rules, syml
 
 - **Retrofit Ch1 + Ch2 (25 cells):** add `Interview readiness:` block, trim long "Why this matters" paragraphs — lesson by lesson
 - **Ch4 start:** 15 lessons, 950 XP — needs screenshot for L1
+
+---
+
+## SESSION PART 8 — Chapter 4 Start + Outline Structure Decision
+
+*Same day, fourth session.*
+
+### Ch4 Lesson 1 Added
+
+- **Lesson 1: Hypothesis testing** *(Video / 50 XP)* — added from transcript provided by user
+- Notebook now: 43 cells
+
+### Design Decision — Mastery Statement → Chapter Recap
+
+**Decision made:** Drop the "Mastery Statement" format. Replace with compact `### Chapter X — Recap` block.
+
+**Rationale:**
+- "Mastery statement" is invented jargon — meaningless to a recruiter
+- Current blocks are mostly noise (bullet lists repeating lesson content)
+- Only genuinely useful parts: one "mental shift" sentence + the XP progress table
+
+**New format:**
+```
+### Chapter X — Recap
+*[One mental shift sentence.]*
+
+| Chapter | Lessons | XP | Status |
+|---|---|---|---|
+...
+```
+
+### Outline Structure Problem Identified
+
+**Problem:** VS Code Jupyter outline shows `##` mastery/recap cells and `####` lesson cells jumbled with no chapter grouping. No chapter separators exist as dedicated cells.
+
+**Fix planned (next chat):**
+1. Add `### Chapter X: [Title]` separator cell before each chapter's first lesson (4 cells total)
+2. Rewrite Ch1, Ch2, Ch3 recap cells to new compact format
+3. Update `datacamp.instructions.md` to document separator cells and new recap format
+
+### Stopping Point
+
+- Ch4 Lesson 1 complete ✅
+- Outline fix + recap rewrite: **pending next chat**
+- Next lesson needed: Ch4 Lesson 2 screenshot (Sunshine and sleep — Exercise / 100 XP)
