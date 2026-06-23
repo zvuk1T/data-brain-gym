@@ -17,6 +17,7 @@ Do not run commands that change the environment.
 Read, in this exact order:
 
 1. User-level instructions (always present via symlink):
+   - `~/.copilot/instructions/data-spock-hard-rules.instructions.md`
    - `~/.copilot/instructions/data-spock-core.instructions.md`
 
 2. Project-level instructions for the current workspace:
