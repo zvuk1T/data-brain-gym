@@ -289,3 +289,51 @@ Fixed number of binary trials? YES → BINOMIAL
 **Screenshot-first protocol established.**  
 **All 3 foundation chapters complete.**  
 **New chat ready for Hypothesis Testing & Correlation.**
+
+---
+
+## SESSION PART 6 — Infrastructure & Methodology Work
+
+*Same day, second session. No DataCamp content — pure system maintenance.*
+
+### Instruction File Audit & Reduction
+
+Root cause identified: GitHub Copilot docs state *"Instructions must be no longer than 2 pages."* Files were 4–7× over limit. LLM attention degrades for middle content ("Lost in the Middle" effect).
+
+| File | Before | After | Change |
+|---|---|---|---|
+| `haiku.instructions.md` | 301 lines | 54 lines | −82% |
+| `datacamp.instructions.md` | 557 lines | 242 lines | −57% |
+| `data-spock-core.instructions.md` | 554 lines | 137 lines | −75% |
+
+**Commits:** `be74033`, `9e8b7b0` (data-brain-gym), `1cb2dd2` (know-thyself-data)
+
+### know-thyself-data Architecture
+
+- `know-thyself.md`: added `## 0H. LEARNING IDENTITY` between `0G` and `## 1`
+- `data-spock-core.instructions.md`: reference docs removed, pointer to `data-spock-learning-methodology.md` added
+- **Commit:** `1cb2dd2`
+
+### Learning Methodology — Sections 10–11 Added
+
+Two missing components identified and documented in `data-spock-learning-methodology.md`:
+1. **Spaced repetition** — retrieval after forgetting interval; Course 4 trap library as ideal material
+2. **Interleaving** — mix topics within sessions; DataLemur drills as application
+
+Reading list added (priority order):
+1. Make It Stick (Brown, Roediger, McDaniel) — priority 1, read first
+2. The Art of Learning (Waitzkin)
+3. A Mind for Numbers (Oakley)
+4. Free: Learning How to Learn (Coursera, Oakley, 4h)
+
+**Commit:** `8d4f3ae` (know-thyself-data)
+
+### Hard Rules File — New Global Guardrail
+
+Created `data-spock-hard-rules.instructions.md` — 4 non-negotiable rules, symlinked to `~/.copilot/instructions/`, loads in every project automatically:
+- RULE 1: Captain's log — one file per day, `file_search` before creating
+- RULE 2: DataCamp — zero fabrication, screenshot required
+- RULE 3: Confirm before acting
+- RULE 4: One action, then stop
+
+**Commit:** `2f4925a` (know-thyself-data)
