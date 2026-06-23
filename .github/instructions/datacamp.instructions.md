@@ -35,10 +35,6 @@ One cell at a time. No partial cells.
 
 Before starting any new course: parse PDF slide decks → build Course Knowledge Map cell (Cell 2) → then screenshots begin. One course at a time, just before that course starts.
 
-**Current state (as of 20260623):**
-- Course 4 Chapters 1–3 complete: 41 lessons, 2,500 / 3,450 XP ✅
-- Chapter 4 next: Hypothesis Testing & Correlation (15 lessons, 950 XP)
-
 ---
 
 ## 📓 Lesson Cell Templates
@@ -74,10 +70,14 @@ Type = one of: `Video`, `Exercise`, `Practice`
 ---
 
 **💡 Why this matters**
-[One paragraph: specific business scenario where this concept changes a decision]
+[1–2 sentences: core wisdom — what changes when you know this]
+
+**Interview readiness:**
+Recruiter: *"[realistic question about this concept]"*
+**Your answer:** "[2–3 sentences, confident and precise]"
 
 **✅ RECAP**
-- [4–6 concept bullets]
+- [3–4 concept bullets]
 
 **🔗 Connection**
 - [Only genuine cross-chapter or cross-course links — skip if none]
@@ -118,10 +118,14 @@ Type = one of: `Video`, `Exercise`, `Practice`
 ---
 
 **💡 Why this matters**
-[One paragraph: specific business scenario]
+[1–2 sentences: core wisdom — what changes when you know this]
+
+**Interview readiness:**
+Recruiter: *"[realistic question about this concept]"*
+**Your answer:** "[2–3 sentences, confident and precise]"
 
 **✅ RECAP**
-- [3–5 concept bullets]
+- [3–4 concept bullets]
 
 **🔗 Connection**
 - [Only genuine links — skip if none]
@@ -193,11 +197,13 @@ Before inserting any cell into the notebook:
 - [ ] Heading format exact: `#### Chapter X — Lesson N: [Title] *(Type / XP)*`
 - [ ] All required sections present in correct order
 - [ ] `🎯 GOAL` = pedagogical purpose, not a topic summary
-- [ ] `💡 Why This Matters` = concrete scenario, not a generic claim
+- [ ] `💡 Why this matters` = 1–2 sentences wisdom + Recruiter Q&A (3–4 lines total)
+- [ ] `✅ RECAP` = max 4 bullets
 - [ ] Solution table shows ALL options (Exercise/Practice)
 - [ ] `**→**` wisdom line is action-oriented and trap-specific
 - [ ] `🎬` link present in Video; absent in Exercise/Practice
 - [ ] Cell inserted directly after the last completed lesson cell for this chapter
+- [ ] Cell length: Video ≤ 40 lines · Exercise/Practice ≤ 50 lines
 
 ---
 
