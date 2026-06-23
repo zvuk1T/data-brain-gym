@@ -337,3 +337,28 @@ Created `data-spock-hard-rules.instructions.md` — 4 non-negotiable rules, syml
 - RULE 4: One action, then stop
 
 **Commit:** `2f4925a` (know-thyself-data)
+
+---
+
+## SESSION PART 7 — Notebook & Instructions Cleanup
+
+*Same day, third session. No DataCamp content — format tightening.*
+
+### Changes Made
+
+**`datacamp.instructions.md` — format compaction (`0e079d2`):**
+- `💡 Why this matters` → 1–2 sentences + `Interview readiness:` Recruiter Q&A block (replaces multi-paragraph business scenario walls)
+- `✅ RECAP` capped at max 4 bullets
+- Cell length ceiling added to quality checklist: Video ≤ 40 lines · Exercise/Practice ≤ 50 lines
+- Stale hardcoded backbone state ("Course 4 Chapters 1–3 complete...") removed
+
+**Notebook + instructions — Knowledge Map removed (`cce08c2`):**
+- Cell 2 (Course Knowledge Map — ASCII trees for all 4 chapters) deleted from `04-introduction-to-statistics.ipynb`
+- Backbone PDF parsing rule removed from `datacamp.instructions.md`
+- Reason: lesson cells are the synthesis; the map was parallel content at lower quality
+- Notebook now: 42 cells (was 43)
+
+### Pending for Next Chat
+
+- **Retrofit Ch1 + Ch2 (25 cells):** add `Interview readiness:` block, trim long "Why this matters" paragraphs — lesson by lesson
+- **Ch4 start:** 15 lessons, 950 XP — needs screenshot for L1
