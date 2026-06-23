@@ -407,3 +407,46 @@ Created `data-spock-hard-rules.instructions.md` — 4 non-negotiable rules, syml
 - Ch4 Lesson 1 complete ✅
 - Outline fix + recap rewrite: **pending next chat**
 - Next lesson needed: Ch4 Lesson 2 screenshot (Sunshine and sleep — Exercise / 100 XP)
+
+---
+
+## SESSION PART 9 — Outline Fix Phase 1: Chapter Separators
+
+*Same day, fifth session. No DataCamp content — structural cleanup (task B).*
+
+### Goal
+
+Reorganize the notebook outline so VS Code groups lessons under chapters. Task B (outline + recap refactor) and task C (Ch1/Ch2 retrofit) requested; B started first.
+
+### What Was Done
+
+**4 chapter separator cells added** (`### Chapter X: [Title]`), one before each chapter's first lesson:
+- `### Chapter 1: Summary Statistics`
+- `### Chapter 2: Probability and distributions`
+- `### Chapter 3: More Distributions and the Central Limit Theorem`
+- `### Chapter 4: Correlation and Hypothesis Testing`
+
+Notebook: 43 → 47 cells. Outline now nests `####` lessons under `###` chapter headings correctly.
+
+### Error Caught & Recovered
+
+**Mistake:** Misidentified the cell holding the "CHAPTER 1 COMPLETE" block. Sent an `edit_notebook_file` call to the wrong cell (L11 Box plots), and — not realizing `editType: edit` replaces the *entire* cell — overwrote the full L11 lesson with 6 lines of SD recap.
+
+**Root cause:** Two compounding errors — wrong cell ID + wrong assumption about how the edit tool works (it replaces whole cells, not fragments).
+
+**Recovery:** Restored full L11 content from an earlier complete read. A disk-vs-editor mismatch then appeared (editor had the restore, disk still held the damaged version). Verified via terminal `grep` on the raw file; user saved (Cmd+S); re-verified disk clean.
+
+**Verification before commit:** `git diff --stat` = 32 insertions, 0 deletions (separators only). `grep "Box plot anatomy"` = 1 (L11 intact).
+
+### Lesson Learned
+
+- `edit_notebook_file` with `editType: edit` replaces the **whole cell**, not a fragment. To trim a block from a lesson cell, the entire cell content must be rewritten — high risk. **Safer approach for Phase 2:** extract mastery blocks into their *own* cells rather than deleting from lesson cells.
+- Always confirm cell identity by reading it before editing — never trust position assumptions.
+- `git diff --stat` is the pre-commit safety gate: unexpected deletions = stop.
+
+### Stopping Point
+
+- **Phase 1 (separators): complete ✅** — committed
+- **Phase 2 (pending):** extract + compact the 3 chapter recap blocks (currently tails of L12 / Ch2-L13 / Ch3-L16), move cumulative XP table into the course header, fix stale 47.8% / 72.5% tables
+- **Task C (pending):** Ch1+Ch2 retrofit (Interview readiness block, trim "Why this matters")
+- Next DataCamp lesson: Ch4 Lesson 2 screenshot (Sunshine and sleep — Exercise / 100 XP)
