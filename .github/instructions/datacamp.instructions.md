@@ -31,10 +31,6 @@ One cell at a time. No partial cells.
 
 ---
 
-## 🦴 Course Backbone Rule
-
-Before starting any new course: parse PDF slide decks → build Course Knowledge Map cell (Cell 2) → then screenshots begin. One course at a time, just before that course starts.
-
 ---
 
 ## 📓 Lesson Cell Templates
