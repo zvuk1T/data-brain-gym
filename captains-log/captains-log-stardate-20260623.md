@@ -450,3 +450,32 @@ Notebook: 43 → 47 cells. Outline now nests `####` lessons under `###` chapter 
 - **Phase 2 (pending):** extract + compact the 3 chapter recap blocks (currently tails of L12 / Ch2-L13 / Ch3-L16), move cumulative XP table into the course header, fix stale 47.8% / 72.5% tables
 - **Task C (pending):** Ch1+Ch2 retrofit (Interview readiness block, trim "Why this matters")
 - Next DataCamp lesson: Ch4 Lesson 2 screenshot (Sunshine and sleep — Exercise / 100 XP)
+
+---
+
+## SESSION PART 10 — Outline Fix Phase 2: Recaps + Progress Table
+
+*Same day, sixth session. No DataCamp content — structural cleanup (task B completed).*
+
+### What Was Done
+
+**1. Three mastery blocks removed, replaced with compact recap cells.**
+The old "CHAPTER X MASTERY STATEMENT / COMPLETE" blocks (tails of L12, Ch2-L13, Ch3-L16) were dropped. Each chapter now ends with a separate `### Chapter X — Recap` cell: one italic mental-shift sentence + the chapter's XP line. Nothing else.
+
+**2. Single course-progress table added** directly after the course header (`### 📊 Course Progress`, one cumulative table, current state 42/56, 2,550/3,450, 74%). The stale 47.8% / 72.5% tables vanished with the mastery blocks they lived in — no duplicates remain.
+
+**3. `datacamp.instructions.md` updated.** Replaced the "Mastery Statement" section with a "Chapter Structure" section documenting three framing cells: separator, recap, and the single progress table. Fixed two stale references (header arc line, mistakes table).
+
+### Result
+
+Notebook: 47 → 51 cells. Clean hierarchy: `## course → 📊 progress → ### Chapter X: → #### lessons → ### Chapter X — Recap`. All lesson bodies verified intact (SD strategy, uniform ASCII diagram, Poisson ASCII diagram all present).
+
+### Decision: Task C Dropped
+
+Task C (Ch1+Ch2 retrofit — add Interview readiness blocks, trim "Why this matters") was scoped at 25 full cell rewrites. Verified via grep: all 17 existing `Interview readiness:` blocks are in Ch3+Ch4; Ch1+Ch2 lack them. Conclusion: mechanical, low-value busywork better done by hand or skipped. Not worth agent time. Dropped by Data's call.
+
+### Stopping Point
+
+- **Task B: complete ✅** — separators + recaps + progress table + instructions, committed
+- **Task C: dropped** — Data will handle manually if ever needed
+- Next DataCamp lesson: Ch4 Lesson 2 screenshot (Sunshine and sleep — Exercise / 100 XP) — fresh chat

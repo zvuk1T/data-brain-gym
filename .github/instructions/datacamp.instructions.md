@@ -136,36 +136,45 @@ Recruiter: *"[realistic question about this concept]"*
 
 ---
 
-## 📊 Mastery Statement — after all lessons in a chapter are complete
+## �️ Chapter Structure — Separators, Recaps, Progress Table
+
+**Three structural cells frame the lessons of each course notebook.**
+
+### 1. Chapter separator — before each chapter's first lesson
 
 ```markdown
-## 📊 CHAPTER X MASTERY STATEMENT
+### Chapter X: [Exact Chapter Title from DataCamp]
+```
 
-**Chapter X built [one-sentence framing].**
+One line, no body. This is what makes the VS Code outline nest `####` lessons under `###` chapters. One separator per chapter.
 
-**What this chapter established:**
-- [concept bullet]
-- [concept bullet]
-- [concept bullet]
-- [concept bullet]
+### 2. Chapter recap — after all lessons in a chapter are complete
 
-**The key mental shift:** [From X thinking to Y thinking.]
-Chapter X+1 builds on this by [one line].
+```markdown
+### Chapter X — Recap
 
----
+*Mental shift: [from X thinking to Y thinking — one italic sentence].*
 
 **Chapter X complete: XP / XP ✅**
+```
+
+A separate cell — never appended to the last lesson cell. Two parts only: one mental-shift sentence + the chapter's own XP line. Nothing else.
+
+Exclude: "what this chapter established" bullet lists, wisdom lists, interview checklists, re-explanations of lesson content, cross-chapter cumulative tables.
+
+### 3. Course progress table — one only, directly after the course header (Cell 1)
+
+```markdown
+### 📊 Course Progress
 
 | Chapter | Lessons | XP | Status |
 |---|---|---|---|
 | Ch1: ... | x/x | x/x | ✅ |
-| Ch2: ... | x/x | x/x | ✅ |
-| Ch3: ... | x/x | x/x | 🔄 |
-| Ch4: ... | x/x | x/x | ⏳ |
+| ... | ... | ... | ... |
 | **Total** | **x/x** | **x/x** | **x%** |
 ```
 
-Exclude: wisdom lists, interview checklists, re-explanations of lesson content.
+The cumulative table lives here and nowhere else. Update it when a chapter completes. Never duplicate it inside recap cells — duplicated tables drift out of sync.
 
 ---
 
@@ -181,7 +190,7 @@ Exclude: wisdom lists, interview checklists, re-explanations of lesson content.
 
 **`🔗 Connection`:** max 3 bullets, genuine cross-chapter/course links only. Skip if none.
 
-**Chapter arc line:** one italic line added to course header cell (Cell 1) after chapter is complete — not a separate cell.
+**Chapter mental-shift line:** one italic sentence, lives in the `### Chapter X — Recap` cell — not the header, not a lesson cell.
 
 ---
 
@@ -226,7 +235,7 @@ Complete Course N Chapter X: [Title] — N lessons
 |---------|------|
 | `🎬` link in exercise/practice cells | Video cells only |
 | Building a cell from lesson title alone | Screenshot required — always |
-| Chapter intro or mastery written mid-chapter | Defer until chapter is complete |
+| Chapter separator or recap written mid-chapter | Separator goes in when the chapter starts; recap only after all lessons complete |
 | Multiple lesson cells in one message | One cell per message |
 | ASCII trees in notebook cells | Prose or Markdown table only |
 
