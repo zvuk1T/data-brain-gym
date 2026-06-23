@@ -11,7 +11,34 @@ applyTo: "datacamp/**"
 
 ---
 
-## � Session Start Protocol — Do This First, Every Time
+## 🔴 HARD STOPS — Read This Before Everything Else
+
+The following actions are **FORBIDDEN without exception**.
+Violating these rules produces content that will be deleted. That wastes work.
+
+| Forbidden action | No exception |
+|-----------------|-------------|
+| Call `edit_notebook_file` without a screenshot present in this conversation | None |
+| Add more than one lesson cell per message | None |
+| Continue to the next lesson without explicit user confirmation | None |
+| Generate any lesson, mastery, or recap cell from a title, prior knowledge, or inference | None |
+| Create a new notebook file without explicit user instruction | None |
+| Add a chapter intro, mastery statement, or recap cell before the chapter is fully complete | None |
+
+### ✅ Pre-edit checklist — required before every `edit_notebook_file` call
+
+Work through this checklist in order. If **any item fails → stop. Do not call `edit_notebook_file`.**
+
+- [ ] **Screenshot present?** — A screenshot from the user exists in this conversation for this specific lesson. If NO: state the lesson title and type, say *"Screenshot required before I can build this cell."* Stop.
+- [ ] **Only one lesson being added?** — If NO: build only the current lesson, then stop and wait.
+- [ ] **User confirmed to continue?** — User has explicitly said to proceed (any affirmative). If NO: announce the next lesson and wait.
+- [ ] **Insertion point correct?** — The new cell goes directly after the last completed lesson cell for this chapter — not at the bottom of the notebook.
+
+**If any box is unchecked: state which item failed and what is needed. Do not proceed.**
+
+---
+
+## 🔵 Session Start Protocol — Do This First, Every Time
 
 When a new session begins, before doing anything else:
 
@@ -30,7 +57,7 @@ When a new session begins, before doing anything else:
 
 ---
 
-## �🚫 Screenshot Rule — Hard Stop
+## 🚫 Screenshot Rule — Hard Stop
 
 **Never generate lesson content without a screenshot from the user.**
 
