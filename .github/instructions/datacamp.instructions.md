@@ -31,8 +31,6 @@ One cell at a time. No partial cells.
 
 ---
 
----
-
 ## 📓 Lesson Cell Templates
 
 All DataCamp theory notebooks: markdown cells only (no code cells until Course 8).
@@ -136,7 +134,7 @@ Recruiter: *"[realistic question about this concept]"*
 
 ---
 
-## �️ Chapter Structure — Separators, Recaps, Progress Table
+## 🗂️ Chapter Structure — Separators, Recaps, Progress Table
 
 **Three structural cells frame the lessons of each course notebook.**
 
@@ -194,20 +192,14 @@ The cumulative table lives here and nowhere else. Update it when a chapter compl
 
 ---
 
-## ✅ Cell Quality Checklist
+## ✅ Pre-Insertion Gate
 
-Before inserting any cell into the notebook:
+The templates above define every content and section rule. This gate covers only
+the mechanical checks the template structure does not enforce on its own:
 
-- [ ] Built from a screenshot (not inferred from title or prior knowledge)
-- [ ] Heading format exact: `#### Chapter X — Lesson N: [Title] *(Type / XP)*`
-- [ ] All required sections present in correct order
-- [ ] `🎯 GOAL` = pedagogical purpose, not a topic summary
-- [ ] `💡 Why this matters` = 1–2 sentences wisdom + Recruiter Q&A (3–4 lines total)
-- [ ] `✅ RECAP` = max 4 bullets
-- [ ] Solution table shows ALL options (Exercise/Practice)
-- [ ] `**→**` wisdom line is action-oriented and trap-specific
-- [ ] `🎬` link present in Video; absent in Exercise/Practice
-- [ ] Cell inserted directly after the last completed lesson cell for this chapter
+- [ ] Screenshot present for this lesson (HARD RULE — never infer from title)
+- [ ] All required sections present, in template order
+- [ ] Inserted directly after the last completed lesson cell for this chapter
 - [ ] Cell length: Video ≤ 40 lines · Exercise/Practice ≤ 50 lines
 
 ---
@@ -227,17 +219,9 @@ Complete Course N Chapter X: [Title] — N lessons
 
 ### Opening — run `#file:new-session.prompt.md`
 
----
+### Notebook state checks — cadence
 
-## ❌ Mistakes to Never Repeat
-
-| Mistake | Rule |
-|---------|------|
-| `🎬` link in exercise/practice cells | Video cells only |
-| Building a cell from lesson title alone | Screenshot required — always |
-| Chapter separator or recap written mid-chapter | Separator goes in when the chapter starts; recap only after all lessons complete |
-| Multiple lesson cells in one message | One cell per message |
-| ASCII trees in notebook cells | Prose or Markdown table only |
+Run `copilot_getNotebookSummary` only at **chapter start** and **chapter end** (and at session bootstrap). Between lessons in the same chapter, trust the `edit_notebook_file` return value — it reports the new cell id and the surrounding cells. Re-fetch the summary only if the injected context indicates the user manually reordered or deleted cells.
 
 ---
 
