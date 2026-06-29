@@ -114,6 +114,50 @@ codified in the instructions.
 
 ---
 
+## SESSION PART 4 — Format Decision + Course 5 Backbone (Markdown)
+
+### Decision resolved — theory courses move to `.md`
+The format question deferred in PART 3 is now answered. Conceptual
+`true-story-data` courses carry no executable code until Course 8, so the notebook
+container adds only overhead (JSON diff noise, heavier GitHub render). Principle
+adopted: **format follows content** — theory → `.md`; code → notebook or `.py`
+when code actually returns. Markdown wins on git-diff cleanliness, native GitHub
+rendering (the side a recruiter sees), and search (plain text vs. JSON-buried cell
+text). Validated live: tables, headings, emoji, and the Outline panel render
+identically to the notebook — `Cmd+Shift+V` preview confirmed by Data.
+
+### Course 5 backbone scaffolded — `05-introduction-to-data-culture.md`
+First true-story-data course built as Markdown. Backbone only — no lessons (hard
+rule: no lesson content without a screenshot). Contains: course header (Joanne
+Xiong, 2 chapters, 23 lessons, 1,500 XP, 🔄 In Progress), both chapter overview
+tables (mirrored from the notebook-04 convention), the single `### 📊 Course
+Progress` table (0/23 · 0/1,500 · 0%), and a Knowledge Map placeholder. Chapter 2
+description is verbatim from the screenshot; Chapter 1 description and course-level
+metadata are honest placeholders pending screenshots.
+
+### Reconciliation — curriculum verified against screenshots
+10 + 13 = 23 lessons · 3 + 5 = 8 videos · 600 + 900 = 1,500 XP — all three totals
+close against the course header. No fabrication.
+
+### Glyph fix — `datacamp.instructions.md`
+The PART 3 "Naming Lessons in Chat" heading emoji (broken `�` through the edit
+toolchain) is fixed → `📛`. Root cause confirmed: variation-selector emoji
+(`U+FE0F`) corrupt through the toolchain while single-codepoint emoji survive
+(`🔄` did). Also restored the adjacent `🔄 Chat Closing` heading the same edit had
+damaged. Post-fix glyph scan: clean.
+
+### Open threads recorded (no action)
+- **MD template codification** — the MD course-header template is still not
+  codified in `datacamp.instructions.md`. Deferred until lessons (not just the
+  backbone) validate the format. Notebooks 01–04 likewise still lack a codified
+  header template.
+- **`.py` for code courses (far)** — when code returns (Course 8), build courses
+  as `.py` with `# %%` cells (markdown task text + runnable code + Interactive
+  Window), embedding result screenshots as the "frozen output." Principle only;
+  validate live before codifying.
+
+---
+
 ## 📊 COURSE PROGRESS
 
 | Chapter | Lessons | XP | Status |
@@ -131,10 +175,11 @@ Notebook progress table (Cell 2) and Cell 1 header status synced to match.
 ## 🔜 NEXT STEP
 
 - **Course 4: Introduction to Statistics — COMPLETE.** All 56 lessons populated, recap cell added, tables synced.
-- Next course: **Course 5 — Introduction to Data Culture** (Data Literacy Professional, position 5). Outline researched and ready.
-- **Decision pending before scaffolding C5:** notebook vs. plain `.md` for conceptual theory courses. Resolve first, then scaffold the course header + progress table.
+- **Course 5: Introduction to Data Culture — backbone scaffolded in Markdown.** Header, chapter tables, and progress table in place; no lessons yet.
+- **Next lesson:** Chapter 1 — Lesson 1: What is data culture? *(Video / 50 XP)* — needs a screenshot before any content is written.
+- **Deferred:** codify the MD course-header template in `datacamp.instructions.md` once lessons (not just the backbone) validate the format.
 
-**Paused at:** Course 4 closed; standing at the Course 5 format decision.
+**Paused at:** Course 5 backbone committed; standing by for the Chapter 1 — Lesson 1 screenshot.
 
 ---
 
@@ -142,8 +187,9 @@ Notebook progress table (Cell 2) and Cell 1 header status synced to match.
 
 **data-brain-gym:**
 - `04-introduction-to-statistics.ipynb` — added Ch4 L6–L15 (10 lessons) + Chapter 4 Recap cell; synced progress table + header status to 100% Complete (55 → 66 cells)
-- `.github/instructions/datacamp.instructions.md` — cadence rule made deterministic + new "Naming Lessons in Chat" section
+- `.github/instructions/datacamp.instructions.md` — cadence rule made deterministic + new "Naming Lessons in Chat" section; fixed broken heading glyphs (`📛` Naming, restored `🔄`)
 - `.github/instructions/haiku.instructions.md` — **deleted** (obsolete; no rule loss)
+- `datacamp/true-story-data/data-literacy-professional/05-introduction-to-data-culture.md` — **new**; Course 5 backbone in Markdown (header, chapter tables, progress table, Knowledge Map placeholder)
 - `captains-log/captains-log-stardate-20260629.md` — this log
 
 🖖 *Live long and prosper, Data.*
