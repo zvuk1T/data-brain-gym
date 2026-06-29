@@ -221,7 +221,7 @@ Complete Course N Chapter X: [Title] — N lessons
 
 ### Notebook state checks — cadence
 
-Run `copilot_getNotebookSummary` only at **chapter start** and **chapter end** (and at session bootstrap). Between lessons in the same chapter, trust the `edit_notebook_file` return value — it reports the new cell id and the surrounding cells. Re-fetch the summary only if the injected context indicates the user manually reordered or deleted cells.
+Run `copilot_getNotebookSummary` only at **chapter start** and **chapter end** (and at session bootstrap). Between lessons in the same chapter, trust the `edit_notebook_file` return value — it reports the new cell id and the surrounding cells. Re-fetch the summary only if the injected context **explicitly names** a reorder or deletion, **or** the `edit_notebook_file` return value shows unexpected neighbouring cells. The harness's routine *"potentially added/removed/reordered"* notice does **not**, on its own, count as a trigger — it fires after every normal insert.
 
 ---
 
