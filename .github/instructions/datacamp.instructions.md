@@ -204,6 +204,16 @@ the mechanical checks the template structure does not enforce on its own:
 
 ---
 
+## 📛 Naming Lessons in Chat
+
+When referring to any lesson in chat — next step, progress report, bootstrap summary — always state **both the lesson number and its title together**:
+
+> Chapter 4 — Lesson 13: Significance levels vs. p-values
+
+Never the bare number ("Lesson 13"). Data finds lessons by title, not by index — a number alone is not locatable.
+
+---
+
 ## 🔄 Chat Closing & Opening
 
 ### Closing (in order)
