@@ -74,6 +74,46 @@ remaining reference is a historical captain's-log note (correct as history).
 
 ---
 
+## SESSION PART 3 — Chapter 4 Lessons 13–15 + Course 4 Complete
+
+| Lesson | Type | XP | Topic | Trap captured |
+|--------|------|-----|-------|---------------|
+| **L13** | Exercise | 100 | Significance levels vs. p-values | α and p are both 0–1 probabilities → bucket by *timing*, not scale |
+| **L14** | Exercise | 50 | Type I and type II errors | Heavy overlap = fail to reject; an H₁ tempts you to "confirm" a noise-sized gap |
+| **L15** | Video | 50 | Congratulations! | — (course capstone recap) |
+
+**Block subtotal: 200 XP.** L13 and L14 carry a `Common Mistake` block from the
+wrong-attempt screenshots. L15 is the closing video → no exercise sections.
+
+### Wisdom extracted
+- **L13:** α is the bar set *before* data; the p-value is the number returned *after*. "Set vs. calculated" is the cleanest separator — both being probabilities on the same scale is exactly the trap.
+- **L14:** Substantial overlap of sampling distributions → fail to reject H₀. "Fail to reject" ≠ "proven equal." Bonus tell: the faint visible gap here favored Madrid, the opposite of the Berlin-heavier H₁ — so rejecting was wrong twice over.
+- **L15:** The course arc in one line — describe (Ch1) → model uncertainty (Ch2–3) → conclude (Ch4). Hypothesis testing is the bridge from sample to population claim.
+
+### Course 4 closed
+All 56 lessons populated. Added the `### Chapter 4 — Recap` cell (mental-shift +
+950/950 XP). Synced the progress table (Cell 2) to 56/56 · 3,450/3,450 · 100% and
+flipped the Cell 1 header status to ✅ Complete. **Introduction to Statistics is
+done.**
+
+### New rule — "Naming Lessons in Chat" (`datacamp.instructions.md`)
+Added a section requiring lessons to be named with **both number and title** in
+chat (e.g. "Chapter 4 — Lesson 13: Significance levels vs. p-values"), never the
+bare number — Data locates lessons by title, not index. Self-correcting rule fix,
+prompted by Data. NOTE: the section's heading emoji rendered as a broken glyph
+through the edit toolchain (same bug as the earlier `🗂️` case) — Data is fixing
+the glyph manually.
+
+### Course 5 prep — research only (no files created)
+Gathered the full outline for **Course 5: Introduction to Data Culture** (Joanne
+Xiong; 2 chapters, 23 lessons = 8 videos + 15 exercises, 1,500 XP). Open design
+question raised: convert conceptual `true-story-data` courses to plain `.md`
+instead of notebooks (no executable code → notebooks add only overhead). Deferred
+pending decision; also noted notebooks 01–04 have no course-header template
+codified in the instructions.
+
+---
+
 ## 📊 COURSE PROGRESS
 
 | Chapter | Lessons | XP | Status |
@@ -81,29 +121,30 @@ remaining reference is a historical captain's-log note (correct as history).
 | Ch1: Summary Statistics | 12/12 | 750/750 | ✅ |
 | Ch2: Probability & Distributions | 13/13 | 750/750 | ✅ |
 | Ch3: More Distributions & CLT | 16/16 | 1,000/1,000 | ✅ |
-| Ch4: Correlation & Hypothesis Testing | 12/15 | 750/950 | 🔄 |
-| **Total** | **53/56** | **3,250/3,450** | **94%** |
+| Ch4: Correlation & Hypothesis Testing | 15/15 | 950/950 | ✅ |
+| **Total** | **56/56** | **3,450/3,450** | **100% ✅** |
 
-Notebook progress table (Cell 2) synced to match this state.
+Notebook progress table (Cell 2) and Cell 1 header status synced to match.
 
 ---
 
 ## 🔜 NEXT STEP
 
-- Next DataCamp lesson: **Ch4 L13 — Significance levels vs. p-values** *(Exercise / 100 XP)* — needs screenshot.
-- Then L14 (Type I and type II errors, Exercise / 50 XP) and L15 (Congratulations!, Video / 50 XP) — L15 completes the course → trigger Chapter 4 recap cell + final progress sync.
+- **Course 4: Introduction to Statistics — COMPLETE.** All 56 lessons populated, recap cell added, tables synced.
+- Next course: **Course 5 — Introduction to Data Culture** (Data Literacy Professional, position 5). Outline researched and ready.
+- **Decision pending before scaffolding C5:** notebook vs. plain `.md` for conceptual theory courses. Resolve first, then scaffold the course header + progress table.
 
-**Paused at:** Chapter 4, Lesson 13 — chat hit the image limit (could not attach
-new screenshots). Continue in a new chat via `#file:new-session.prompt.md`.
+**Paused at:** Course 4 closed; standing at the Course 5 format decision.
 
 ---
 
 ## 📁 FILES TOUCHED
 
 **data-brain-gym:**
-- `04-introduction-to-statistics.ipynb` — added Ch4 L6–L12 (7 lessons); synced progress table (55 → 62 cells)
-- `.github/instructions/datacamp.instructions.md` — cadence rule made deterministic
+- `04-introduction-to-statistics.ipynb` — added Ch4 L6–L15 (10 lessons) + Chapter 4 Recap cell; synced progress table + header status to 100% Complete (55 → 66 cells)
+- `.github/instructions/datacamp.instructions.md` — cadence rule made deterministic + new "Naming Lessons in Chat" section
 - `.github/instructions/haiku.instructions.md` — **deleted** (obsolete; no rule loss)
 - `captains-log/captains-log-stardate-20260629.md` — this log
 
 🖖 *Live long and prosper, Data.*
+
