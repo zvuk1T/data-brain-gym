@@ -19,9 +19,9 @@
 
 | Chapter | Lessons | XP | Status |
 |---|---|---|---|
-| Ch1: Getting to Know Data Culture | 7/10 | 400/600 | 🔄 |
+| Ch1: Getting to Know Data Culture | 10/10 | 600/600 | ✅ |
 | Ch2: Data Culture in Depth | 0/13 | 0/900 | ⬜ |
-| **Total** | **7/23** | **400/1,500** | **27%** |
+| **Total** | **10/23** | **600/1,500** | **40%** |
 
 ---
 
@@ -346,6 +346,155 @@ Recruiter: *"What gets in the way of building a data culture?"*
 **🔗 Connection**
 - Data silos directly invert L4's "trust & collaboration" lever and L2's org-wide literacy answer.
 - Data literacy as a people challenge is the whole subject of Course 3, *Introduction to Data Literacy*.
+
+---
+
+#### Chapter 1 — Lesson 8: People challenges unfolded *(Exercise / 50 XP)*
+
+---
+
+**🎯 GOAL — What does this exercise test?**
+Whether you can spot the initiative that raises a *data ethics* red flag (people challenge) rather than genuinely improving the company's approach to data.
+
+---
+
+**📋 Scenario**
+"EverSecure," an insurance company, is working on launching their data culture program. While reviewing the proposed plan the Chief Transformation Officer (CTO) highlights a potential issue with the program.
+
+**Task:** Identify which proposed initiative **won't** improve the company's approach to data.
+
+---
+
+**✅ Solution**
+
+| Option | Verdict | Explanation | Why This Trap |
+|--------|---------|-------------|---------------|
+| Launch centralized data platforms to store and manage data from multiple departments | ❌ Improves it | Breaks down data silos — a genuine people-challenge fix | — |
+| Collect social media data from their customers and analyze it to infer customers' risk profiles | ✅ Won't improve — the answer | Collecting customer data without consent reads as an invasion of privacy and erodes long-term trust — a data ethics violation | Ethics-blind "more data" — assumes more data is always better, ignoring consent |
+| Initiate a feedback loop for employees to report on their feedback of a data visualization online course | ❌ Improves it | Builds data literacy through training + a feedback loop | — |
+
+---
+
+**💡 Why this matters**
+More data is not automatically better data — collecting it without consent is a data ethics failure that costs customer trust, the one asset an insurer cannot rebuild quickly.
+
+**Interview readiness:**
+Recruiter: *"When could a data initiative actually backfire?"*
+**Your answer:** "When it ignores ethics. Harvesting customers' social media data without consent to profile their risk might add signal, but it reads as an invasion of privacy and destroys trust — especially for an insurer. A data culture has to weigh consent and ethics, not just chase more data."
+
+**✅ RECAP**
+- Data ethics is a *people* challenge — L7's "softer" family.
+- NOT-question: find the initiative that harms, not the one that helps.
+- Consent is the line: collecting customer data without it invades privacy and loses trust.
+- The two distractors are real fixes — centralized platforms (silos) and a literacy feedback loop.
+
+**🔗 Connection**
+- Directly applies L7's *people* family — this is the "data ethics" challenge made concrete (cf. Amazon's biased hiring tool).
+
+---
+
+#### Chapter 1 — Lesson 9: The process matters *(Exercise / 50 XP)*
+
+---
+
+**🎯 GOAL — What does this exercise test?**
+Whether you can select the initiatives that strengthen the *process* family — data quality, privacy, and security — while rejecting the ones that describe the failure they are meant to prevent.
+
+---
+
+**📋 Scenario**
+In order to facilitate a smooth transition to a data-driven culture, the Chief Transformation Officer of EverSecure is aiming to fine-tune aspects of the data culture program beyond ethical data collection.
+
+**Task:** Select all — which aspects **could** the CTO prioritize next to successfully foster a data-driven culture?
+
+---
+
+**✅ Solution**
+
+| Option | Verdict | Explanation | Why This Trap |
+|--------|---------|-------------|---------------|
+| Entering customer information into the database without implementing a data validation process | ❌ Wrong | Describes a data quality *failure*, not a fix | Failure-as-fix — states the problem as if it were an initiative |
+| Providing regular training to all employees on how to properly handle and manage data | ✅ Correct | Builds the literacy/skills that keep data quality high | — |
+| Storing customer data without sufficient encryption measures | ❌ Wrong | A data security *failure* — the opposite of a safeguard | Failure-as-fix — missing encryption is the risk, not the remedy |
+| Allowing employees to view, modify, or delete sensitive customer data without proper authorization | ❌ Wrong | A data privacy/access-control *failure* | Failure-as-fix — absent authorization is the vulnerability |
+| Conducting routine checks to identify and fix weaknesses in systems and processes | ✅ Correct | Proactive quality/security maintenance — keeps the process healthy | — |
+
+---
+
+**💡 Why this matters**
+Process safeguards are stated as *actions you add* (validation, encryption, authorization, routine checks) — an option phrased as the *absence* of one is the failure, never the fix.
+
+**Interview readiness:**
+Recruiter: *"What does managing the 'process' side of a data culture involve?"*
+**Your answer:** "Keeping data quality, privacy, and security healthy through concrete safeguards — validation on entry, encryption at rest, authorization controls, and routine checks to catch weaknesses. Plus training so people follow those processes. The tell for a bad option is one that describes doing the work *without* a safeguard — that's the risk, not the remedy."
+
+**✅ RECAP**
+- Process family = data quality, privacy, security — L7's "hardcore" side.
+- Two fixes: regular training (skills) and routine checks (proactive maintenance).
+- Three traps each describe a safeguard's *absence* (no validation, no encryption, no authorization) — those are failures.
+- Multi-select: read each option for whether it *adds* a safeguard or *removes* one.
+
+**🔗 Connection**
+- The mirror of L8: L8 tested the *people* family (ethics), L9 tests the *process* family — both from L7's two-family split.
+
+---
+
+#### Chapter 1 — Lesson 10: Anything dubious? *(Exercise / 100 XP)*
+
+---
+
+**🎯 GOAL — What does this exercise test?**
+Whether you can separate genuine data-culture practices (accurate) from absolutist / tech-for-its-own-sake claims (inaccurate) — the capstone that blends all of Chapter 1.
+
+---
+
+**📋 Scenario**
+Time to blend everything together! "EverSecure" made adjustments to their data culture program and proudly announced its launch in a blog article. Some statements in the article seem questionable.
+
+**Task:** Classify each statement as **Accurate** or **Inaccurate**.
+
+---
+
+**✅ Solution**
+
+| Statement | Bucket | Why |
+|-----------|--------|-----|
+| Project management software aligns everyone's efforts toward a common goal, promoting a robust data culture | ✅ Accurate | Trust & collaboration lever — org-wide alignment |
+| We champion effective data storytelling, empowering employees to communicate complex ideas clearly | ✅ Accurate | Data literacy / communication — a core component |
+| Our automated data entry maintains data quality and boosts workflow efficiency | ✅ Accurate | Automation lever — genuinely supports quality + efficiency |
+| Having thoroughly validated the program, our plan is effective and won't need any revision | ❌ Inaccurate | Contradicts experimentation & continuous improvement — nothing is revision-proof |
+| Our objective is to integrate as many cutting-edge technologies as possible to harness more data without hurdles | ❌ Inaccurate | Tech-for-its-own-sake — more data ≠ better; ignores process/ethics hurdles |
+
+**Common Mistake**
+Placed "automated data entry maintains data quality" in *Inaccurate* — likely carrying over L5's automation trap (where automation was wrongly pitched as cutting staff). Root cause: treating "automation" as a red-flag word regardless of context.
+**→** *Judge automation by its stated effect: quality + workflow efficiency is the legitimate lever; only "replaces staff / more data without hurdles" framing is the trap.*
+
+---
+
+**💡 Why this matters**
+The inaccurate statements share a signature — absolutism ("won't need any revision") and technology-worship ("as many technologies as possible") — the same myth pattern from L3, now hidden inside a proud launch announcement.
+
+**Interview readiness:**
+Recruiter: *"How do you spot hollow 'data-driven' marketing claims?"*
+**Your answer:** "I look for two tells: absolutism — 'no revision needed,' which denies continuous improvement — and tech-for-its-own-sake — 'adopt every new technology to grab more data.' Genuine data-culture claims name a mechanism: collaboration, literacy, or automation tied to quality and efficiency."
+
+**✅ RECAP**
+- Accurate = named mechanism: collaboration (PM software), literacy (storytelling), automation (quality + efficiency).
+- Inaccurate = absolutism ("no revision") and tech-worship ("as many technologies as possible, more data without hurdles").
+- Automation is accurate when judged by effect (quality/efficiency), not by the word itself.
+- Capstone: blends L3's myths, L4's levers, and L7's people/process challenges.
+
+**🔗 Connection**
+- "Won't need any revision" denies L1's experimentation & continuous-improvement component.
+- "More data without hurdles" ignores L7–L9's process and ethics challenges.
+
+---
+
+### Chapter 1 — Recap
+
+*Mental shift: from "we have data" to "we have a culture that uses it" — defining data culture, arguing its ROI, then diagnosing what blocks it.*
+
+**Chapter 1 complete: 600 / 600 XP ✅**
 
 ---
 
