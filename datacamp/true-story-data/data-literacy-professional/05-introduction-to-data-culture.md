@@ -20,8 +20,8 @@
 | Chapter | Lessons | XP | Status |
 |---|---|---|---|
 | Ch1: Getting to Know Data Culture | 10/10 | 600/600 | ✅ |
-| Ch2: Data Culture in Depth | 0/13 | 0/900 | ⬜ |
-| **Total** | **10/23** | **600/1,500** | **40%** |
+| Ch2: Data Culture in Depth | 1/13 | 50/900 | 🔄 |
+| **Total** | **11/23** | **650/1,500** | **43%** |
 
 ---
 
@@ -519,3 +519,47 @@ Recruiter: *"How do you spot hollow 'data-driven' marketing claims?"*
 | 13 | Congratulations! | 🎬 Video | 50 |
 
 **Chapter 2 XP: 900**
+
+---
+
+#### Chapter 2 — Lesson 1: Assessing capabilities *(Video / 50 XP)*
+
+> 🎬 [Watch on DataCamp](https://campus.datacamp.com/courses/introduction-to-data-culture/data-culture-in-depth?ex=1) *(requires login)*
+
+---
+
+**🎯 GOAL — What is this lesson about?**
+Introduce the **maturity model** as the tool for assessing how far along an organization's data culture is — and walk its five levels from Awareness to Innovation.
+
+---
+
+A maturity model measures competency across stages arranged as a hierarchy; climbing it means more efficient processes, better alignment with business goals, and improved performance. Organizations customize them — Gartner and IBM name the steps differently but reach the same end — and no off-the-shelf model captures every aspect of a data culture, so this course builds a simple five-level one.
+
+| Level | What it means |
+|-------|---------------|
+| **1. Awareness** | Knows data matters but has no plan to understand or analyze it |
+| **2. Adoption** | Some stakeholders try data-informed decisions — limited or siloed |
+| **3. Standardization** | Silos broken; the org acts on one unified vision |
+| **4. Optimization** | Efficiency gained by coordinating groups and data streams |
+| **5. Innovation** | Data's value realized at every level — data drives innovation |
+
+Case study — **Shine & Glow** (organic skincare): data-rich but at Awareness overall, with uneven pockets (marketing is robust, product dev runs on gut feeling). They bridge gaps with a roadmap, reuse marketing's data platform for research (breaking infrastructure silos), and monitor progress. No one-size-fits-all — but an honest assessment shows where to focus.
+
+---
+
+**💡 Why this matters**
+You cannot improve a data culture you cannot measure — the maturity model turns a vague "are we data-driven?" into a specific level with a concrete next step.
+
+**Interview readiness:**
+Recruiter: *"How would you assess where a company stands on data culture?"*
+**Your answer:** "I'd use a maturity model — a staged hierarchy from Awareness, where data matters but there's no plan, up through Adoption, Standardization, Optimization, to Innovation, where data drives value at every level. The point is an honest assessment: it's rarely uniform, so you find the strong pockets, make them models for the rest, and build a roadmap to the next stage."
+
+**✅ RECAP**
+- A maturity model = staged hierarchy measuring competency; higher levels → efficiency, alignment, performance.
+- Models are customizable (Gartner, IBM) and none is complete — this course uses five levels.
+- The five levels: Awareness → Adoption → Standardization → Optimization → Innovation.
+- Shine & Glow: overall Awareness with uneven pockets; bridge gaps via roadmap + reusing a strong team's platform. No one-size-fits-all; start with an honest assessment.
+
+**🔗 Connection**
+- Standardization (level 3) is L7's "breaking data silos" made into a maturity milestone.
+- Optimization (level 4) operationalizes L4's efficiency levers — coordinating groups and data streams.
