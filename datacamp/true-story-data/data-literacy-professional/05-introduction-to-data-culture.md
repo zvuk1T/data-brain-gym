@@ -20,8 +20,8 @@
 | Chapter | Lessons | XP | Status |
 |---|---|---|---|
 | Ch1: Getting to Know Data Culture | 10/10 | 600/600 | ✅ |
-| Ch2: Data Culture in Depth | 10/13 | 650/900 | 🔄 |
-| **Total** | **20/23** | **1,250/1,500** | **83%** |
+| Ch2: Data Culture in Depth | 11/13 | 750/900 | 🔄 |
+| **Total** | **21/23** | **1,350/1,500** | **90%** |
 
 ---
 
@@ -514,6 +514,9 @@ Recruiter: *"How do you spot hollow 'data-driven' marketing claims?"*
 | 8 | Why we strive for sustainability | 📝 Exercise | 50 |
 | 9 | Way to build a sustainable data culture | 📝 Exercise | 100 |
 | 10 | Leaping into a data culture | 🎬 Video | 50 |
+| 11 | Identify the stakeholders | 📝 Exercise | 100 |
+| 12 | Improper allocations | 📝 Exercise | 100 |
+| 13 | Congratulations! | 🎬 Video | 50 |
 
 **Chapter 2 XP: 900**
 
@@ -992,5 +995,52 @@ Recruiter: *"How do you get an entire organization to adopt a data culture?"*
 
 **🔗 Connection**
 - This lesson operationalizes L4's "leadership support + employee buy-in" by assigning concrete actions to each side.
+
+---
+
+
+#### Chapter 2 — Lesson 11: Identify the stakeholders *(Exercise / 100 XP)*
+
+---
+
+**🎯 GOAL — What does this exercise test?**
+Whether you can assign a concrete data-culture responsibility to the stakeholder group best positioned to own it: IT, data professionals, non-technical data consumers, or executives.
+
+---
+
+**📋 Scenario**
+The executive team at "GreenTech Innovation" wants detailed plans for how each stakeholder should contribute to its data culture initiative.
+
+**Task:** Sort the proposed approaches in this order: IT department, data scientists and analysts, non-technical data consumer employees, and management executives.
+
+---
+
+**✅ Solution**
+
+| Stakeholder | Specific approach | Why this owner fits |
+|---|---|---|
+| **IT department** | Implement effective data management and governance practices so data is secure and accessible to authorized users. | IT owns the infrastructure, access controls, and operational safeguards that make trusted data use possible. |
+| **Data scientists and analysts** | Develop advanced analytics models and techniques to improve data analysis capabilities. | Data professionals turn organizational data into analytical methods, models, and reusable insight. |
+| **Non-technical data consumer employees** | Request specific data reports and analyses that would be useful for their work from technical teams. | Data consumers define the business need and provide context about which insights are useful in daily decisions. |
+| **Management executives** | Allocate resources and support for data-related initiatives, such as training and infrastructure. | Executives control priorities, budget, time, and organizational sponsorship. |
+
+---
+
+**💡 Why this matters**
+A data culture becomes actionable when responsibility is explicit. IT enables secure access, data professionals create analytical capability, data consumers articulate business needs, and executives fund and support the system. None of the groups can build the culture alone.
+
+**Interview readiness:**
+Hiring manager: *"How would you divide responsibility for a data-culture initiative across an organization?"*
+**Your answer:** "I would use a shared-ownership model. IT owns secure, governed access; data professionals build models and communicate insights; business users define the reports and decisions they need; and executives set priorities and provide budget, training, and sponsorship. The important point is that these responsibilities connect—technical teams should not build solutions without consumer input, and executive support is ineffective without adoption."
+
+**✅ RECAP**
+- IT: governance, security, infrastructure, and authorized access.
+- Data professionals: analytical models, techniques, standards, and insights.
+- Data consumers: articulate business needs and request useful analysis.
+- Executives: vision, priorities, resources, training, and sponsorship.
+- Shared ownership works only when the four groups collaborate.
+
+**🔗 Connection**
+- Applies Lesson 10's stakeholder model to specific actions and reinforces Lesson 4's principle that leadership support and employee buy-in must work together.
 
 ---
