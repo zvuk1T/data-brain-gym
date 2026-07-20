@@ -219,7 +219,7 @@ Never the bare number ("Lesson 13"). Data finds lessons by title, not by index �
 ### Closing (in order)
 1. Finish current lesson cell
 2. `git add` + `git commit` — one chapter = one commit
-3. Update captain's log: last lesson completed + next lesson
+3. Update captain's log: **first run `file_search` (or `ls captains-log/*<date>*`) for today's date. If a file exists → append a new `## SESSION PART` to the bottom of it. Never `create_file` a new log; never make a `-b`/`-c` variant (HARD RULE 1).** Record last lesson completed + next lesson.
 4. Commit captain's log
 
 **Commit format:**

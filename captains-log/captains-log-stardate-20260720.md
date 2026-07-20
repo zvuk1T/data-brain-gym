@@ -89,4 +89,67 @@ Added the `### Chapter 1 — Recap` cell (mental-shift + 600/600 XP). Synced the
 - `datacamp/true-story-data/data-literacy-professional/05-introduction-to-data-culture.md` — committed previously-uncommitted Lessons 1–7 + synced table (`d97f1fa`); added Lessons 8–10 + Chapter 1 Recap; synced table to 40% and committed Chapter 1 (`d278e3e`)
 - `captains-log/captains-log-stardate-20260720.md` — this log
 
+---
+
+## SESSION PART 3 — Chapter 2 Opened: Lesson 1 (Assessing capabilities)
+
+Later the same day, resumed Course 5 at Chapter 1 complete and opened **Chapter 2:
+Data Culture in Depth**. Session cut short — Data switching to another project —
+so closed cleanly at Lesson 1.
+
+| Lesson | Type | XP | Topic | Key content |
+|--------|------|-----|-------|-------------|
+| **Ch2 L1** | Video | 50 | Assessing capabilities | The **maturity model** — five levels for measuring data-culture progress |
+
+### The five-level maturity model (course's own, not Gartner/IBM)
+Awareness → Adoption → Standardization → Optimization → Innovation.
+- **Awareness:** data matters, no plan.
+- **Adoption:** some data-informed decisions, limited/siloed.
+- **Standardization:** silos broken, one unified vision.
+- **Optimization:** efficiency via coordinating groups + data streams.
+- **Innovation:** data's value realized at every level; data drives innovation.
+
+Models are customizable (Gartner, IBM = same end, different names); none is
+complete → course builds its own five-level model. Case study **Shine & Glow**
+(organic skincare): Awareness overall, uneven pockets (marketing robust, product
+dev on gut feeling); bridge gaps via roadmap + reuse marketing's data platform
+for research (breaks infrastructure silos); no one-size-fits-all — start with an
+honest assessment.
+
+### Wisdom extracted
+- **L1:** You can't improve what you can't measure — the maturity model turns "are
+  we data-driven?" into a specific level + a concrete next step. Assessment is
+  rarely uniform: find strong pockets, make them models for the rest.
+
+### Connections drawn
+- Standardization (level 3) = L7's "breaking data silos" as a maturity milestone.
+- Optimization (level 4) = L4's efficiency levers operationalized (coordinating
+  groups + data streams).
+
+### ⚠️ Process note — RULE 1 violation, corrected
+This session first wrote the work into a new `captains-log-stardate-20260720b.md`
+— a `-b` variant, violating HARD RULE 1 (one log per day). Data caught it. The
+`-b` file was deleted and the content merged here as SESSION PART 3, where it
+belongs. Same mistake as the documented `20260610` and `20260619` cases — the fix
+is always: `file_search` the date first, then append a `## SESSION PART`.
+
+### Progress after this session
+
+| Chapter | Lessons | XP | Status |
+|---------|---------|-----|--------|
+| Ch1: Getting to Know Data Culture | 10/10 | 600/600 | ✅ |
+| Ch2: Data Culture in Depth | 1/13 | 50/900 | 🔄 |
+| **Total** | **11/23** | **650/1,500** | **43%** |
+
+### Next step
+- **Course 5, Chapter 2 — IN PROGRESS.** Lesson 1 committed (`edefc16`, WIP checkpoint — not the chapter-close commit).
+- **Next lesson:** Chapter 2 — Lesson 2: Maturity model basics *(Exercise / 50 XP)* — needs a screenshot.
+- No `Chapter 2 — Recap` cell yet; add only when all 13 lessons are done.
+
+**Paused at:** Chapter 2 Lesson 1 committed; standing by for the Chapter 2 — Lesson 2 screenshot. Data switching to another project.
+
+### Files touched (this part)
+- `datacamp/true-story-data/data-literacy-professional/05-introduction-to-data-culture.md` — added Chapter 2 Lesson 1 + synced progress table to 43% (`edefc16`)
+- `captains-log/captains-log-stardate-20260720.md` — appended this SESSION PART 3
+
 🖖 *Live long and prosper, Data.*

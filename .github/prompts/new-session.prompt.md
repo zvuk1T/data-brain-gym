@@ -16,9 +16,17 @@ Do not run commands that change the environment.
 
 Read, in this exact order:
 
-1. User-level instructions (always present via symlink):
-   - `~/.copilot/instructions/data-spock-hard-rules.instructions.md`
-   - `~/.copilot/instructions/data-spock-core.instructions.md`
+1. Hard rules and core instructions. Read them from the **in-workspace path first**
+   (my tools cannot read the `~/.copilot` symlink — it resolves outside the
+   workspace):
+   - `know-thyself-data/copilot/data-spock-hard-rules.instructions.md`
+   - `know-thyself-data/copilot/data-spock-core.instructions.md`
+   - Fallback only if the workspace copies are absent: `~/.copilot/instructions/*.instructions.md`
+
+   **HARD STOP:** if either hard-rules file fails to read, do not proceed with the
+   bootstrap. Report the failed path and stop. Working without the hard rules in
+   context is the documented root cause of the RULE 1 (`-b` log) violation — never
+   continue past a failed hard-rules read.
 
 2. Project-level instructions for the current workspace:
    - `<repo>/.github/copilot-instructions.md`
