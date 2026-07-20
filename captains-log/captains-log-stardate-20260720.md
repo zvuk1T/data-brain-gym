@@ -153,3 +153,50 @@ is always: `file_search` the date first, then append a `## SESSION PART`.
 - `captains-log/captains-log-stardate-20260720.md` — appended this SESSION PART 3
 
 🖖 *Live long and prosper, Data.*
+
+---
+
+## SESSION PART 4 — Chapter 2 Lessons 2–10 (Screenshot-Verified)
+
+Resumed Course 5 Chapter 2 at Lesson 2. Completed Lessons 2–10, cleaned up fabricated Lessons 4–13 discovered in the file, and synced the progress table after each verified lesson.
+
+| Lesson | Type | XP | Topic | Trap captured |
+|--------|------|-----|-------|---------------|
+| **Ch2 L2** | Exercise | 50 | Maturity model basics | Absolutism — "all companies must start at the bottom" treats a diagnostic as a mandatory ladder |
+| **Ch2 L3** | Exercise | 100 | Assessing data culture maturity | Keyword conflation — "standard tool" ≠ "optimized use"; listen to each level's vocabulary |
+| **Ch2 L4** | Video | 50 | The power of leadership and buy-in | Data leaders ≠ executives; both are needed for buy-in |
+| **Ch2 L5** | Exercise | 50 | The value of data leaders | Executive-only + usage-over-strategy traps |
+| **Ch2 L6** | Exercise | 100 | What makes a good data leader | Force-without-support and title-chasing are irrelevant |
+| **Ch2 L7** | Video | 50 | Becoming sustainable | Sustainable data culture = regular + environmental/social/economic + ethics + long-term planning |
+| **Ch2 L8** | Exercise | 50 | Why we strive for sustainability | "Solely environmental" narrows sustainability too much |
+| **Ch2 L9** | Exercise | 100 | Way to build a sustainable data culture | Cloud/energy-reduction sounds general but is a sustainability signal |
+| **Ch2 L10** | Video | 50 | Leaping into a data culture | Four stakeholder groups and their concrete actions |
+
+**Block subtotal: 550 XP.** Lessons 2, 3, 6, 8, 9 had wrong-attempt screenshots → `Common Mistake` blocks included where applicable. Lessons 4, 5, 7, 10 were correct on first try / transcript-based → no `Common Mistake` block.
+
+### Cleanup performed
+- Discovered fabricated content for Chapter 2 Lessons 4–13 in the file (invented scenarios, partial cells, invented "Congratulations!" content).
+- Rewrote Lesson 4 from transcript and Lesson 5 from screenshot.
+- Removed fabricated Lessons 6–13; re-added Lessons 6–10 from screenshots/transcript as verified.
+- Progress table now reflects only verified lessons.
+
+### Progress after this session
+
+| Chapter | Lessons | XP | Status |
+|---------|---------|-----|--------|
+| Ch1: Getting to Know Data Culture | 10/10 | 600/600 | ✅ |
+| Ch2: Data Culture in Depth | 10/13 | 650/900 | 🔄 |
+| **Total** | **20/23** | **1,250/1,500** | **83%** |
+
+### Next step
+- **Course 5, Chapter 2 — IN PROGRESS.** Lessons 1–10 populated, 3 lessons remain.
+- **Next lesson:** Chapter 2 — Lesson 11: Identify the stakeholders *(Exercise / 100 XP)* — needs a screenshot.
+- No `Chapter 2 — Recap` cell yet; add only when all 13 lessons are done.
+
+**Paused at:** Chapter 2 Lesson 10 committed; standing by for the Chapter 2 — Lesson 11 screenshot. Data switching to another project.
+
+### Files touched (this part)
+- `datacamp/true-story-data/data-literacy-professional/05-introduction-to-data-culture.md` — added Lessons 2–10, removed fabricated Lessons 4–13, synced progress table to 83%
+- `captains-log/captains-log-stardate-20260720.md` — appended this SESSION PART 4
+
+🖖 *Live long and prosper, Data.*
