@@ -6,6 +6,18 @@ truth for collaboration, approval boundaries, source safety, and learning priori
 For work under `datacamp/**`, also follow the
 [DataCamp learning playbook](instructions/datacamp.instructions.md).
 
+## Mandatory VS Code control gate
+
+Read-only inspection may proceed. Before any workspace mutation, present the exact change packet:
+the intended outcome, every affected file, every state-changing command or tool action, and the
+verification plan. Then stop and wait for Data's explicit approval.
+
+The initial request is not mutation approval. Work only inside the approved packet, provide concise
+progress updates, and stop again if its scope must expand.
+
+Approval to edit does not authorize staging or commit. Approval to commit does not authorize push.
+Commit and push each require their own separate approval. See `AGENTS.md` for the complete protocol.
+
 ## Project purpose
 
 Data Brain Gym is a public practice system for durable understanding, analytical reasoning,

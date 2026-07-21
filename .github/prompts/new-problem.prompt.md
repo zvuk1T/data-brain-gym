@@ -17,6 +17,8 @@ Ask me:
 5. Is there a company associated with this problem? (e.g. Amazon, Meta — or "unknown")
 
 Then announce the folder and files you will create, and wait for my confirmation before proceeding.
+Approval covers only the announced folder and exact four files. Any additional file, command,
+dependency, or wider scope requires a new proposal and new explicit approval.
 
 Once confirmed, create the folder and scaffold these four files:
 
@@ -90,4 +92,6 @@ import pandas as pd
 -
 ```
 
-After creating all files, confirm what was created and wait for my next instruction.
+After creating the approved files, show what changed and how it was verified, then stop. Creation
+approval does not authorize staging, commit, or push; each later stage requires separate explicit
+approval.

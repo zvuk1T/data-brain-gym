@@ -58,10 +58,22 @@ Use this compact structure:
 **📚 Context loaded:** rules and artifacts actually read  
 **⚠️ Open questions or discrepancies:** “None” when there are none
 
-## 5. Continue according to current authorization
+## 5. Propose the next action, then stop
 
-Read-only orientation needs no extra confirmation. If the current request already authorizes a
-reversible edit or publication scope, continue within it without asking again.
+Session restoration is read-only. Do not create, modify, rename, or delete files, run
+state-changing commands, stage changes, commit, or push during the bootstrap.
 
-Pause only when a missing choice would materially change the result, the source is unavailable, or
-the next action crosses an approval boundary in `AGENTS.md`.
+If the user has requested work, follow the restored-state report with a proposed change packet:
+
+- exact intended outcome;
+- exact files affected;
+- exact commands or tool actions that can change state;
+- planned verification; and
+- whether later commit or push stages are expected.
+
+Then stop and wait for explicit approval. Do not perform the proposal and the mutation in the same
+response. The initial request itself is not approval for mutation.
+
+After approval, remain inside the approved packet and provide concise progress updates. Stop again
+before any scope expansion. Staging, commit, and push require separate explicit approvals under
+`AGENTS.md`.

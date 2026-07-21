@@ -47,19 +47,45 @@ on a private repository or machine-specific file to understand this public repos
 - Do not create logs, trackers, templates, or duplicate artifacts unless they add durable value.
 - Never treat file length, commit count, course completion, or polished formatting as proof of mastery.
 
-## Approval boundaries
+## Control and approval protocol — mandatory for VS Code agents
 
-Proceed without repeated confirmation for read-only inspection and for reversible edits already
-authorized by the current request.
+Read-only inspection may proceed without prior approval. An initial task request authorizes
+investigation and planning; it does not authorize workspace mutation.
 
-Ask before:
+Before creating, editing, renaming, or deleting a file; applying a code change; running a
+state-changing terminal command; installing software; or making an external write, the agent must:
 
-- deleting, overwriting, or broadly restructuring material;
-- replacing Data's own reasoning or personal writing;
-- exposing private or sensitive information;
-- installing software or materially expanding the task;
-- committing or pushing when the current request has not already authorized publication; or
-- choosing between alternatives that would materially change the result.
+1. inspect the relevant state read-only;
+2. explain the intended outcome;
+3. list every file that will be created, changed, renamed, or deleted;
+4. list the exact terminal commands or tool actions that can change state;
+5. state how the result will be verified; and
+6. stop and wait for Data's explicit approval.
+
+The proposal and the mutation must not happen in the same response. A general request such as
+“fix,” “change,” or “create” is not approval until the exact change packet has been shown.
+
+Approval covers only the named change packet. While executing it, the agent must:
+
+- stay inside the approved files, commands, and outcome;
+- give concise progress updates during multi-step work;
+- ask rather than guess when the intent, source, or desired result is unclear;
+- stop and request new approval before adding a file, command, dependency, or broader objective; and
+- report what changed and how it was verified.
+
+### Commit and push gates
+
+Approval to edit does not authorize staging or a commit.
+
+Before committing, show the repository status, summarize the diff, provide the proposed commit
+message, and stop for explicit approval.
+
+Approval to commit does not authorize a push.
+
+Before pushing, state the repository, branch, remote, and exact commit or commits to be pushed,
+then stop for separate explicit approval.
+
+Never use a tool that implicitly commits or publishes as a shortcut around these gates.
 
 ## Git
 
@@ -67,7 +93,7 @@ Ask before:
 - Do not discard or overwrite unrelated changes.
 - Avoid destructive history operations.
 - Use small, descriptive commits grouped by a real learning or documentation unit.
-- Direct work on `main` is allowed only when the current request explicitly authorizes it.
+- Editing approval never implies `git add`, commit, push, or direct work on `main`.
 
 ## Scoped workflows
 

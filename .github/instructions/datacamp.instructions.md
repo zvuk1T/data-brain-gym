@@ -187,5 +187,11 @@ At the start of a new task:
 4. consult a captain's log only when it contains a relevant unresolved decision that the artifacts
    do not reveal.
 
-After an edit, verify the changed section, its source link, Markdown structure, and any Mermaid or
-executable content. Commit or push only within the authorization of the current request.
+Before editing a companion-course artifact or running a state-changing command, follow the control
+and approval protocol in root `AGENTS.md`. Show the exact lesson or section, files, commands, and
+verification plan, then stop for Data's explicit approval. Data answering or clicking an exercise
+does not by itself authorize a repository edit.
+
+After an approved edit, verify the changed section, source link, Markdown structure, and any Mermaid
+or executable content. Stop again if the approved packet must expand. Approval to edit does not
+include staging, commit, or push; each later stage requires its own explicit approval.
