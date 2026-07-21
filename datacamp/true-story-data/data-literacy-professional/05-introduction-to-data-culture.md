@@ -2,7 +2,7 @@
 
 **Level:** Basic | **Instructor:** Joanne Xiong
 **Chapters:** 2 | **Lessons:** 23 (8 🎬 Video + 15 📝 Exercise) | **XP:** 1,500
-**Status:** 🔄 In Progress
+**Status:** ✅ Complete
 **Part of track:** Data Literacy Professional (Course 5)
 
 > ℹ️ *Remaining landing-page metadata (duration, updated date, learners) to be filled from a screenshot.*
@@ -20,8 +20,8 @@
 | Chapter | Lessons | XP | Status |
 |---|---|---|---|
 | Ch1: Getting to Know Data Culture | 10/10 | 600/600 | ✅ |
-| Ch2: Data Culture in Depth | 12/13 | 850/900 | 🔄 |
-| **Total** | **22/23** | **1,450/1,500** | **97%** |
+| Ch2: Data Culture in Depth | 13/13 | 900/900 | ✅ |
+| **Total** | **23/23** | **1,500/1,500** | **100%** |
 
 ---
 
