@@ -182,6 +182,17 @@ Usually omit:
 DataCamp remains authoritative for course progress. The repository remains authoritative for what
 was understood and how that understanding can be used.
 
+## Working surface and synchronization
+
+- The signed-in DataCamp browser is authoritative for lesson content, exercises, solutions, and
+  platform feedback.
+- The GitHub connector is the collaboration surface for repository reads and approved writes.
+- Codex must treat Data's local checkout as read-only. It may inspect local status when Data asks,
+  but must not edit files or run local state-changing Git commands.
+- GitHub `main` is the shared source of truth during the session. Data synchronizes the VS Code
+  checkout with `git pull` after approved connector changes are pushed.
+- Prefer synchronization at a chapter boundary unless Data explicitly chooses another boundary.
+
 ## Continuity and verification
 
 At the start of a new task:

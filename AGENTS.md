@@ -105,6 +105,18 @@ current approved task, the agent must:
 If the purpose remains uncertain, preserve the content and ask. “It looks outdated” is not
 sufficient justification for changing it.
 
+### Codex collaboration surface
+
+For DataCamp work performed with Codex:
+
+- use the signed-in DataCamp browser as the source for lesson content, answers, and feedback;
+- use the GitHub connector for repository changes after the required approvals;
+- treat Data's local checkout as read-only; never edit, stage, stash, commit, pull, reset, or
+  otherwise mutate local files or Git state;
+- inspect local Git state only when Data asks for diagnosis or verification; and
+- let Data synchronize VS Code with `git pull` after approved connector changes are pushed,
+  normally at a chapter boundary.
+
 ## Git
 
 - Check status and recent history before local Git work.
