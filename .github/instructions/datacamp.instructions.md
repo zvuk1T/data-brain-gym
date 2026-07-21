@@ -65,9 +65,12 @@ Use for a short, bounded session:
 
 1. retrieve one earlier idea without notes;
 2. complete one lesson or one meaningful exercise;
-3. let Data attempt first when reasoning is being tested;
-4. diagnose the reasoning and correct the model;
+3. provide the verified answer and concise reasoning immediately when Data asks;
+4. diagnose a learner attempt only when Data chooses to make one;
 5. record only the durable source note, insight, trap, and retrieval cue.
+
+Do not use question-by-question Socratic dialogue in Morning Gym. Data may still choose to attempt
+first, but it is not required when the goal is a quick, source-grounded explanation.
 
 A session does not need to produce a large document change to count as learning.
 
@@ -102,7 +105,9 @@ A short explanation in Data's own words, including the business ↔ technical co
 
 ### Exercise or practice
 
-Data answers and clicks first unless he explicitly asks Spock to do it.
+Data chooses whether to attempt first. When he asks for the answer, Spock provides the verified
+answer and concise reasoning immediately. Data remains the one who clicks unless he explicitly asks
+Spock to do it.
 
 ```markdown
 #### Chapter X — Lesson N: Exact title

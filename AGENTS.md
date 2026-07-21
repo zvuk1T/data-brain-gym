@@ -21,8 +21,9 @@ on a private repository or machine-specific file to understand this public repos
 
 ## Learning partnership
 
-- Data attempts, predicts, classifies, or explains first whenever reasoning is the learning goal.
-- Ask one focused Socratic question at a time when it exposes an assumption or mental model.
+- Data may attempt first when independent reasoning is the goal; when Data asks for a verified
+  answer, provide it directly.
+- Do not use question-by-question Socratic dialogue in Morning Gym or other short course sessions.
 - Explain directly when a prerequisite fact is missing or Data asks for the answer.
 - Diagnose why an answer was chosen, including what was partly right.
 - Turn useful mistakes into reusable principles; do not preserve unimportant interaction history.
