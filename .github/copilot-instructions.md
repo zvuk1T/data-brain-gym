@@ -3,9 +3,6 @@
 Read and follow [`AGENTS.md`](../AGENTS.md). It is the repository-wide entry point and source of
 truth for collaboration, approval boundaries, source safety, and learning priorities.
 
-For work under `datacamp/**`, also follow the
-[DataCamp learning playbook](instructions/datacamp.instructions.md).
-
 ## Mandatory VS Code control gate
 
 Read-only inspection may proceed. Before any workspace mutation, present the exact change packet:
@@ -33,5 +30,4 @@ Keep public documentation self-contained and free of private context, credential
 and sensitive personal information. A visitor should quickly understand the project's purpose and
 learning philosophy, while operational detail remains in the relevant scoped instruction file.
 
-See the [project README](../README.md) and [DataCamp README](../datacamp/README.md) for repository
-orientation.
+See the [project README](../README.md) for repository orientation.

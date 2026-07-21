@@ -17,9 +17,6 @@ Read completely, in this order:
 3. every matching scoped file in `.github/instructions/`;
 4. the relevant public README.
 
-For work under `datacamp/**`, always read
-`.github/instructions/datacamp.instructions.md` and `datacamp/README.md`.
-
 ## 2. Identify the active work
 
 Use the current user request first. Then inspect the relevant course artifact, repository status,
@@ -27,13 +24,6 @@ and recent history as needed.
 
 A captain's log is optional recovery evidence. Read it only when it is relevant and does not
 duplicate a clearer current artifact.
-
-For DataCamp work:
-
-- treat DataCamp as authoritative for current platform position and progress;
-- treat the companion course as authoritative for recorded understanding;
-- never infer unseen lesson content from a title;
-- support both theory `.md` files and executable `.ipynb` files.
 
 ## 3. Verify the stopping point
 

@@ -8,8 +8,6 @@ venv/
 .vscode/
 data/
 
-# DataCamp raw data files and recordings (copyright protection)
-# Notebooks, README, and queries are original work — committed
-datacamp/**/data/
-datacamp/**/recordings/
-datacamp/**/*-assets/
+# Provider-specific DataCamp study material is maintained outside this public repository.
+# Ignore the whole folder to prevent accidental re-publication.
+datacamp/

@@ -38,6 +38,8 @@ on a private repository or machine-specific file to understand this public repos
 - Do not reproduce complete copyrighted transcripts or duplicate a provider's progress dashboard.
 - Keep this public repository free of secrets, credentials, private paths, private-repository content,
   and sensitive personal information.
+- Provider-specific source-fidelity study records belong outside this public repository; publish only
+  original, public-safe learning artifacts after a separate exact plan and Data's explicit approval.
 
 ## Working discipline
 
@@ -105,18 +107,6 @@ current approved task, the agent must:
 If the purpose remains uncertain, preserve the content and ask. “It looks outdated” is not
 sufficient justification for changing it.
 
-### Codex collaboration surface
-
-For DataCamp work performed with Codex:
-
-- use the signed-in DataCamp browser as the source for lesson content, answers, and feedback;
-- use the GitHub connector for repository changes after the required approvals;
-- treat Data's local checkout as read-only; never edit, stage, stash, commit, pull, reset, or
-  otherwise mutate local files or Git state;
-- inspect local Git state only when Data asks for diagnosis or verification; and
-- let Data synchronize VS Code with `git pull` after approved connector changes are pushed,
-  normally at a chapter boundary.
-
 ## Git
 
 - Check status and recent history before local Git work.
@@ -124,8 +114,3 @@ For DataCamp work performed with Codex:
 - Avoid destructive history operations.
 - Use small, descriptive commits grouped by a real learning or documentation unit.
 - Editing approval never implies `git add`, commit, push, or direct work on `main`.
-
-## Scoped workflows
-
-Work under `datacamp/**` also follows
-[`.github/instructions/datacamp.instructions.md`](.github/instructions/datacamp.instructions.md).

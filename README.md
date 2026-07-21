@@ -85,7 +85,7 @@ Typical practice areas:
 ## Learning sources
 
 ```text
-DataCamp  → structured learning path
+DataCamp  → structured learning source (provider-specific notes kept private)
 DataLemur → interview-style SQL drills
 GitHub    → documentation and portfolio proof
 AI tools  → assistant, not replacement for thinking
@@ -95,15 +95,10 @@ AI tools  → assistant, not replacement for thinking
 
 ## Current focus
 
-**DataCamp:** Data Literacy Professional track
-- ✅ Course 1: Introduction to Data (12 lessons, 2,000 XP)
-- ✅ Course 2: Communicating Data Insights (38 lessons, 2,600 XP)
-- ✅ Course 3: Introduction to Data Literacy (61 lessons, 4,000 XP)
-- ✅ Course 4, Ch1: Summary Statistics (12 lessons, 750 XP)
-- ✅ Course 4, Ch2: Probability & Distributions (13 lessons, 750 XP)
-- ⏳ Course 4, Ch3: Key Probability Distributions (16 lessons, 1,000 XP)
-
-**Next:** DataLemur SQL interview drills + Python fundamentals
+- analytical questioning and data literacy
+- SQL interview drills and business metrics
+- Python / pandas foundations
+- clear business ↔ technical communication
 
 ---
 
@@ -117,16 +112,6 @@ data-brain-gym/
 │   ├── recruiting-lens-framework.md    ← portfolio strategy for interviews
 │   ├── data-spock-learning-methodology.md
 │   └── ...
-│
-├── datacamp/                           ← structured learning path (18+ courses)
-│   ├── README.md                       ← learning philosophy
-│   ├── true-story-data/
-│   │   └── data-literacy-professional/
-│   │       ├── 01-introduction-to-data.ipynb
-│   │       ├── 02-communicating-data-insights.ipynb
-│   │       ├── 03-introduction-to-data-literacy.ipynb
-│   │       └── 04-introduction-to-statistics.ipynb  ← *in progress*
-│   └── sql-for-business-analysts/      ← queued for after theory tracks
 │
 ├── sql/                                ← DataLemur interview drills + notes
 ├── python/                             ← pandas drills + data cleaning
