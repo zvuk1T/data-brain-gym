@@ -20,8 +20,8 @@
 | Chapter | Lessons | XP | Status |
 |---|---|---|---|
 | Ch1: Getting to Know Data Culture | 10/10 | 600/600 | ✅ |
-| Ch2: Data Culture in Depth | 11/13 | 750/900 | 🔄 |
-| **Total** | **21/23** | **1,350/1,500** | **90%** |
+| Ch2: Data Culture in Depth | 12/13 | 850/900 | 🔄 |
+| **Total** | **22/23** | **1,450/1,500** | **97%** |
 
 ---
 
@@ -1042,5 +1042,51 @@ Hiring manager: *"How would you divide responsibility for a data-culture initiat
 
 **🔗 Connection**
 - Applies Lesson 10's stakeholder model to specific actions and reinforces Lesson 4's principle that leadership support and employee buy-in must work together.
+
+---
+
+#### Chapter 2 — Lesson 12: Improper allocations *(Exercise / 100 XP)*
+
+---
+
+**🎯 GOAL — What does this exercise test?**
+Whether you can distinguish responsibilities that fit each stakeholder's role from allocations that create silos, concentrate decisions, or assign technical ownership to the wrong function.
+
+---
+
+**📋 Scenario**
+"GreenTech Innovation" followed the earlier stakeholder advice and assigned tasks to employees, but some allocations appeared inappropriate during a follow-up meeting.
+
+**Task:** Sort each allocation into **Appropriate** or **Inappropriate**.
+
+---
+
+**✅ Solution**
+
+| Task allocation | Bucket | Why |
+|---|---|---|
+| The IT department ensures data is secure and accessible to authorized users. | ✅ Appropriate | Security, access controls, and reliable infrastructure are core IT responsibilities. |
+| The marketing analyst communicates data insights and best practices to the team so everyone can access relevant data. | ✅ Appropriate | Analysts should translate insights, share knowledge, and help business users apply data in their work. |
+| C-suite executives make all data-related decisions alone because they understand the company's goals best. | ❌ Inappropriate | Executives set direction and provide resources, but a data culture requires distributed, evidence-based decision-making and input from other stakeholders. |
+| Data scientists and analysts work in silos, prioritize their own data needs, and deprioritize non-technical teams. | ❌ Inappropriate | Data professionals must collaborate with data consumers and understand business needs; silos undermine adoption and relevance. |
+| Financial analysts organize and manage company databases so data is accessible and efficiently retrievable. | ❌ Inappropriate | Database administration and technical data management normally belong to IT or data engineering; financial analysts should focus on interpreting financial data and supporting decisions. |
+
+---
+
+**💡 Why this matters**
+Shared ownership does not mean interchangeable ownership. A healthy data culture gives each group responsibilities that match its expertise while requiring collaboration across roles. Poor allocation creates bottlenecks, silos, weak controls, and analysis that does not solve real business problems.
+
+**Interview readiness:**
+Hiring manager: *"How would you identify improperly allocated responsibilities in a data-culture initiative?"*
+**Your answer:** "I would check two things: whether the task matches the stakeholder's expertise and whether it supports collaboration. IT should own secure access and infrastructure; data professionals should analyze and communicate insights; business users should define their needs and apply the results; executives should set direction and provide resources. Red flags are executive-only decision-making, analysts working in silos, or business analysts being assigned database-administration duties."
+
+**✅ RECAP**
+- Appropriate: IT secures and enables authorized access; a marketing analyst communicates insights and best practices.
+- Inappropriate: executives monopolize decisions, analysts work in silos, or financial analysts manage company databases.
+- Role clarity prevents both duplicated effort and neglected responsibilities.
+- Data culture is shared ownership with distinct contributions—not one group controlling everything.
+
+**🔗 Connection**
+- Applies Lesson 10's four-stakeholder model and tests whether Lesson 11's responsibility mapping can be used to detect misallocation.
 
 ---
