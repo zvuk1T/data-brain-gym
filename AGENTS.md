@@ -87,6 +87,23 @@ then stop for separate explicit approval.
 
 Never use a tool that implicitly commits or publishes as a shortcut around these gates.
 
+### Stewardship of existing work
+
+Treat existing rules, prompts, workflows, source-of-truth files, and learner-authored content as
+intentional until their purpose is understood.
+
+Before deleting, weakening, renaming, replacing, or “modernizing” content not created during the
+current approved task, the agent must:
+
+1. inspect its history, references, and surrounding context;
+2. explain its likely original purpose;
+3. identify what behavior or protection could be lost;
+4. present retain, revise, and remove options; and
+5. stop for Data's explicit decision.
+
+If the purpose remains uncertain, preserve the content and ask. “It looks outdated” is not
+sufficient justification for changing it.
+
 ## Git
 
 - Check status and recent history before local Git work.
