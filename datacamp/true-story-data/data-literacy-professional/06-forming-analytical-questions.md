@@ -91,3 +91,67 @@ A technically correct method creates little value if it answers the wrong questi
 **60-second active recall:** Close the file, reconstruct the six-step workflow, and answer: What must remain aligned when business and technical teams express the problem in different language?
 
 ---
+
+#### Chapter 1 — Lesson 2: The "Value from analytics" workflow *(Exercise / 100 XP)*
+
+> 📝 [Practice on DataCamp](https://campus.datacamp.com/courses/forming-analytical-questions/delivering-value-through-data?ex=2) *(requires login)*
+
+**Original task**
+
+You are preparing a proposal for the analytics team at CozySpace.com, an online marketplace for
+short-term rentals. The example is a request from Maria in customer care.
+
+> Place the steps in the right order.
+
+**Verified solution**
+
+| Order | DataCamp step | Why it belongs here |
+|---:|---|---|
+| 1 | Maria asks why customer complaints for short-term rentals have been increasing. | The workflow begins with the business problem, not with data or a preferred technique. |
+| 2 | Clarify with Maria which customer demographics are complaining and for which time period. | The broad request needs scope, definitions, audience, and time boundaries before it becomes answerable. |
+| 3 | Form the analytical question: “What factors are contributing to the increase in the customer complaint rate in Italy over the past two weeks?” | The business concern is translated into measurable population, location, period, outcome, and explanatory factors. |
+| 4 | Choose diagnostic analysis and examine correlations between variables and the complaint rate. | The question asks **why** the rate increased, so diagnostic—not merely descriptive—analysis is appropriate. |
+| 5 | Conduct the analysis using booking data and customer feedback. | Data and execution come after the question and method have been selected; otherwise the work can be technically correct but irrelevant. |
+| 6 | Present the result: complaints rose because response time increased after an issue with the customer-service tool. | Value is created only when the analytical finding returns to the business as an understandable explanation that can support action. |
+
+**Why the sequence matters**
+
+Each step constrains the next one. Clarifying the business problem determines the analytical
+question; the analytical question determines the method and required data; the analysis produces
+evidence; and communication returns that evidence to the original business decision.
+
+```text
+Business request → Context and scope → Analytical question
+→ Analytical approach → Evidence → Business meaning and action
+```
+
+**Business ↔ technical translation**
+
+| Perspective | Expression of the same underlying problem |
+|---|---|
+| Business | Why are complaints increasing? |
+| Analytical | Which measurable factors are associated with the higher complaint rate in Italy during the past two weeks? |
+| Technical | Join booking and feedback data, define the complaint-rate measure, and use diagnostic analysis to examine relevant relationships. |
+| Business return | Response time increased because of a customer-service-tool issue; investigate and fix that operational cause. |
+
+**Important nuance and common trap**
+
+- Do not start with the available dataset or a familiar model. First establish what decision the
+  business needs to make and what analytical question can support it.
+- Correlation helps identify relationships worth investigating, but correlation alone does not
+  prove causation. A causal statement needs supporting evidence about mechanism, timing, and
+  alternative explanations.
+
+**Transfer principle**
+
+When a new request arrives, do not ask “Which analysis can I run?” Ask:
+
+```text
+What business decision is blocked?
+→ What must be clarified?
+→ What measurable question would produce useful evidence?
+→ Which method and data can answer that question?
+→ How will the result return to the decision-maker?
+```
+
+---
