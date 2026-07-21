@@ -2,6 +2,8 @@
 
 **Level:** Basic | **Instructor:** [Konstantinos Kattidis](https://www.datacamp.com/instructors/kkattidis) — Data Analytics Lead  
 **Chapters:** 3 | **Lessons:** 35 (12 🎬 Video + 23 📝 Exercise) | **XP:** 2,400 | **Duration:** 1 hour  
+**Updated:** May 2026 | **Learners:** 33,263 *(checked 21 July 2026)* | **Prerequisites:** None  
+**CPE:** 2.4 credits | **Qualified assessment:** course completion and a score of at least 70%  
 **Status:** 🟡 In progress  
 **Part of track:** [Data Literacy Professional](https://app.datacamp.com/learn/skill-tracks/data-literacy-professional) — Course 6
 
