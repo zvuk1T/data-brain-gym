@@ -17,13 +17,32 @@ Business questions are usually too broad to guide analysis directly. This non-te
 
 The result must then be translated back into business language so that evidence can support a real decision. That business ↔ technical bridge is the central theme of the course.
 
-### Course map
+### 🧠 Course mental map
 
-| Chapter | Central question |
-|---|---|
-| 1. Delivering value through data | How does analysis move from a strategic goal to business value? |
-| 2. Impactful solutions need the right questions | How do we form the right analytical question and select a suitable solution? |
-| 3. Analytical questions in action | How do descriptive, diagnostic, predictive, and prescriptive questions work in realistic cases? |
+```mermaid
+mindmap
+  root((Forming Analytical Questions))
+    Purpose
+      Business impact
+      Better decisions
+    Translation
+      Strategic goals
+      Business questions
+      Analytical questions
+    Selection
+      Question type
+      Data availability
+      Team capability
+    Application
+      Descriptive
+      Diagnostic
+      Predictive
+      Prescriptive
+    Delivery
+      Data storytelling
+      Model deployment
+      Business action
+```
 
 ---
 
@@ -69,6 +88,6 @@ Data and Information provide the evidence; Knowledge answers the analytical ques
 
 A technically correct method creates little value if it answers the wrong question. Begin with the business goal and decision—not with a preferred model.
 
-**Retrieval question:** What must remain aligned when business and technical teams express the problem in different language?
+**60-second active recall:** Close the file, reconstruct the six-step workflow, and answer: What must remain aligned when business and technical teams express the problem in different language?
 
 ---
