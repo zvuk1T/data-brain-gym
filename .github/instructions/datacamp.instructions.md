@@ -2,246 +2,190 @@
 applyTo: "datacamp/**"
 ---
 
-# DataCamp Folder Instructions
-## data-brain-gym — Spock working in `datacamp/`
+# DataCamp Learning Playbook
 
----
+This file applies the Data–Spock learning method to DataCamp work. It is an operational playbook,
+not a second methodology. Repository-wide boundaries come from [`AGENTS.md`](../../AGENTS.md).
 
-## 🗂️ Folder Structure
+## The two-layer model
 
-```
-true-story-data/
-├── data-literacy-professional/   ← 8 courses, 15h
-├── data-storytelling/            ← 4 courses, 6h
-└── data-skills-for-business/     ← 6 courses, 17h
-sql-for-business-analysts/        ← resumes AFTER true-story-data complete
-```
+DataCamp and the repository have different jobs.
 
-**Rule:** No practical track work until all 3 true-story-data tracks are complete.
+| DataCamp owns | The companion course owns |
+|---|---|
+| Syllabus, lesson inventory, completion, and XP | Data's mental model and durable understanding |
+| Full videos, transcripts, and exercise history | Direct links and essential source-faithful notes |
+| Platform grading and feedback | Reasoning, misconceptions, corrected models, and transfer |
+| Current platform position | Retrieval prompts and chapter synthesis |
 
-One notebook per course. Named by course number: `01-introduction-to-data.ipynb`, `02-communicating-data-insights.ipynb`, etc.
+A course `.md` or `.ipynb` is a personalized **companion course**. It is not a transcript archive,
+a progress dashboard, or a second copy of DataCamp.
 
----
+## Artifact choice
 
-## 📸 Screenshot Rule — The Only Source
+- Use `.md` for theory, conceptual reasoning, and courses without executable work.
+- Use `.ipynb` when SQL, Python, outputs, or an executable walkthrough are central.
+- Prefer one artifact per course unless a real chapter, topic, or technical boundary makes splitting
+  clearer.
 
-Never generate lesson content without a screenshot. Build from what the screenshot shows — never from lesson titles, prior knowledge, or the course outline.
+## Source fidelity
 
-One cell at a time. No partial cells.
+Use the best verified source available: the signed-in DataCamp page, visible transcript, platform
+feedback, user-provided text, or screenshots. Never reconstruct unseen content from a title or from
+general knowledge.
 
----
+Keep these voices distinct:
 
-## 📓 Lesson Cell Templates
+- **DataCamp source** — direct link, exact short prompt, option, or faithful note;
+- **Data's reasoning** — the learner's attempt and explanation;
+- **Spock synthesis** — diagnosis, principle, connection, or transfer.
 
-All DataCamp theory notebooks: markdown cells only (no code cells until Course 8).
+For every documented graded exercise, preserve the exact question and all answer options so the
+reasoning remains auditable. Record concise, source-faithful video notes rather than complete
+transcripts.
 
-### Heading format — exact, no variation
+## Course opening
 
-```
-#### Chapter X — Lesson N: [Exact Title from DataCamp] *(Type / XP)*
-```
+A new companion course should begin with only the orientation needed to navigate and learn:
 
-Type = one of: `Video`, `Exercise`, `Practice`
+- exact course title and instructor;
+- official course link;
+- short official course description (verbatim when concise, otherwise a faithful paraphrase);
+- the capability the course is meant to build;
+- a chapter-level map of the course;
+- one Mermaid mental map when relationships are easier to remember visually.
 
----
+Do not copy learner counts, XP totals, progress tables, or a complete lesson inventory.
 
-### 🎬 Video Lesson
+## Two working modes
 
-```markdown
-#### Chapter X — Lesson N: [Title] *(Video / XP)*
+### Morning Gym
 
-> 🎬 [Watch on DataCamp](URL) *(requires login)*
+Use for a short, bounded session:
 
----
+1. retrieve one earlier idea without notes;
+2. complete one lesson or one meaningful exercise;
+3. let Data attempt first when reasoning is being tested;
+4. diagnose the reasoning and correct the model;
+5. record only the durable source note, insight, trap, and retrieval cue.
 
-**🎯 GOAL — What is this lesson about?**
-[1–2 sentences: the concept the video introduces]
+A session does not need to produce a large document change to count as learning.
 
----
+### Deep Dive
 
-[Prose or Markdown table explanation — 2–4 sentences or comparison table]
+Use when a concept remains confusing, evidence conflicts, or several ideas must be synthesized.
+Bound the dive to one question and end with a tested explanation, transfer example, conclusion, or
+clearly named blocker.
 
----
+A Morning Gym session may identify a Deep Dive candidate without expanding immediately.
 
-**💡 Why this matters**
-[1–2 sentences: core wisdom — what changes when you know this]
+## Lesson patterns
 
-**Interview readiness:**
-Recruiter: *"[realistic question about this concept]"*
-**Your answer:** "[2–3 sentences, confident and precise]"
+These are defaults, not mandatory forms. Omit a block that adds no learning value.
 
-**✅ RECAP**
-- [3–4 concept bullets]
-
-**🔗 Connection**
-- [Only genuine cross-chapter or cross-course links — skip if none]
-```
-
----
-
-### 📝 Exercise / 🔘 Practice
-
-```markdown
-#### Chapter X — Lesson N: [Title] *(Exercise or Practice / XP)*
-
----
-
-**🎯 GOAL — What does this exercise test?**
-[One sentence: pedagogical purpose — not a restatement of the scenario]
-
----
-
-**📋 Scenario**
-[DataCamp scenario text — verbatim or close paraphrase]
-
-**Task:** [Exact task statement]
-
----
-
-**✅ Solution**
-
-| Option | Verdict | Explanation | Why This Trap |
-|--------|---------|-------------|---------------|
-| [text] | ✅ Correct | [Why correct] | — |
-| [text] | ❌ Wrong | [Why wrong] | [Trap name + misconception] |
-
-**Common Mistake** *(include when user sent wrong-answer screenshot)*
-[Trap name. Root cause.]
-**→** *[Wisdom statement: action-oriented, specific to this trap]*
-
----
-
-**💡 Why this matters**
-[1–2 sentences: core wisdom — what changes when you know this]
-
-**Interview readiness:**
-Recruiter: *"[realistic question about this concept]"*
-**Your answer:** "[2–3 sentences, confident and precise]"
-
-**✅ RECAP**
-- [3–4 concept bullets]
-
-**🔗 Connection**
-- [Only genuine links — skip if none]
-```
-
-**Rules:**
-- `🎬` link → Video cells ONLY. Never in Exercise or Practice.
-- `📋 Scenario` → Exercise / Practice ONLY. Never in Video.
-- `✅ Solution` table → Exercise / Practice ONLY.
-- Show ALL answer options in the table, not just the correct one.
-- `🎯 GOAL` → mandatory in every cell. Pedagogical purpose, not topic summary.
-
----
-
-## 🗂️ Chapter Structure — Separators, Recaps, Progress Table
-
-**Three structural cells frame the lessons of each course notebook.**
-
-### 1. Chapter separator — before each chapter's first lesson
+### Video or concept lesson
 
 ```markdown
-### Chapter X: [Exact Chapter Title from DataCamp]
+#### Chapter X — Lesson N: Exact title
+
+> 🎬 [Watch on DataCamp](official lesson URL) *(login required)*
+
+**Essential DataCamp notes**
+- Concise, source-faithful ideas needed to reconstruct the lesson.
+
+**Data's understanding**
+A short explanation in Data's own words, including the business ↔ technical connection when real.
+
+**Retrieval**
+> One question that requires reconstruction rather than recognition.
 ```
 
-One line, no body. This is what makes the VS Code outline nest `####` lessons under `###` chapters. One separator per chapter.
+### Exercise or practice
 
-### 2. Chapter recap — after all lessons in a chapter are complete
+Data answers and clicks first unless he explicitly asks Spock to do it.
 
 ```markdown
-### Chapter X — Recap
+#### Chapter X — Lesson N: Exact title
 
-*Mental shift: [from X thinking to Y thinking — one italic sentence].*
+> [Open the exercise on DataCamp](official exercise URL) *(login required)*
 
-**Chapter X complete: XP / XP ✅**
+**Original question**
+Exact question and answer options when wording matters.
+
+| Option | Data's choice | Verdict | Why |
+|---|---:|---:|---|
+| ... | ✓ / — | ✅ / ❌ | Reasoning and, where useful, the trap |
+
+**Reasoning diagnosis**
+What Data's choice reveals; what was right, missing, or confused.
+
+**Corrected model**
+The shortest reusable principle that resolves the misconception.
+
+**Retrieval**
+> One fresh question or prediction.
 ```
 
-A separate cell — never appended to the last lesson cell. Two parts only: one mental-shift sentence + the chapter's own XP line. Nothing else.
+Record all answer options so the distinction between correct, plausible, and wrong reasoning stays
+visible. Keep long scenario text concise unless its wording changes the answer.
 
-Exclude: "what this chapter established" bullet lists, wisdom lists, interview checklists, re-explanations of lesson content, cross-chapter cumulative tables.
+## Chapter close
 
-### 3. Course progress table — one only, directly after the course header (Cell 1)
+Close a chapter after its relevant practice, not in advance. Keep it compact:
 
-```markdown
-### 📊 Course Progress
+1. reconstruct the chapter's mental map;
+2. answer two or three retrieval questions without notes;
+3. solve one unfamiliar transfer case;
+4. explain the central idea once for a business audience and once for a technical audience;
+5. interleave at least one earlier concept.
 
-| Chapter | Lessons | XP | Status |
-|---|---|---|---|
-| Ch1: ... | x/x | x/x | ✅ |
-| ... | ... | ... | ... |
-| **Total** | **x/x** | **x/x** | **x%** |
-```
+This is the chapter's evidence of learning. A completion badge or XP total is not.
 
-The cumulative table lives here and nowhere else. Update it when a chapter completes. Never duplicate it inside recap cells — duplicated tables drift out of sync.
+## Visuals and dual coding
 
----
+Keep mental maps. Choose the visual from the relationship:
 
-## 🗂️ Format Rules
+- Mermaid mind map for hierarchy and associations;
+- flowchart for sequence, choices, and causal flow;
+- table for exact comparison;
+- timeline for change over time;
+- graph for quantitative relationships;
+- prose when the logic is linear.
 
-| Format | Used in | When |
-|--------|---------|------|
-| Prose | All lessons | Linear concepts, definitions |
-| Markdown table | Classification lessons | 2–4 categories to compare |
-| Mermaid diagram | `.md` files only | Chapter concept map — after chapter complete |
+A visual belongs only when it helps Data explain or reconstruct the idea. Decorative graphics do
+not count as dual coding.
 
-**No ASCII trees in notebooks.**
+## Keep the companion course lean
 
-**`🔗 Connection`:** max 3 bullets, genuine cross-chapter/course links only. Skip if none.
+Usually keep:
 
-**Chapter mental-shift line:** one italic sentence, lives in the `### Chapter X — Recap` cell — not the header, not a lesson cell.
+- official links and essential source notes;
+- Data's own explanation;
+- reusable misconceptions and traps;
+- retrieval prompts;
+- chapter mental maps and transfer evidence.
 
----
+Usually omit:
 
-## ✅ Pre-Insertion Gate
+- progress and XP tables;
+- copied full transcripts or duplicated outlines;
+- recruiter scripts for every lesson;
+- repeated goals, recaps, and connection blocks;
+- dated review queues;
+- session trivia and mechanical status logs.
 
-The templates above define every content and section rule. This gate covers only
-the mechanical checks the template structure does not enforce on its own:
+DataCamp remains authoritative for course progress. The repository remains authoritative for what
+was understood and how that understanding can be used.
 
-- [ ] Screenshot present for this lesson (HARD RULE — never infer from title)
-- [ ] All required sections present, in template order
-- [ ] Inserted directly after the last completed lesson cell for this chapter
-- [ ] Cell length: Video ≤ 40 lines · Exercise/Practice ≤ 50 lines
+## Continuity and verification
 
----
+At the start of a new task:
 
-## 📛 Naming Lessons in Chat
+1. read root `AGENTS.md`, this playbook, and the active course artifact;
+2. use DataCamp to verify the current platform position when needed;
+3. never infer missing lesson content;
+4. consult a captain's log only when it contains a relevant unresolved decision that the artifacts
+   do not reveal.
 
-When referring to any lesson in chat — next step, progress report, bootstrap summary — always state **both the lesson number and its title together**:
-
-> Chapter 4 — Lesson 13: Significance levels vs. p-values
-
-Never the bare number ("Lesson 13"). Data finds lessons by title, not by index — a number alone is not locatable.
-
----
-
-## 🔄 Chat Closing & Opening
-
-### Closing (in order)
-1. Finish current lesson cell
-2. `git add` + `git commit` — one chapter = one commit
-3. Update captain's log: **first run `file_search` (or `ls captains-log/*<date>*`) for today's date. If a file exists → append a new `## SESSION PART` to the bottom of it. Never `create_file` a new log; never make a `-b`/`-c` variant (HARD RULE 1).** Record last lesson completed + next lesson.
-4. Commit captain's log
-
-**Commit format:**
-```
-Complete Course N Chapter X: [Title] — N lessons
-```
-
-### Opening — run `#file:new-session.prompt.md`
-
-### Notebook state checks — cadence
-
-Run `copilot_getNotebookSummary` only at **chapter start** and **chapter end** (and at session bootstrap). Between lessons in the same chapter, trust the `edit_notebook_file` return value — it reports the new cell id and the surrounding cells. Re-fetch the summary only if the injected context **explicitly names** a reorder or deletion, **or** the `edit_notebook_file` return value shows unexpected neighbouring cells. The harness's routine *"potentially added/removed/reordered"* notice does **not**, on its own, count as a trigger — it fires after every normal insert.
-
----
-
-## 🔗 Cross-Track Shared Courses (as of June 2026)
-
-| Course | Data Literacy Professional | Data Storytelling | Data Skills for Business |
-|--------|---------------------------|-------------------|--------------------------|
-| Introduction to Data | ✅ (1) done | — | shared |
-| Communicating Data Insights | ✅ (2) done | shared | — |
-| Introduction to Data Literacy | ✅ (3) done | — | shared |
-| Data Storytelling Concepts | ✅ (7) | shared | — |
-
-Shared courses: learned once, notebook lives in the first track, other track README points to it.
+After an edit, verify the changed section, its source link, Markdown structure, and any Mermaid or
+executable content. Commit or push only within the authorization of the current request.
