@@ -1090,3 +1090,44 @@ Hiring manager: *"How would you identify improperly allocated responsibilities i
 - Applies Lesson 10's four-stakeholder model and tests whether Lesson 11's responsibility mapping can be used to detect misallocation.
 
 ---
+
+#### Chapter 2 — Lesson 13: Congratulations! *(Video / 50 XP)*
+
+> 🎬 [Watch on DataCamp](https://campus.datacamp.com/courses/introduction-to-data-culture/data-culture-in-depth?ex=13) *(requires login)*
+
+---
+
+**🎯 GOAL — What is this lesson about?**
+Consolidate the course into one practical framework: understand the foundations of data culture, evaluate its maturity, secure leadership support and employee buy-in, make the culture sustainable, and give every stakeholder a concrete role.
+
+---
+
+The final video closes the course by connecting the two chapters:
+
+| Course section | What you should now understand |
+|---|---|
+| **Chapter 1 — Foundations** | What a data culture is—and is not; why organizations build one; and which people and process barriers can obstruct it. |
+| **Chapter 2 — From concept to practice** | How to evaluate data-culture maturity; how leadership and employee buy-in shape adoption; why sustainability matters; and which actions IT, data professionals, data consumers, and executives should take. |
+
+The instructor also recommends continuing with additional learning resources to strengthen these abilities. The closing message is practical: keep building and start applying the ideas to your own organization's data culture.
+
+---
+
+**💡 Why this matters**
+The course is not a collection of isolated definitions. It forms a sequence: diagnose the current culture, understand the barriers, build support, assign responsibilities, and improve the system over time. That sequence turns data culture from an abstract ambition into an organizational capability.
+
+**Interview readiness:**
+Hiring manager: *"How would you summarize the process of building a strong data culture?"*
+**Your answer:** "I would begin by defining the desired data culture and assessing the organization's current maturity. Then I would identify people and process barriers, secure leadership support and employee buy-in, and assign clear responsibilities: IT enables secure access, data professionals create and communicate insights, business users define needs and apply the results, and executives provide direction and resources. Finally, I would make the culture sustainable through continuous improvement, transparency, ethics, and long-term planning."
+
+**✅ RECAP**
+- Chapter 1: definition, misconceptions, business motivation, and people/process barriers.
+- Chapter 2: maturity assessment, leadership, employee buy-in, sustainability, and stakeholder actions.
+- Building a data culture is a shared organizational effort, not an analytics-team project.
+- The practical sequence is: assess → remove barriers → build support → assign roles → improve continuously.
+- Final message: continue learning and start applying the framework in practice.
+
+**🔗 Connection**
+- This lesson ties the entire course together: Chapter 1 explains the foundations and obstacles; Chapter 2 provides the maturity, leadership, sustainability, and stakeholder framework needed to act.
+
+---
